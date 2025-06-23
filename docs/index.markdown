@@ -1,7 +1,7 @@
 ---
 layout: event
 title: ECMR Workshop 2025
-logo: /images/logo.svg
+logo: images/logo.svg
 permlink: /ecmr-workshop-2025
 navigation: About;Call for papers;Important dates;Program;Competition;Organizers
 logos: httsp:://www.cvut.cz,images/logo_ctu.jpg
@@ -59,38 +59,38 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Matteo Matteucci</strong> Politecnico di Milano<br>
         <i>Topic: Radar-based SLAM for Robust Localization</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Giorgio Grisetti</strong>Sapienza University of Rome (online)<br>
         <i>Topic: TBD</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Achim Lilienthal</strong>Technische Universität München<br>
         <i>Topic: TBD</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Konstantinos Alexis</strong>NTNU<br>
         <i>Topic: TBD</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Martin Saska</strong>
 CTU in Prague<br>
         <i>Topic: TBD</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Tentative speaker <br> from Cyrill Stachniss lab</strong>
 University of Bonn<br>
         <i>Topic: TBD</i>
@@ -123,7 +123,7 @@ University of Bonn<br>
 <h3>Main organizer</h3>
 <div class="image-info-grid">
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Vsevolod Hulchuk</strong>
 CTU in Prague
     </div>
@@ -132,43 +132,43 @@ CTU in Prague
 <h3>Co-organizers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Martin Magnusson</strong> 
 Örebro University, Sweden
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Vladimír Kubelka</strong> 
 Örebro University, Sweden
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Konstantinos Alexis</strong> 
 NTNU
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Matteo Luperto</strong> 
 University of Milano, Italy
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Tomasz Kucner</strong> 
 Aalto University, Finland
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Piotr Kicki</strong> 
 Poznan University of Technology, Poland
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ '/images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Rudolf Szadkowski</strong> 
 CTU in Prague
     </div>
