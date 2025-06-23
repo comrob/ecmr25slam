@@ -4,7 +4,7 @@ title: ECMR Workshop 2025
 logo: images/logo.svg
 permlink: /ecmr-workshop-2025
 navigation: About;Call for papers;Important dates;Program;Competition;Organizers
-logos: httsp:://www.cvut.cz,images/logo_ctu.jpg
+logos: httsp://www.cvut.cz,images/logo_ctu.jpg
 contact: Vsevolod Hulchuk
 contact-email: hulchvse@student.cvut.cz
 ---
