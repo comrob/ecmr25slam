@@ -52,7 +52,7 @@
         {% assign logos = page.logos | split: ";" %}
         {% for logo in logos %}
             {% assign l = logo | split: "," %}
-            <a href="{{ l[0] }}" target="_blank"><img src="{{l[1] | absolute_url }}"></a>
+            <a href="{{ l[0] }}"><img src="{{ l[1] | absolute_url }}"></a>
         {% endfor %}
     </div>
 </footer>
