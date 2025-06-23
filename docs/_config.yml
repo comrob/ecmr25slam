@@ -22,9 +22,9 @@ title: ECMR Workshop 2025
 email: ulchvse@student.cvut.cz
 description: >- # this means to ignore newlines until "baseurl:"
   Resilient SLAM in Challenging Settings: Recent Advancements, Open Problems, and Competitions. 
-  A workshop within European Conference on Mobile Robots 2025.
+  A workshop within the European Conference on Mobile Robots 2025.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://ecmr25slam.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
 # Build settings
 theme: minima
