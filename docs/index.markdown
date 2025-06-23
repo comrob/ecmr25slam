@@ -145,8 +145,7 @@ CTU in Prague
     <!--  -->
     <div class="image-info-card">
         <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
-        <strong>Konstantinos Alexis</strong> 
-NTNU
+        <strong>Konstantinos Alexis</strong> NTNU
     </div>
     <!--  -->
     <div class="image-info-card">
