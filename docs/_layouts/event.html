@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ page.title }}</title>
+  <link rel="icon" type="image/x-icon" href="{{ '/assets/icons/favicon.ico' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | absolute_url }}">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <script type="text/javascript" src="{{ '/assets/js/script.js' | absolute_url }}"></script>
+</head>
+
+<body>
+    <header class="sticky">
+    <div class="logo">
+        <a href="{{ page.url | absolute_url }}">
+        <img src="{{ page.logo | absolute_url }}" alt="logo">
+        </a>
+    </div>
+    <!-- Hamburger button -->
+    <button class="nav-toggle" aria-label="Toggle navigation">
+        <i class="material-icons icon icon-hamburger">menu</i>
+        <i class="material-icons icon icon-close">close</i>
+    </button>
+    {% assign navigation = page.navigation | split: ";" %}
+    <nav>
+        <ul>
+        {% for item in navigation %}
+        {% assign it = item | downcase | replace: " ", "-" %}
+        <li><a href="#{{ it }}" class="
+                {% if item == 'Important dates' %} highlight {% endif %}
+                ">
+            {{ item }}
+            </a>
+        </li>
+        {% endfor %}
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        {{ content }}
+    </main>
+
+<footer>
+    <!-- Contact Information Section -->
+    <div class="contact-link">
+        <strong>Contact:</strong> {{ page.contact }}, <a href="mailto:{{ page.contact-email }}?subject=ECMR Workshop">{{ page.contact-email }}</a>
+    </div>
+    <!-- Logo Section -->
+    <div class="footer-logo">
+        {% assign logos = page.logos | split: ";" %}
+        {% for logo in logos %}
+            {% assign l = logo | split: "," %}
+            <a href="{{ l[0] }}" target="_blank"><img src="{{l[1] | absolute_url }}"></a>
+        {% endfor %}
+    </div>
+</footer>
+</body>
+
+</html>
