@@ -59,31 +59,31 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61MxYKWEwFi30Ucplcn-qcDUoup3-EzU9zIALe8fsabIkejmAVRjAO985azquuoKGMl0&usqp=CAU' | absolute_url }}">                
         <strong>Matteo Matteucci</strong> Politecnico di Milano<br>
         <i>Topic: Radar-based SLAM for Robust Localization</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://openslam-org.github.io/pics/giorgiogrisetti.jpg' | absolute_url }}">                
         <strong>Giorgio Grisetti</strong>Sapienza University of Rome (online)<br>
         <i>Topic: TBD</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://www.ce.cit.tum.de/fileadmin/w00cgn/pins/_my_direct_uploads/Achim_L_1_w5_300dpi_bglightgrad.jpg' | absolute_url }}">                
         <strong>Achim Lilienthal</strong>Technische Universität München<br>
         <i>Topic: TBD</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
         <strong>Konstantinos Alexis</strong>NTNU<br>
         <i>Topic: TBD</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://mrs.fel.cvut.cz/images/images/people/martin_saska.jpg' | absolute_url }}">                
         <strong>Martin Saska</strong>
 CTU in Prague<br>
         <i>Topic: TBD</i>
@@ -123,7 +123,7 @@ University of Bonn<br>
 <h3>Main organizer</h3>
 <div class="image-info-grid">
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}">                
         <strong>Vsevolod Hulchuk</strong>
 CTU in Prague
     </div>
@@ -132,47 +132,53 @@ CTU in Prague
 <h3>Co-organizers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">                
         <strong>Martin Magnusson</strong> 
 Örebro University, Sweden
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">                
         <strong>Vladimír Kubelka</strong> 
 Örebro University, Sweden
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
         <strong>Konstantinos Alexis</strong> NTNU
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQMw-fVNCr9Y7QQWgv6Cvt4E8QYXLtDLeQ4IYCLZE0JpZfCPnn' | absolute_url }}">                
         <strong>Matteo Luperto</strong> 
 University of Milano, Italy
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">                
+        <strong>Dyuman Aditya</strong> 
+TBD
+    </div>
+    <!--  -->
+    <div class="image-info-card">
+        <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">                
         <strong>Tomasz Kucner</strong> 
 Aalto University, Finland
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">                
         <strong>Piotr Kicki</strong> 
 Poznan University of Technology, Poland
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://loop.frontiersin.org/images/profile/1009756/203' | absolute_url }}">                
         <strong>Rudolf Szadkowski</strong> 
 CTU in Prague
     </div>
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <img src="{{ 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=436,fit=crop,trim=97.2;0;493.2;0/mk30aZBrbGhJDjV5/milos_pragr_960-mv09EaQxO9hkX858.jpg' | absolute_url }}">                
         <strong>Miloš Prágr</strong> 
 CTU in Prague
     </div>
