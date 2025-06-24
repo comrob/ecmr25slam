@@ -171,5 +171,10 @@ Poznan University of Technology, Poland
         <strong>Rudolf Szadkowski</strong> 
 CTU in Prague
     </div>
+    <div class="image-info-card">
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <strong>Miloš Prágr</strong> 
+CTU in Prague
+    </div>
 </div>
 
