@@ -59,9 +59,9 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61MxYKWEwFi30Ucplcn-qcDUoup3-EzU9zIALe8fsabIkejmAVRjAO985azquuoKGMl0&usqp=CAU' | absolute_url }}">                
-        <strong>Matteo Matteucci</strong> Politecnico di Milano<br>
-        <i>Topic: Radar-based SLAM for Robust Localization</i>
+        <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">                
+        <strong>Matteo Frosi</strong> Politecnico di Milano<br>
+        <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
     </div>
     <!--  -->
     <div class="image-info-card">
