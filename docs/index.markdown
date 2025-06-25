@@ -59,7 +59,7 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">                
+        <img src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}">                
         <strong>Matteo Frosi</strong> Politecnico di Milano<br>
         <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
     </div>
@@ -155,7 +155,7 @@ University of Milano, Italy
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">                
+        <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">                
         <strong>Dyuman Aditya</strong> 
 Ecole Centrale de Nantes, France
     </div>
