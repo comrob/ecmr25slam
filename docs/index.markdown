@@ -157,7 +157,7 @@ University of Milano, Italy
     <div class="image-info-card">
         <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">                
         <strong>Dyuman Aditya</strong> 
-TBD
+Ecole Centrale de Nantes, France
     </div>
     <!--  -->
     <div class="image-info-card">
