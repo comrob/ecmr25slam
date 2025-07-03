@@ -59,41 +59,45 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR61MxYKWEwFi30Ucplcn-qcDUoup3-EzU9zIALe8fsabIkejmAVRjAO985azquuoKGMl0&usqp=CAU' | absolute_url }}">                
-        <strong>Matteo Matteucci</strong> Politecnico di Milano<br>
-        <i>Topic: Radar-based SLAM for Robust Localization</i>
+        <img src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}">                
+        <strong>Matteo Frosi</strong> Politecnico di Milano<br>
+        <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'https://openslam-org.github.io/pics/giorgiogrisetti.jpg' | absolute_url }}">                
-        <strong>Giorgio Grisetti</strong>Sapienza University of Rome (online)<br>
-        <i>Topic: TBD</i>
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}">                
+        <strong>Luca Di Giammarino (online)</strong>Sapienza University of Rome (online)<br>
+        <i>Topic: Active Perception and Mapping: Learning to Localize in  Space and Time</i>
     </div>
     <!--  -->
-    <div class="image-info-card">
+<!--     <div class="image-info-card">
         <img src="{{ 'https://www.ce.cit.tum.de/fileadmin/w00cgn/pins/_my_direct_uploads/Achim_L_1_w5_300dpi_bglightgrad.jpg' | absolute_url }}">                
         <strong>Achim Lilienthal</strong>Technische Universität München<br>
         <i>Topic: TBD</i>
-    </div>
+    </div> -->
     <!--  -->
-    <div class="image-info-card">
+<!--     <div class="image-info-card">
         <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
         <strong>Konstantinos Alexis</strong>NTNU<br>
         <i>Topic: TBD</i>
-    </div>
+    </div> -->
     <!--  -->
-    <div class="image-info-card">
+<!--     <div class="image-info-card">
         <img src="{{ 'https://mrs.fel.cvut.cz/images/images/people/martin_saska.jpg' | absolute_url }}">                
         <strong>Martin Saska</strong>
 CTU in Prague<br>
         <i>Topic: TBD</i>
-    </div>
+    </div> -->
     <!--  -->
-    <div class="image-info-card">
+<!--     <div class="image-info-card">
         <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>Tentative speaker <br> from Cyrill Stachniss lab</strong>
 University of Bonn<br>
         <i>Topic: TBD</i>
+    </div> -->
+    <div class="image-info-card">
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
+        <strong>To be announced</strong>
     </div>
 </div>
 
@@ -103,15 +107,28 @@ University of Bonn<br>
 
 <h3>Evalution</h3>
 <ul>
-<li>Absolute Trajectory Error (ATE)</li>
-<li>Relative Pose Error (RPE)</li>
-<li>Dockerized ROS pipelines evaluated via <strong>CodaBench</strong>.</li>
+    <li>Absolute Trajectory Error (ATE)</li>
+    <li>Relative Pose Error (RPE)</li>
+    <li> Dockerized ROS pipelines evaluated via <strong>CodaBench</strong>.<br/>
+        <ul>
+            <li>
+                Dockerized evaluation github: <a href="https://github.com/comrob/slam-bench">https://github.com/comrob/slam-bench</a>
+            </li>
+        </ul>
+    </li>
 </ul>
 
 <h3>Datasets</h3>
 <ul>
-<li>Outdoor forest, tunnel, and alpine trail datasets with radar and GNSS</li>
-<li>Indoor dataset using a quadruped with RGBD and motion capture ground truth</li>
+<li>Outdoor forest, tunnel, and alpine trail datasets with radar and GNSS: <br/> 
+    <a href="https://github.com/comrob/CRL25DEG_dataset">https://github.com/comrob/CRL25DEG_dataset</a>
+</li>
+<li>Indoor dataset using a quadruped with RGBD and motion capture ground truth: <br/>
+    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">https://github.com/aislabunimi/IAS_IRIM_AIS_dataset</a>
+</li>
+<li>The Viking Hill Radar Dataset: <br/>
+    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">https://github.com/kubelvla/viking_hill_tall_grass</a>
+</li>
 </ul>
 
 <p>Participants can access training datasets ~3 months before the workshop. Testing data is hidden and evaluated post-submission.</p>
@@ -149,7 +166,7 @@ CTU in Prague
     </div>
     <!--  -->
     <div class="image-info-card">
-        <img src="{{ 'https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRQMw-fVNCr9Y7QQWgv6Cvt4E8QYXLtDLeQ4IYCLZE0JpZfCPnn' | absolute_url }}">                
+        <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">                
         <strong>Matteo Luperto</strong> 
 University of Milano, Italy
     </div>
@@ -157,7 +174,7 @@ University of Milano, Italy
     <div class="image-info-card">
         <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">                
         <strong>Dyuman Aditya</strong> 
-TBD
+Ecole Centrale de Nantes, France
     </div>
     <!--  -->
     <div class="image-info-card">
