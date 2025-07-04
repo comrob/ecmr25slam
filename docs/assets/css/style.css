@@ -66,6 +66,7 @@ h1 .highlight {
 
 h2 {
   margin: 0.5rem 0 0.5rem;
+  scroll-margin-top: var(--header-height, 0px); /* Uses the JS variable, with a fallback of 80px */
 }
 
 h3 {

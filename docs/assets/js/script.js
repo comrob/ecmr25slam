@@ -47,4 +47,26 @@ function copyToClipboard(button) {
 }
 
 // Scroll to view - TODO: little offset
-document.getElementById("scroll").scrollIntoView({block: 'start',behavior: 'smooth'});
+// The fix: only scroll if the element exists
+const scrollElement = document.getElementById("scroll");
+if (scrollElement) {
+  scrollElement.scrollIntoView({block: 'start', behavior: 'smooth'});
+}
+
+document.addEventListener("DOMContentLoaded", function () {
+  const header = document.querySelector("header"); // Or 'nav' or your main header element selector
+
+  // Function to set the header height CSS variable
+  const setHeaderHeight = () => {
+    if (header) {
+      const headerHeight = header.offsetHeight;
+      document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+    }
+  };
+
+  // Set the height on initial load
+  setHeaderHeight();
+
+  // Re-set the height if the window is resized
+  window.addEventListener("resize", setHeaderHeight);
+});
