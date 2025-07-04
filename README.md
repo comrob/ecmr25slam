@@ -7,5 +7,5 @@ https://comrob.github.io/ecmr25slam/
 ```
 cd docs
 bundle install
-bundle exec jekyll serve
+bundle exec jekyll serve --port 4001
 ```

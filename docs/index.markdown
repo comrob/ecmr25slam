@@ -18,22 +18,48 @@ contact-email: hulchvse@student.cvut.cz
     </p>
 </div>
 
-<div class="cta">
-    <div class="cta-text long">
-        <h3 id="call-for-papers">Call for papers</h3>
-        <p>During this workshop, we will also hold a poster session to present recent developments. 
-        We invite you to submit your novel contribution aligned with the following indicative (and non-exhaustive) list of topics.</p>
-    </div>   
-    <div class="cta-link-button">
-        <a href="mailto:hulchvse@student.cvut.cz?subject=ECMR Workshop 2025 - Submission"><i class="material-icons">arrow_forward</i></a>
-    </div>
+<h2 id="call-for-papers">Call for Papers</h2>
+<div class="section-intro">
+    <p>We invite submissions of novel contributions aligned with (but not limited to) the following indicative topics:</p>
+    <ul>
+        <li>SLAM under perceptual degradation and degenerative scenarios</li>
+        <li>Radar-based SLAM and radar-visual-inertial fusion</li>
+        <li>Passive and low-cost sensor fusion for localization and mapping</li>
+        <li>Architectures for failure resilience and sensor dropout handling</li>
+        <li>Robust back-end optimization and front-end perception</li>
+        <li>Coupling strategies in multi-sensor SLAM pipelines</li>
+        <li>Benchmarks, datasets, and evaluation metrics for degraded environments</li>
+    </ul>
+    <p>Late-breaking results are welcome, as well as extended contributions related to ECMR submissions.</p>
+    
+    <p>In addition to the main paper track, we are hosting an exciting <strong>SLAM competition</strong>. This is a great opportunity to test your algorithms on challenging datasets, including scenarios with degenerative LiDAR, low-cost sensors on quadrupeds, and radar in forest environments.</p>
+    <p>While we encourage competition participants to submit an accompanying paper describing their system, this is entirely voluntary. You are free to <strong>submit a paper without competing, or compete without submitting a paper</strong>. You can find all the details and access the training data in the <a href="#competition">Competition Section</a>.</p>
+    <h4>Guide for Authors</h4>
+    <p>Please submit an extended abstract (up to 4 pages, including references) in IEEE conference format to the workshop chairs at: 📧 <a href="mailto:robotmappingws@gmail.com">robotmappingws@gmail.com</a></p>
+    <p>Submissions can include re-elaborations of recently published work. The workshop will not have archival proceedings, and all submissions will be peer-reviewed by the organizing committee based on quality, relevance, and timeliness.</p>
+
+    <h4>Important Dates – Extended Submission</h4>
+    <ul>
+        <li>📅 Submission deadline: <strong>20 August 2025</strong></li>
+        <li>📩 Notification of acceptance: <strong>28 August 2025</strong></li>
+    </ul>
+    <p>If you require early notification to help plan your ECMR participation, please indicate this in your submission email.</p>
+
+    <h4>Publication and Dissemination</h4>
+    <p>Accepted papers will be presented during the poster session at the workshop, held in conjunction with ECMR 2025 in Padova, Italy. After the event, the posters and accompanying papers will be made available on the workshop's official website.</p>
+</div>
+
+<div class="cta-button-wrapper">
+    <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Submission" class="cta-button">
+        Submit Your Paper
+    </a>
 </div>
 
 <h2 id="important-dates">Important dates</h2>
 <div class="section-intro">
 <ul>
-<li><strong>01. 08. 2025</strong> — Deadline for submission</li>
-<li><strong>15. 08. 20025</strong> — Notification of acceptance</li>
+<li><strong>20. 08. 2025</strong> — Deadline for submission</li>
+<li><strong>28. 08. 2025</strong> — Notification of acceptance</li>
 <li><strong>05. 09. 2025</strong> — Deadline for final paper submission</li>
 <li><strong>Two weeks before ECMR 2025</strong> — Competition deadline</li>
 <li><strong>02. 09. 2025</strong> — Workshop</li>
@@ -66,7 +92,7 @@ contact-email: hulchvse@student.cvut.cz
     <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}">                
-        <strong>Luca Di Giammarino (online)</strong>Sapienza University of Rome (online)<br>
+        <strong>Luca Di Giammarino (online)</strong>Sapienza University of Rome<br>
         <i>Topic: Active Perception and Mapping: Learning to Localize in  Space and Time</i>
     </div>
     <!--  -->
@@ -101,37 +127,40 @@ University of Bonn<br>
     </div>
 </div>
 
-<h2 id="competition">Competition</h2>
+<h2 id="competition">Competition 🏆</h2>
 <div class="section-intro">
-<p>The workshop hosts a SLAM benchmarking competition with datasets that include radar, multispectral imagery (NDVI, thermal), and low-cost sensors on quadruped and wheeled robots.</p>
+<p>The workshop hosts a SLAM benchmarking competition featuring datasets with radar, multispectral imagery (NDVI, thermal), and low-cost sensors on both quadruped and wheeled robots.</p>
 
-<h3>Evalution</h3>
+<h3>Evaluation</h3>
+<p>Submissions will be evaluated based on the following metrics:</p>
 <ul>
-    <li>Absolute Trajectory Error (ATE)</li>
-    <li>Relative Pose Error (RPE)</li>
-    <li> Dockerized ROS pipelines evaluated via <strong>CodaBench</strong>.<br/>
+    <li><strong>Absolute Trajectory Error (ATE)</strong></li>
+    <li><strong>Relative Pose Error (RPE)</strong></li>
+    <li>Dockerized ROS pipelines will be evaluated via the <strong>CodaBench</strong> platform.
         <ul>
             <li>
-                Dockerized evaluation github: <a href="https://github.com/comrob/slam-bench">https://github.com/comrob/slam-bench</a>
+                Evaluation code is available on GitHub: <a href="https://github.com/comrob/slam-bench">comrob/slam-bench</a>
             </li>
         </ul>
     </li>
 </ul>
 
 <h3>Datasets</h3>
+<p>Participants will have access to the following datasets:</p>
 <ul>
-<li>Outdoor forest, tunnel, and alpine trail datasets with radar and GNSS: <br/> 
-    <a href="https://github.com/comrob/CRL25DEG_dataset">https://github.com/comrob/CRL25DEG_dataset</a>
+<li>An outdoor dataset in forest, tunnel, and alpine environments with radar and GNSS.<br/> 
+    <a href="https://github.com/comrob/CRL25DEG_dataset">comrob/CRL25DEG_dataset</a>
 </li>
-<li>Indoor dataset using a quadruped with RGBD and motion capture ground truth: <br/>
-    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">https://github.com/aislabunimi/IAS_IRIM_AIS_dataset</a>
+<li>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.<br/>
+    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">aislabunimi/IAS_IRIM_AIS_dataset</a>
 </li>
-<li>The Viking Hill Radar Dataset: <br/>
-    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">https://github.com/kubelvla/viking_hill_tall_grass</a>
+<li>The Viking Hill Radar Dataset.<br/>
+    <a href="https://github.com/kubelvla/viking_hill_tall_grass">kubelvla/viking_hill_tall_grass</a>
 </li>
 </ul>
 
-<p>Participants can access training datasets ~3 months before the workshop. Testing data is hidden and evaluated post-submission.</p>
+<p>Training datasets will be released approximately three months before the workshop. The testing data will remain hidden and used for final evaluation after the submission deadline.</p>
+<p>The official competition website is under construction. In the meantime, you can test your SLAM system on the training portions of the datasets using the links above.</p>
 </div>
 
 
