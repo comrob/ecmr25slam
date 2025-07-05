@@ -708,3 +708,18 @@ pre {
 .cta-button:hover {
   background-color: #0056b3;
 }
+
+.date-list {
+  list-style-type: none;
+  padding: 0;
+}
+.date-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+.date-list .date-label {
+  font-weight: bold;
+  margin-right: 20px;
+}

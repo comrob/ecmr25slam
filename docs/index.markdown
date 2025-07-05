@@ -3,20 +3,95 @@ layout: event
 title: ECMR Workshop 2025
 logo: images/logo.svg
 permlink: /ecmr-workshop-2025
-navigation: About;Call for papers;Important dates;Program;Competition;Organizers
+navigation: About;Important dates;Competition;Call for papers;Program;Organizers
 logos: https://www.cvut.cz/,images/logo_ctu.jpg
 contact: Vsevolod Hulchuk
 contact-email: hulchvse@student.cvut.cz
 ---
-<h1>SLAM Workshop - ECMR 2025</h1>
+<h1>Resilient SLAM in Challenging Settings - ECMR 2025</h1>
+
+<br/>
+<hr>
 
 <h2 id="about">About</h2>
 <div class="section-intro">
     <strong>Resilient SLAM in Challenging Settings: Recent Advancements, Open Problems, and Competitions</strong>
-    <p>Despite decades of SLAM research, real-world deployment remains challenging, especially in perceptually degraded or structurally complex environments. This workshop aims to unite researchers across Europe to address SLAM robustness in such conditions. Topics include radar-visual-inertial fusion, low-cost sensor configurations, resilience to sensor dropouts, and architectural designs for long-term autonomy.
-    A key goal is fostering discussion on robust SLAM backends, adaptive fusion strategies, and benchmarking under degenerative conditions. The workshop will feature invited talks, poster sessions, a World Café-style discussion, and a SLAM competition to evaluate new methods on real datasets collected with quadruped and wheeled robots using diverse sensors.
-    </p>
+    <p>Despite decades of SLAM research, real-world deployment remains challenging, especially in perceptually degraded or structurally complex environments. This workshop aims to unite researchers across Europe to address SLAM robustness in such conditions. Topics include radar-visual-inertial fusion, low-cost sensor configurations, resilience to sensor dropouts, and architectural designs for long-term autonomy. A key goal is fostering discussion on robust SLAM backends, adaptive fusion strategies, and benchmarking under degenerative conditions.</p>
+    <p>The workshop hosts:</p>
+    <ul>
+        <li>A <strong>SLAM competition</strong> to evaluate new methods on real datasets collected with quadruped and wheeled robots using diverse sensors.</li>
+        <li>A <strong>call for papers</strong> to discuss late-breaking results and novel ideas about SLAM.</li>
+    </ul>
+    <p>The workshop will feature invited talks, a World Café-style discussion, poster sessions, oral presentations of contributions sent to the call for papers, and the results of the SLAM competition.</p>
 </div>
+
+<br/>
+<hr>
+
+<h2 id="important-dates">Important Dates</h2>
+<div class="section-intro">
+    <ul class="date-list">
+        <li>
+            <span class="date-label">Paper submission deadline:</span>
+            <span class="date-value"><strong>August 20, 2025</strong></span>
+        </li>
+        <li>
+            <span class="date-label">Competition deadline:</span>
+            <span class="date-value"><strong>August 19, 2025</strong></span>
+        </li>
+        <li>
+            <span class="date-label">Notification of acceptance:</span>
+            <span class="date-value"><strong>August 28, 2025</strong></span>
+        </li>
+        <li>
+            <span class="date-label">Workshop Day:</span>
+            <span class="date-value"><strong>September 2, 2025</strong></span>
+        </li>
+    </ul>
+</div>
+<br/>
+
+<br/>
+<hr>
+
+<h2 id="competition">Competition 🏆</h2>
+<div class="section-intro">
+<p>The workshop hosts a SLAM benchmarking competition featuring datasets with radar, multispectral imagery (NDVI, thermal), and low-cost sensors on both quadruped and wheeled robots.</p>
+
+<h3>Evaluation</h3>
+<p>Submissions will be evaluated based on the following metrics:</p>
+<ul>
+    <li><strong>Absolute Trajectory Error (ATE)</strong></li>
+    <li><strong>Relative Pose Error (RPE)</strong></li>
+    <li>Dockerized ROS pipelines will be evaluated via the <strong>CodaBench</strong> platform.
+        <ul>
+            <li>
+                Evaluation code is available on GitHub: <a href="https://github.com/comrob/slam-bench">comrob/slam-bench</a>
+            </li>
+        </ul>
+    </li>
+</ul>
+
+<h3>Datasets</h3>
+<p>Participants will have access to the following datasets:</p>
+<ul>
+<li>An outdoor dataset in forest, tunnel, and alpine environments with radar and GNSS.<br/> 
+    <a href="https://github.com/comrob/CRL25DEG_dataset">comrob/CRL25DEG_dataset</a>
+</li>
+<li>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.<br/>
+    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">aislabunimi/IAS_IRIM_AIS_dataset</a>
+</li>
+<li>The Viking Hill Radar Dataset.<br/>
+    <a href="https://github.com/kubelvla/viking_hill_tall_grass">kubelvla/viking_hill_tall_grass</a>
+</li>
+</ul>
+
+<p>Training datasets will be released approximately three months before the workshop. The testing data will remain hidden and used for final evaluation after the submission deadline.</p>
+<p>The official competition website is under construction. In the meantime, you can test your SLAM system on the training portions of the datasets using the links above.</p>
+</div>
+
+<br/>
+<hr>
 
 <h2 id="call-for-papers">Call for Papers</h2>
 <div class="section-intro">
@@ -55,16 +130,8 @@ contact-email: hulchvse@student.cvut.cz
     </a>
 </div>
 
-<h2 id="important-dates">Important dates</h2>
-<div class="section-intro">
-<ul>
-<li><strong>20. 08. 2025</strong> — Deadline for submission</li>
-<li><strong>28. 08. 2025</strong> — Notification of acceptance</li>
-<li><strong>05. 09. 2025</strong> — Deadline for final paper submission</li>
-<li><strong>Two weeks before ECMR 2025</strong> — Competition deadline</li>
-<li><strong>02. 09. 2025</strong> — Workshop</li>
-</ul>
-</div>
+<br/>
+<hr>
 
 <h2 id="program">Program</h2>
 <div class="section-intro">
@@ -89,80 +156,19 @@ contact-email: hulchvse@student.cvut.cz
         <strong>Matteo Frosi</strong> Politecnico di Milano<br>
         <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}">                
         <strong>Luca Di Giammarino (online)</strong>Sapienza University of Rome<br>
         <i>Topic: Active Perception and Mapping: Learning to Localize in  Space and Time</i>
     </div>
-    <!--  -->
-<!--     <div class="image-info-card">
-        <img src="{{ 'https://www.ce.cit.tum.de/fileadmin/w00cgn/pins/_my_direct_uploads/Achim_L_1_w5_300dpi_bglightgrad.jpg' | absolute_url }}">                
-        <strong>Achim Lilienthal</strong>Technische Universität München<br>
-        <i>Topic: TBD</i>
-    </div> -->
-    <!--  -->
-<!--     <div class="image-info-card">
-        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
-        <strong>Konstantinos Alexis</strong>NTNU<br>
-        <i>Topic: TBD</i>
-    </div> -->
-    <!--  -->
-<!--     <div class="image-info-card">
-        <img src="{{ 'https://mrs.fel.cvut.cz/images/images/people/martin_saska.jpg' | absolute_url }}">                
-        <strong>Martin Saska</strong>
-CTU in Prague<br>
-        <i>Topic: TBD</i>
-    </div> -->
-    <!--  -->
-<!--     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
-        <strong>Tentative speaker <br> from Cyrill Stachniss lab</strong>
-University of Bonn<br>
-        <i>Topic: TBD</i>
-    </div> -->
     <div class="image-info-card">
         <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>To be announced</strong>
     </div>
 </div>
 
-<h2 id="competition">Competition 🏆</h2>
-<div class="section-intro">
-<p>The workshop hosts a SLAM benchmarking competition featuring datasets with radar, multispectral imagery (NDVI, thermal), and low-cost sensors on both quadruped and wheeled robots.</p>
-
-<h3>Evaluation</h3>
-<p>Submissions will be evaluated based on the following metrics:</p>
-<ul>
-    <li><strong>Absolute Trajectory Error (ATE)</strong></li>
-    <li><strong>Relative Pose Error (RPE)</strong></li>
-    <li>Dockerized ROS pipelines will be evaluated via the <strong>CodaBench</strong> platform.
-        <ul>
-            <li>
-                Evaluation code is available on GitHub: <a href="https://github.com/comrob/slam-bench">comrob/slam-bench</a>
-            </li>
-        </ul>
-    </li>
-</ul>
-
-<h3>Datasets</h3>
-<p>Participants will have access to the following datasets:</p>
-<ul>
-<li>An outdoor dataset in forest, tunnel, and alpine environments with radar and GNSS.<br/> 
-    <a href="https://github.com/comrob/CRL25DEG_dataset">comrob/CRL25DEG_dataset</a>
-</li>
-<li>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.<br/>
-    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">aislabunimi/IAS_IRIM_AIS_dataset</a>
-</li>
-<li>The Viking Hill Radar Dataset.<br/>
-    <a href="https://github.com/kubelvla/viking_hill_tall_grass">kubelvla/viking_hill_tall_grass</a>
-</li>
-</ul>
-
-<p>Training datasets will be released approximately three months before the workshop. The testing data will remain hidden and used for final evaluation after the submission deadline.</p>
-<p>The official competition website is under construction. In the meantime, you can test your SLAM system on the training portions of the datasets using the links above.</p>
-</div>
-
+<br/>
+<hr>
 
 <h2 id="organizers">Organizers</h2>
 
@@ -182,42 +188,35 @@ CTU in Prague
         <strong>Martin Magnusson</strong> 
 Örebro University, Sweden
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">                
         <strong>Vladimír Kubelka</strong> 
 Örebro University, Sweden
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
         <strong>Konstantinos Alexis</strong> NTNU
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">                
         <strong>Matteo Luperto</strong> 
 University of Milano, Italy
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">                
         <strong>Dyuman Aditya</strong> 
 Ecole Centrale de Nantes, France
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">                
         <strong>Tomasz Kucner</strong> 
 Aalto University, Finland
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">                
         <strong>Piotr Kicki</strong> 
 Poznan University of Technology, Poland
     </div>
-    <!--  -->
     <div class="image-info-card">
         <img src="{{ 'https://loop.frontiersin.org/images/profile/1009756/203' | absolute_url }}">                
         <strong>Rudolf Szadkowski</strong> 
