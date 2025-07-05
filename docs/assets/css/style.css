@@ -12,7 +12,7 @@
   --text-color: #000000;
   --orange-color: #be5000;
   --font-heading: 'Roboto', sans-serif;
-  --max-width: 900px;
+  --max-width: 1100px;
   --image-width: 200px;
   --image-height: 250px;
   --border-radius: 10px;
@@ -722,4 +722,32 @@ pre {
 .date-list .date-label {
   font-weight: bold;
   margin-right: 20px;
+}
+
+/* --- CSS for the Program Schedule --- */
+
+/* Basic layout for each row */
+.date-list li {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 15px; /* Adds some nice spacing */
+  border-bottom: 1px solid #eee;
+  border-radius: 5px; /* Rounds the corners */
+  margin-bottom: 5px; /* Adds space between rows */
+}
+
+.date-list .date-label {
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+/* Light background colors for each event type */
+li.event-speech {
+  background-color: rgba(40, 167, 69, 0.1); /* Light Green */
+}
+li.event-poster {
+  background-color: rgba(0, 123, 255, 0.1); /* Light Blue */
+}
+li.event-break {
+  background-color: rgba(108, 117, 125, 0.1); /* Light Grey */
 }

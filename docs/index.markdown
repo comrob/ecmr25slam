@@ -3,18 +3,16 @@ layout: event
 title: ECMR Workshop 2025
 logo: images/logo.svg
 permlink: /ecmr-workshop-2025
-navigation: About;Important dates;Competition;Call for papers;Program;Organizers
+navigation: About;Important dates;Competition;Call for papers;Program;Organizers;Venue and location
 logos: https://www.cvut.cz/,images/logo_ctu.jpg
 contact: Vsevolod Hulchuk
 contact-email: hulchvse@student.cvut.cz
 ---
 <h1>Resilient SLAM in Challenging Settings - ECMR 2025</h1>
 
-<br/>
-<hr>
-
 <h2 id="about">About</h2>
 <div class="section-intro">
+    <p>This workshop is a full-day event held in conjunction with the <a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer"><strong>European Conference on Mobile Robots (ECMR) 2025</strong></a>.</p>
     <strong>Resilient SLAM in Challenging Settings: Recent Advancements, Open Problems, and Competitions</strong>
     <p>Despite decades of SLAM research, real-world deployment remains challenging, especially in perceptually degraded or structurally complex environments. This workshop aims to unite researchers across Europe to address SLAM robustness in such conditions. Topics include radar-visual-inertial fusion, low-cost sensor configurations, resilience to sensor dropouts, and architectural designs for long-term autonomy. A key goal is fostering discussion on robust SLAM backends, adaptive fusion strategies, and benchmarking under degenerative conditions.</p>
     <p>The workshop hosts:</p>
@@ -24,6 +22,7 @@ contact-email: hulchvse@student.cvut.cz
     </ul>
     <p>The workshop will feature invited talks, a World Café-style discussion, poster sessions, oral presentations of contributions sent to the call for papers, and the results of the SLAM competition.</p>
 </div>
+
 
 <br/>
 <hr>
@@ -37,7 +36,7 @@ contact-email: hulchvse@student.cvut.cz
         </li>
         <li>
             <span class="date-label">Competition deadline:</span>
-            <span class="date-value"><strong>August 19, 2025</strong></span>
+            <span class="date-value"><strong>August 28, 2025</strong></span>
         </li>
         <li>
             <span class="date-label">Notification of acceptance:</span>
@@ -49,7 +48,7 @@ contact-email: hulchvse@student.cvut.cz
         </li>
     </ul>
 </div>
-<br/>
+
 
 <br/>
 <hr>
@@ -90,6 +89,7 @@ contact-email: hulchvse@student.cvut.cz
 <p>The official competition website is under construction. In the meantime, you can test your SLAM system on the training portions of the datasets using the links above.</p>
 </div>
 
+
 <br/>
 <hr>
 
@@ -113,13 +113,6 @@ contact-email: hulchvse@student.cvut.cz
     <p>Please submit an extended abstract (up to 4 pages, including references) in IEEE conference format to the workshop chairs at: 📧 <a href="mailto:robotmappingws@gmail.com">robotmappingws@gmail.com</a></p>
     <p>Submissions can include re-elaborations of recently published work. The workshop will not have archival proceedings, and all submissions will be peer-reviewed by the organizing committee based on quality, relevance, and timeliness.</p>
 
-    <h4>Important Dates – Extended Submission</h4>
-    <ul>
-        <li>📅 Submission deadline: <strong>20 August 2025</strong></li>
-        <li>📩 Notification of acceptance: <strong>28 August 2025</strong></li>
-    </ul>
-    <p>If you require early notification to help plan your ECMR participation, please indicate this in your submission email.</p>
-
     <h4>Publication and Dissemination</h4>
     <p>Accepted papers will be presented during the poster session at the workshop, held in conjunction with ECMR 2025 in Padova, Italy. After the event, the posters and accompanying papers will be made available on the workshop's official website.</p>
 </div>
@@ -130,24 +123,55 @@ contact-email: hulchvse@student.cvut.cz
     </a>
 </div>
 
+
 <br/>
 <hr>
 
 <h2 id="program">Program</h2>
 <div class="section-intro">
-<p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>02. 09. 2025</strong></p>
-<ul>
-<li><strong>09:00–09:10</strong> — Welcome & Introduction</li>
-<li><strong>09:10–10:10</strong> — Invited Speakers Session 1</li>
-<li><strong>10:10–11:00</strong> — Poster & Competition Session 1 + Coffee</li>
-<li><strong>11:00–13:00</strong> — Presentations of Accepted Papers</li>
-<li><strong>13:00–14:00</strong> — Lunch Break</li>
-<li><strong>14:00–15:30</strong> — Invited Speakers Session 2</li>
-<li><strong>15:30–16:15</strong> — Poster & Competition Session 2 + Coffee</li>
-<li><strong>16:16–17:15</strong> — World Café Discussion</li>
-<li><strong>17:15–17:30</strong> — Closing Remarks</li>
+<p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
+
+<ul class="date-list">
+    <li class="event-speech">
+        <span class="date-label"><strong>09:00–09:10</strong></span>
+        <span class="date-value">Welcome & Introduction</span>
+    </li>
+    <li class="event-speech">
+        <span class="date-label"><strong>09:10–10:10</strong></span>
+        <span class="date-value">Invited Speakers Session 1</span>
+    </li>
+    <li class="event-poster">
+        <span class="date-label"><strong>10:10–11:00</strong></span>
+        <span class="date-value">Poster & Competition Session 1 + Coffee</span>
+    </li>
+    <li class="event-speech">
+        <span class="date-label"><strong>11:00–13:00</strong></span>
+        <span class="date-value">Presentations of Accepted Papers</span>
+    </li>
+    <li class="event-break">
+        <span class="date-label"><strong>13:00–14:00</strong></span>
+        <span class="date-value">Lunch Break</span>
+    </li>
+    <li class="event-speech">
+        <span class="date-label"><strong>14:00–15:30</strong></span>
+        <span class="date-value">Invited Speakers Session 2</span>
+    </li>
+    <li class="event-poster">
+        <span class="date-label"><strong>15:30–16:15</strong></span>
+        <span class="date-value">Poster & Competition Session 2 + Coffee</span>
+    </li>
+    <li class="event-speech">
+        <span class="date-label"><strong>16:16–17:15</strong></span>
+        <span class="date-value">World Café Discussion</span>
+    </li>
+    <li class="event-speech">
+        <span class="date-label"><strong>17:15–17:30</strong></span>
+        <span class="date-value">Closing Remarks</span>
+    </li>
 </ul>
 </div>
+
+<br/>
 
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
@@ -166,6 +190,7 @@ contact-email: hulchvse@student.cvut.cz
         <strong>To be announced</strong>
     </div>
 </div>
+
 
 <br/>
 <hr>
@@ -229,3 +254,40 @@ CTU in Prague
     </div>
 </div>
 
+
+<br/>
+<hr>
+
+<hr>
+
+<h2 id="venue-and-location">Venue and location</h2>
+<div class="section-intro">
+    <p>
+        The workshop will be held at:
+        <br>
+        <strong>Palazzo della Salute</strong>
+        <br>
+        Via S. Francesco, 90
+        <br>
+        I-35121 Padua (Italy)
+    </p>
+    <p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+della+Salute,Via+S.+Francesco,90,Padua,Italy" target="_blank" rel="noopener noreferrer">
+            Open in Google Maps
+        </a>
+    </p>
+
+    <div style="border-radius: 8px; overflow: hidden; margin-top: 15px;">
+        <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.378776495039!2d11.88031807609789!3d45.40130697107389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda5a57497745%3A0x6517a61d5656add!2sPalazzo%20della%2S%20Via%20S.%20Francesco%2C%2090%2C%2035121%20Padova%20PD%2C%20Italy!5e0!3m2!1sen!2scz!4v1720204344795!5m2!1sen!2scz" 
+            width="100%" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+<br/>
