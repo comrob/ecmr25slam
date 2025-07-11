@@ -87,6 +87,7 @@ contact-email: hulchvse@student.cvut.cz
 
 <p>Training datasets will be released approximately three months before the workshop. The testing data will remain hidden and used for final evaluation after the submission deadline.</p>
 <p>The official competition website is under construction. In the meantime, you can test your SLAM system on the training portions of the datasets using the links above.</p>
+<p>Participation in the SLAM competition is open to <strong>online submission</strong>, and attendance at the ECMR workshop in Padova <strong>is not mandatory</strong> for submitting your work.</p>
 </div>
 
 
