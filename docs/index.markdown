@@ -177,6 +177,11 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
+        <img src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}">                
+        <strong>Martin Saska</strong>Czech Technical University in Prague<br>
+        <i>Topic: Long-term UAV deployment in challenging GNSS-denied conditions</i>
+    </div>
+    <div class="image-info-card">
         <img src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}">                
         <strong>Matteo Frosi</strong> Politecnico di Milano<br>
         <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
@@ -186,14 +191,10 @@ contact-email: hulchvse@student.cvut.cz
         <strong>Luca Di Giammarino (online)</strong>Sapienza University of Rome<br>
         <i>Topic: Active Perception and Mapping: Learning to Localize in  Space and Time</i>
     </div>
-    <div class="image-info-card">
+<!--     <div class="image-info-card">
         <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
         <strong>Konstantinos Alexis</strong>Norwegian University of Science and Technology<br>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}">                
-        <strong>Martin Saska</strong>Czech Technical University in Prague<br>
-    </div>
+    </div> -->
     <div class="image-info-card">
         <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
         <strong>To be announced</strong>
