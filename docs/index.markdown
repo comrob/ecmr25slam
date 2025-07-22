@@ -320,15 +320,7 @@ contact-email: hulchvse@student.cvut.cz
     </p>
 
     <div style="border-radius: 8px; overflow: hidden; margin-top: 15px;">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.378776495039!2d11.88031807609789!3d45.40130697107389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda5a57497745%3A0x6517a61d5656add!2sPalazzo%20della%2S%20Via%20S.%20Francesco%2C%2090%2C%2035121%20Padova%20PD%2C%20Italy!5e0!3m2!1sen!2scz!4v1720204344795!5m2!1sen!2scz" 
-            width="100%" 
-            height="400" 
-            style="border:0;" 
-            allowfullscreen="" 
-            loading="lazy" 
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d716610.9270584247!2d9.85687447685091!3d45.444387649620595!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda50d451f411%3A0x712672e59eeb4c53!2sPalazzo%20della%20Salute!5e0!3m2!1sen!2scz!4v1753197585603!5m2!1sen!2scz" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
 </div>
 
