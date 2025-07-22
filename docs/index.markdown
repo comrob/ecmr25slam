@@ -217,39 +217,14 @@ contact-email: hulchvse@student.cvut.cz
 <hr>
 
 <h2 id="organizers">Organizers</h2>
+<br/>
 
-<h3>Main organizer</h3>
-<div class="image-info-grid">
+<div class="image-info-grid small">
     <div class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}">
         <div class="card-content">
             <strong>Vsevolod Hulchuk</strong>
             <span class="affiliation">CTU in Prague</span>
-        </div>
-    </div>
-</div>
-
-<h3>Co-organizers</h3>
-<div class="image-info-grid small">
-    <div class="image-info-card">
-        <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">
-        <div class="card-content">
-            <strong>Martin Magnusson</strong>
-            <span class="affiliation">Örebro University, Sweden</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">
-        <div class="card-content">
-            <strong>Vladimír Kubelka</strong>
-            <span class="affiliation">Örebro University, Sweden</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">
-        <div class="card-content">
-            <strong>Konstantinos Alexis</strong>
-            <span class="affiliation">NTNU</span>
         </div>
     </div>
     <div class="image-info-card">
@@ -267,17 +242,17 @@ contact-email: hulchvse@student.cvut.cz
         </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">
+        <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">
         <div class="card-content">
-            <strong>Tomasz Kucner</strong>
-            <span class="affiliation">Aalto University, Finland</span>
+            <strong>Vladimír Kubelka</strong>
+            <span class="affiliation">Örebro University, Sweden</span>
         </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">
+        <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">
         <div class="card-content">
-            <strong>Piotr Kicki</strong>
-            <span class="affiliation">Poznan University of Technology, Poland</span>
+            <strong>Martin Magnusson</strong>
+            <span class="affiliation">Örebro University, Sweden</span>
         </div>
     </div>
     <div class="image-info-card">
@@ -292,6 +267,27 @@ contact-email: hulchvse@student.cvut.cz
         <div class="card-content">
             <strong>Miloš Prágr</strong>
             <span class="affiliation">CTU in Prague</span>
+        </div>
+    </div>
+    <div class="image-info-card">
+        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">
+        <div class="card-content">
+            <strong>Konstantinos Alexis</strong>
+            <span class="affiliation">NTNU</span>
+        </div>
+    </div>
+    <div class="image-info-card">
+        <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">
+        <div class="card-content">
+            <strong>Tomasz Kucner</strong>
+            <span class="affiliation">Aalto University, Finland</span>
+        </div>
+    </div>
+    <div class="image-info-card">
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">
+        <div class="card-content">
+            <strong>Piotr Kicki</strong>
+            <span class="affiliation">Poznan University of Technology, Poland</span>
         </div>
     </div>
 </div>
