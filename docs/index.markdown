@@ -177,27 +177,38 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}">                
-        <strong>Martin Saska</strong>Czech Technical University in Prague<br>
-        <i>Topic: Long-term UAV deployment in challenging GNSS-denied conditions</i>
+        <img src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}">
+        <div class="card-content">
+            <strong>Martin Saska</strong>
+            <span class="affiliation">Czech Technical University in Prague</span>
+            <i>Topic: Long-term UAV deployment in challenging GNSS-denied conditions</i>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}">                
-        <strong>Matteo Frosi</strong> Politecnico di Milano<br>
-        <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
+        <img src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}">
+        <div class="card-content">
+            <strong>Matteo Frosi</strong>
+            <span class="affiliation">Politecnico di Milano</span>
+            <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}">                
-        <strong>Luca Di Giammarino (online)</strong>Sapienza University of Rome<br>
-        <i>Topic: Active Perception and Mapping: Learning to Localize in  Space and Time</i>
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}">
+        <div class="card-content">
+            <strong>Luca Di Giammarino <span class="online-badge">online</span></strong>
+            <span class="affiliation">Sapienza University of Rome</span>
+            <i>Topic: Active Perception and Mapping: Learning to Localize in Space and Time</i>
+            <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
+            <div class="abstract-content" style="display:none;">
+                <p>This talk explores recent advances at the intersection of geometry, learning, and probabilistic modeling for robot localization and mapping. We present four complementary approaches that tackle key challenges in active perception: Gaussian splatting for real-time LiDAR odometry, continuous-time pose estimation via Gaussian belief propagation, and learning-based strategies for viewpoint selection in active localization. Together, these works push the boundaries of how autonomous systems perceive, move, and map the world, efficiently and intelligently, in both space and time.</p>
+            </div>
+        </div>
     </div>
-<!--     <div class="image-info-card">
-        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
-        <strong>Konstantinos Alexis</strong>Norwegian University of Science and Technology<br>
-    </div> -->
     <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">                
-        <strong>To be announced</strong>
+        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">
+        <div class="card-content">
+            <strong>To be announced</strong>
+        </div>
     </div>
 </div>
 
@@ -210,57 +221,78 @@ contact-email: hulchvse@student.cvut.cz
 <h3>Main organizer</h3>
 <div class="image-info-grid">
     <div class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}">                
-        <strong>Vsevolod Hulchuk</strong>
-CTU in Prague
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}">
+        <div class="card-content">
+            <strong>Vsevolod Hulchuk</strong>
+            <span class="affiliation">CTU in Prague</span>
+        </div>
     </div>
 </div>
 
 <h3>Co-organizers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
-        <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">                
-        <strong>Martin Magnusson</strong> 
-Örebro University, Sweden
+        <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">
+        <div class="card-content">
+            <strong>Martin Magnusson</strong>
+            <span class="affiliation">Örebro University, Sweden</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">                
-        <strong>Vladimír Kubelka</strong> 
-Örebro University, Sweden
+        <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">
+        <div class="card-content">
+            <strong>Vladimír Kubelka</strong>
+            <span class="affiliation">Örebro University, Sweden</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">                
-        <strong>Konstantinos Alexis</strong> NTNU
+        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">
+        <div class="card-content">
+            <strong>Konstantinos Alexis</strong>
+            <span class="affiliation">NTNU</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">                
-        <strong>Matteo Luperto</strong> 
-University of Milano, Italy
+        <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">
+        <div class="card-content">
+            <strong>Matteo Luperto</strong>
+            <span class="affiliation">University of Milano, Italy</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">                
-        <strong>Dyuman Aditya</strong> 
-Ecole Centrale de Nantes, France
+        <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">
+        <div class="card-content">
+            <strong>Dyuman Aditya</strong>
+            <span class="affiliation">Ecole Centrale de Nantes, France</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">                
-        <strong>Tomasz Kucner</strong> 
-Aalto University, Finland
+        <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">
+        <div class="card-content">
+            <strong>Tomasz Kucner</strong>
+            <span class="affiliation">Aalto University, Finland</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">                
-        <strong>Piotr Kicki</strong> 
-Poznan University of Technology, Poland
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">
+        <div class="card-content">
+            <strong>Piotr Kicki</strong>
+            <span class="affiliation">Poznan University of Technology, Poland</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://loop.frontiersin.org/images/profile/1009756/203' | absolute_url }}">                
-        <strong>Rudolf Szadkowski</strong> 
-CTU in Prague
+        <img src="{{ 'https://loop.frontiersin.org/images/profile/1009756/203' | absolute_url }}">
+        <div class="card-content">
+            <strong>Rudolf Szadkowski</strong>
+            <span class="affiliation">CTU in Prague</span>
+        </div>
     </div>
     <div class="image-info-card">
-        <img src="{{ 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=436,fit=crop,trim=97.2;0;493.2;0/mk30aZBrbGhJDjV5/milos_pragr_960-mv09EaQxO9hkX858.jpg' | absolute_url }}">                
-        <strong>Miloš Prágr</strong> 
-CTU in Prague
+        <img src="{{ 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=436,fit=crop,trim=97.2;0;493.2;0/mk30aZBrbGhJDjV5/milos_pragr_960-mv09EaQxO9hkX858.jpg' | absolute_url }}">
+        <div class="card-content">
+            <strong>Miloš Prágr</strong>
+            <span class="affiliation">CTU in Prague</span>
+        </div>
     </div>
 </div>
 

@@ -490,57 +490,108 @@ pre {
 
 .image-info-card {
   display: flex;
-  align-items: center;
   flex-direction: column;
   width: 100%;
-  flex-shrink: 0;
-  padding-top: 0.1rem;
-  margin: 0;
-
-  transition: box-shadow 0.3s ease;
+  height: 100%; /* Ensures cards in a row have the same height */
+  transition: all 0.3s ease;
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
 .image-info-card:hover {
-  /* box-shadow: 0 5px 15px var(--secondary-color); */
-  /* transform: scale(1.1); */
-
-}
-
-.image-info-card h3 {
-  margin: 0;
-  padding: 0;
-}
-
-.image-info-card a {
-  text-decoration: none;
-  color: var(--text-color);
-}
-
-.image-info-card .links {
-  margin-top: 0;
-  /* Remove top margin, if desired */
-  display: flex;
-  flex-wrap: nowrap;
-  gap: 1rem;
-  justify-content: center;
-  padding: 0;
-}
-
-.image-info-card .links a {
-  text-decoration: none;
-  color: var(--primary-color);
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .image-info-card img {
-  height: var(--image-height);
-  width: auto;
-  object-fit: fill;
-
-  border-radius: var(--border-radius);
-  /* opacity: 0.75; */
+  height: var(--image-height);  /* This defines the container height (e.g., 250px) */
+  width: 100%;                  /* This defines the container width */
+  object-fit: contain;          /* This fits the whole image inside the container */
+  background-color: white;      /* This creates the "white padding" effect */
   
+  /* Your other styles like border-radius remain unchanged */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
 
-  transition: .5s ease;
+/* New container for text to apply padding and alignment */
+.card-content {
+  padding: 1rem;
+  text-align: left; /* Key change for readability */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allows the content to fill the card height */
+}
+
+.card-content strong {
+  font-size: 1.1rem;.image-info-card img {
+    height: var(--image-height);  /* Keep this as 250px */
+    width: 100%;                  /* Change from 'auto' to '100%' */
+    object-fit: cover;            /* Change from 'fill' to 'cover' */
+  
+    /* Your other styles like border-radius remain unchanged */
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  color: var(--dark-color);
+  margin-bottom: 0.1rem;
+}
+
+.card-content .affiliation {
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+  margin-bottom: 0.75rem;
+}
+
+.card-content i {
+  color: var(--text-color);
+  font-style: italic;
+  margin-bottom: auto; /* Pushes the button to the bottom */
+}
+
+/* Style for the (online) badge */
+.online-badge {
+  display: inline-block;
+  background-color: var(--primary-color);
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 2px 8px;
+  border-radius: 12px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
+/* Style for the Abstract button */
+.abstract-btn {
+  margin-top: 1rem;
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--primary-color);
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+  transition: all 0.2s ease-in-out;
+}
+
+.abstract-btn:hover {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+/* Style for the abstract content itself */
+.abstract-content {
+  font-size: 0.9em;
+  text-align: justify;
+  margin-top: 0.75rem;
+  padding-top: 0.75rem;
+  border-top: 1px dashed var(--gray);
+  color: var(--dark-gray);
 }
 
 /* --------------- TEAM/ROBOT members ------------------ */
