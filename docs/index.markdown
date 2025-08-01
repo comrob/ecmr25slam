@@ -16,8 +16,8 @@ contact-email: hulchvse@student.cvut.cz
         <h1>Resilient SLAM in Challenging Settings</h1>
         <p class="hero-subtitle">A Full-Day Workshop at ECMR 2025</p>
         <div class="hero-buttons">
-            <a href="#competition-section" class="cta-button">Join the Competition</a>
-            <a href="#call-for-papers-section" class="cta-button secondary">Submit a Paper</a>
+            <a href="#competition" class="cta-button">Join the Competition</a>
+            <a href="#call-for-papers" class="cta-button secondary">Submit a Paper</a>
         </div>
     </div>
 </div>
@@ -69,6 +69,9 @@ contact-email: hulchvse@student.cvut.cz
 
 <div class="countdown-timer" id="countdown"></div>
 
+<br/>
+<hr>
+
 </section>
 
 <script>
@@ -101,11 +104,6 @@ contact-email: hulchvse@student.cvut.cz
     }
   }, 1000);
 </script>
-
-<br/>
-<hr>
-
-</section>
 
 <section id="competition-section">
 <h2 id="competition">Competition 🏆</h2>
