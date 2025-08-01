@@ -1,7 +1,7 @@
 ---
 layout: event
 title: ECMR Workshop 2025
-logo: images/logo.svg
+logo: images/home-logo.png
 permlink: /ecmr-workshop-2025
 navigation: About;Important dates;Competition;Call for papers;Program;Organizers;Venue and location
 logos: https://www.cvut.cz/,images/logo_ctu.jpg
@@ -21,8 +21,6 @@ contact-email: hulchvse@student.cvut.cz
         </div>
     </div>
 </div>
-
-<h1>Resilient SLAM in Challenging Settings - ECMR 2025</h1>
 
 <section id="about-section">
 <h2 id="about">About</h2>
@@ -124,8 +122,8 @@ contact-email: hulchvse@student.cvut.cz
 
 <div class="dataset-grid">
     <div class="dataset-card">
-        <h4>Outdoor Forest & Radar</h4>
-        <p>An outdoor dataset in forest, tunnel, and alpine environments with radar and GNSS.</p>
+        <h4>Outdoor Degenerate LiDAR</h4>
+        <p>An outdoor dataset in open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming </p>
         <div class="card-footer">
             <span class="status-badge available">Available</span>
             <a href="https://github.com/comrob/CRL25DEG_dataset" target="_blank" class="github-button">View on GitHub</a>
