@@ -881,3 +881,20 @@ li.event-break {
 .github-button:hover {
   background-color: #000;
 }
+
+/* --- Style for Alternating Sections --- */
+
+section {
+  padding: 2rem 0;
+}
+
+section:nth-of-type(even) {
+  background-color: #f9f9f9;
+  margin: 0 -2rem; /* Extends color to the edges of the main container */
+  padding: 2rem;  /* Adds padding back in */
+  border-radius: var(--border-radius);
+}
+
+main > hr {
+  display: none; /* Hide the <hr> tags for a cleaner look */
+}

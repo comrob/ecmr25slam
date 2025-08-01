@@ -8,8 +8,23 @@ logos: https://www.cvut.cz/,images/logo_ctu.jpg
 contact: Vsevolod Hulchuk
 contact-email: hulchvse@student.cvut.cz
 ---
+<head>
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<div class="hero-section">
+    <div class="hero-content">
+        <h1>Resilient SLAM in Challenging Settings</h1>
+        <p class="hero-subtitle">A Full-Day Workshop at ECMR 2025</p>
+        <div class="hero-buttons">
+            <a href="#competition-section" class="cta-button">Join the Competition</a>
+            <a href="#call-for-papers-section" class="cta-button secondary">Submit a Paper</a>
+        </div>
+    </div>
+</div>
+
 <h1>Resilient SLAM in Challenging Settings - ECMR 2025</h1>
 
+<section id="about-section">
 <h2 id="about">About</h2>
 <div class="section-intro">
     <p>This workshop is a full-day event held in conjunction with the <a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer"><strong>European Conference on Mobile Robots (ECMR) 2025</strong></a>.</p>
@@ -26,7 +41,10 @@ contact-email: hulchvse@student.cvut.cz
 
 <br/>
 <hr>
+</section>
 
+
+<section id="dates-section">
 <h2 id="important-dates">Important Dates</h2>
 <div class="section-intro">
     <ul class="date-list">
@@ -49,10 +67,47 @@ contact-email: hulchvse@student.cvut.cz
     </ul>
 </div>
 
+<div class="countdown-timer" id="countdown"></div>
+
+</section>
+
+<script>
+  // Set the date we're counting down to (August 28, 2025)
+  const countDownDate = new Date("Aug 28, 2025 23:59:59").getTime();
+
+  // Update the count down every 1 second
+  const x = setInterval(function() {
+    const now = new Date().getTime();
+    const distance = countDownDate - now;
+
+    // Time calculations for days, hours, minutes and seconds
+    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+    // Display the result in the element with id="countdown"
+    document.getElementById("countdown").innerHTML = `
+      <div><span>${days}</span><p>Days</p></div>
+      <div><span>${hours}</span><p>Hours</p></div>
+      <div><span>${minutes}</span><p>Minutes</p></div>
+      <div><span>${seconds}</span><p>Seconds</p></div>
+    `;
+
+    // If the count down is finished, write some text
+    if (distance < 0) {
+      clearInterval(x);
+      document.getElementById("countdown").innerHTML = "<h3>The deadline has passed!</h3>";
+    }
+  }, 1000);
+</script>
 
 <br/>
 <hr>
 
+</section>
+
+<section id="competition-section">
 <h2 id="competition">Competition 🏆</h2>
 <div class="section-intro">
     <p>The workshop hosts a SLAM challenge to benchmark algorithms on unique datasets designed to test the limits of modern localization systems, focusing on scenarios with <strong>Degenerate LiDAR</strong>, <strong>Forest Radar</strong>, and data from <strong>quadruped robots</strong>.</p>
@@ -110,7 +165,9 @@ contact-email: hulchvse@student.cvut.cz
 </div>
 <br/>
 <hr>
+</section>
 
+<section id="call-for-papers-section">
 <h2 id="call-for-papers">Call for Papers</h2>
 <div class="section-intro">
     <p>We invite submissions of novel contributions aligned with (but not limited to) the following indicative topics:</p>
@@ -145,6 +202,9 @@ contact-email: hulchvse@student.cvut.cz
 <br/>
 <hr>
 
+</section>
+
+<section id="program-section">
 <h2 id="program">Program</h2>
 <div class="section-intro">
 <p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
@@ -233,6 +293,9 @@ contact-email: hulchvse@student.cvut.cz
 <br/>
 <hr>
 
+</section>
+
+<section id="organizers-section">
 <h2 id="organizers">Organizers</h2>
 <br/>
 
@@ -313,8 +376,9 @@ contact-email: hulchvse@student.cvut.cz
 <br/>
 <hr>
 
-<hr>
+</section>
 
+<section id="venue-and-location-section">
 <h2 id="venue-and-location">Venue and location</h2>
 <div class="section-intro">
     <p>
