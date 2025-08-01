@@ -55,42 +55,59 @@ contact-email: hulchvse@student.cvut.cz
 
 <h2 id="competition">Competition 🏆</h2>
 <div class="section-intro">
-<p>The workshop hosts a SLAM benchmarking competition featuring datasets with radar, multispectral imagery (NDVI, thermal), and low-cost sensors on both quadruped and wheeled robots.</p>
+    <p>The workshop hosts a SLAM challenge to benchmark algorithms on unique datasets designed to test the limits of modern localization systems, focusing on scenarios with <strong>Degenerate LiDAR</strong>, <strong>Forest Radar</strong>, and data from <strong>quadruped robots</strong>.</p>
+    <p>Submissions are handled as Dockerized <strong>ROS1</strong> SLAM systems and evaluated on our competition platform.</p>
 
-<h3>Evaluation</h3>
-<p>Submissions will be evaluated based on the following metrics:</p>
-<ul>
-    <li><strong>Absolute Trajectory Error (ATE)</strong></li>
-    <li><strong>Relative Pose Error (RPE)</strong></li>
-    <li>Dockerized ROS pipelines will be evaluated via the <strong>CodaBench</strong> platform.
-        <ul>
-            <li>
-                Evaluation code is available on GitHub: <a href="https://github.com/comrob/slam-bench">comrob/slam-bench</a>
-            </li>
-        </ul>
-    </li>
-</ul>
+    <h3>Evaluation</h3>
+    <p>Submissions are evaluated based on standard SLAM metrics:</p>
+    <ul>
+        <li><strong>Absolute Trajectory Error (ATE)</strong></li>
+        <li><strong>Relative Pose Error (RPE)</strong></li>
+    </ul>
 
-<h3>Datasets</h3>
-<p>Participants will have access to the following datasets:</p>
-<ul>
-<li>An outdoor dataset in forest, tunnel, and alpine environments with radar and GNSS.<br/> 
-    <a href="https://github.com/comrob/CRL25DEG_dataset">comrob/CRL25DEG_dataset</a>
-</li>
-<li>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.<br/>
-    <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset">aislabunimi/IAS_IRIM_AIS_dataset</a>
-</li>
-<li>The Viking Hill Radar Dataset.<br/>
-    <a href="https://github.com/kubelvla/viking_hill_tall_grass">kubelvla/viking_hill_tall_grass</a>
-</li>
-</ul>
-
-<p>Training datasets will be released approximately three months before the workshop. The testing data will remain hidden and used for final evaluation after the submission deadline.</p>
-<p>The official competition website is under construction. In the meantime, you can test your SLAM system on the training portions of the datasets using the links above.</p>
-<p>Participation in the SLAM competition is open to <strong>online submission</strong>, and attendance at the ECMR workshop in Padova <strong>is not mandatory</strong> for submitting your work.</p>
+    <h3>Datasets</h3>
+    <p>Participants will have access to the following datasets, with more to be announced:</p>
 </div>
 
+<div class="dataset-grid">
+    <div class="dataset-card">
+        <h4>Outdoor Forest & Radar</h4>
+        <p>An outdoor dataset in forest, tunnel, and alpine environments with radar and GNSS.</p>
+        <div class="card-footer">
+            <span class="status-badge available">Available</span>
+            <a href="https://github.com/comrob/CRL25DEG_dataset" target="_blank" class="github-button">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dataset-card">
+        <h4>Indoor Quadruped</h4>
+        <p>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.</p>
+        <div class="card-footer">
+            <span class="status-badge integrating">Integrating</span>
+            <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset" target="_blank" class="github-button">View on GitHub</a>
+        </div>
+    </div>
+    <div class="dataset-card">
+        <h4>Viking Hill Radar</h4>
+        <p>The Viking Hill Radar Dataset, focusing on challenging navigation in tall grass.</p>
+        <div class="card-footer">
+            <span class="status-badge available">Available</span>
+            <a href="https://github.com/kubelvla/viking_hill_tall_grass" target="_blank" class="github-button">View on GitHub</a>
+        </div>
+    </div>
+</div>
 
+<div class="section-intro" style="margin-top: 2rem;">
+    <h3>Submission & Support</h3>
+    <p>The training portions of the datasets are available now, while testing data will remain private for the final evaluation. We are currently accepting submissions for <strong>ROS1-integrated</strong> SLAM systems.</p>
+    <p>Participation is open to <strong>online submission</strong>, and physical attendance at the ECMR workshop in Padova <strong>is not mandatory</strong> to compete.</p>
+    <p>We encourage all participants to <a href="mailto:robotmappingws@gmail.com"><strong>contact us</strong></a> with any questions or issues that may appear. We're here to help!</p>
+</div>
+
+<div class="cta-button-wrapper">
+    <a href="https://comrob-ds.fel.cvut.cz:555/?page=1" target="_blank" class="cta-button">
+        Go to Competition Platform
+    </a>
+</div>
 <br/>
 <hr>
 

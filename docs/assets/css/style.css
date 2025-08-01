@@ -802,3 +802,82 @@ li.event-poster {
 li.event-break {
   background-color: rgba(108, 117, 125, 0.1); /* Light Grey */
 }
+
+/* --- Styles for Dataset Cards --- */
+
+.dataset-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+.dataset-card {
+  border: 1px solid var(--gray);
+  border-radius: var(--border-radius);
+  padding: 1.5rem;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dataset-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.dataset-card h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+}
+
+.dataset-card p {
+  font-size: 0.95rem;
+  color: var(--dark-gray);
+  flex-grow: 1; /* Ensures cards in a row have the same height */
+  margin-bottom: 1.5rem;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+}
+
+.status-badge {
+  font-size: 0.8rem;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 15px;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.status-badge.available {
+  color: #1e6643;
+  background-color: #d1f7e4;
+}
+
+.status-badge.integrating {
+  color: #8c5a00;
+  background-color: #fff3cd;
+}
+
+.github-button {
+  background-color: var(--dark-color);
+  color: white;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 0.9em;
+  font-weight: 500;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.github-button:hover {
+  background-color: #000;
+}
