@@ -155,7 +155,7 @@ contact-email: hulchvse@student.cvut.cz
 </div>
 
 <div class="cta-button-wrapper">
-    <a href="https://comrob-ds.fel.cvut.cz:555/?page=1" target="_blank" class="cta-button">
+    <a href="https://crl-slam.fel.cvut.cz/?page=1" target="_blank" class="cta-button">
         Go to Competition Platform
     </a>
 </div>
