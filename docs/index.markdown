@@ -105,16 +105,24 @@ contact-email: hulchvse@student.cvut.cz
 
 <section id="competition-section">
 <h2 id="competition">Competition 🏆</h2>
+
+<div class="cta-button-wrapper">
+    <a href="https://crl-slam.fel.cvut.cz/?page=1" target="_blank" class="cta-button">
+        Go to Competition Platform
+    </a>
+</div>
+
 <div class="section-intro">
-    <p>The workshop hosts a SLAM challenge to benchmark algorithms on unique datasets designed to test the limits of modern localization systems, focusing on scenarios with <strong>Degenerate LiDAR</strong>, <strong>Forest Radar</strong>, and data from <strong>quadruped robots</strong>.</p>
-    <p>Submissions are handled as Dockerized <strong>ROS1</strong> SLAM systems and evaluated on our competition platform.</p>
+    <p>Test the limits of your localization algorithms in our SLAM challenge, featuring unique datasets from quadruped and wheeled robots in perceptually-degraded environments.</p>
+
+    <h3>A Novel Evaluation Approach</h3>
+    <p>This competition uses a unique <strong>server-side evaluation</strong>. Instead of submitting a final trajectory, you submit your entire SLAM system as a <strong>Dockerized ROS1 node</strong>. We run it on our servers against private test data, providing a fair and robust benchmark of your algorithm's real-world performance.</p>
+
+    <h3>Participation & Deadline</h3>
+    <p>Participation is open to everyone globally, and <strong>physical attendance is not required</strong>. The deadline for the official workshop competition is <strong>August 28, 2025</strong>. After this date, the platform will remain open for continued benchmarking. For any questions, please <a href="mailto:robotmappingws@gmail.com"><strong>contact us</strong></a>.</p>
 
     <h3>Evaluation</h3>
-    <p>Submissions are evaluated based on standard SLAM metrics:</p>
-    <ul>
-        <li><strong>Absolute Trajectory Error (ATE)</strong></li>
-        <li><strong>Relative Pose Error (RPE)</strong></li>
-    </ul>
+    <p>Submissions are evaluated based on standard SLAM metrics, including <strong>Absolute Trajectory Error (ATE)</strong> and <strong>Relative Pose Error (RPE)</strong>.</p>
 
     <h3>Datasets</h3>
     <p>Participants will have access to the following datasets, with more to be announced:</p>
@@ -123,7 +131,7 @@ contact-email: hulchvse@student.cvut.cz
 <div class="dataset-grid">
     <div class="dataset-card">
         <h4>Outdoor Degenerate LiDAR</h4>
-        <p>An outdoor dataset in open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming </p>
+        <p>An outdoor dataset in open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming.</p>
         <div class="card-footer">
             <span class="status-badge available">Available</span>
             <a href="https://github.com/comrob/CRL25DEG_dataset" target="_blank" class="github-button">View on GitHub</a>
@@ -145,19 +153,6 @@ contact-email: hulchvse@student.cvut.cz
             <a href="https://github.com/kubelvla/viking_hill_tall_grass" target="_blank" class="github-button">View on GitHub</a>
         </div>
     </div>
-</div>
-
-<div class="section-intro" style="margin-top: 2rem;">
-    <h3>Submission & Support</h3>
-    <p>The training portions of the datasets are available now, while testing data will remain private for the final evaluation. We are currently accepting submissions for <strong>ROS1-integrated</strong> SLAM systems.</p>
-    <p>Participation is open to <strong>online submission</strong>, and physical attendance at the ECMR workshop in Padova <strong>is not mandatory</strong> to compete.</p>
-    <p>We encourage all participants to <a href="mailto:robotmappingws@gmail.com"><strong>contact us</strong></a> with any questions or issues that may appear. We're here to help!</p>
-</div>
-
-<div class="cta-button-wrapper">
-    <a href="https://crl-slam.fel.cvut.cz/?page=1" target="_blank" class="cta-button">
-        Go to Competition Platform
-    </a>
 </div>
 <br/>
 <hr>
