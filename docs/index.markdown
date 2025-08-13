@@ -434,14 +434,15 @@ contact-email: hulchvse@student.cvut.cz
                 Via S. Francesco, 90<br>
                 I-35121 Padua (Italy)
             </p>
-            <a href="https://www.google.com/maps/place/Palazzo+della+Salute/@45.405459,11.879038,15z/data=!4m6!3m5!1s0x477eda59d8da5555:0xf065e8f424b5211d!8m2!3d45.405459!4d11.879038!16s%2Fg%2F11b6dr_2r0?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" class="cta-button">
+            <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+della+Salute,Via+S.+Francesco,90,Padua,Italy" target="_blank" rel="noopener noreferrer" class="ctgit push
+            a-button">
                 <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
             </a>
         </div>
 
         <div class="venue-column venue-map">
             <iframe 
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.704207839352!2d11.87646307675988!3d45.40546313508122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda59d8da5555%3A0xf065e8f424b5211d!2sPalazzo%20della%20Salute!5e0!3m2!1sen!2scz!4v1723562098254!5m2!1sen!2scz" 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1746355862447!2d11.877135669477912!3d45.40581789663544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda50d451f411%3A0x712672e59eeb4c53!2sPalazzo%20della%20Salute!5e0!3m2!1sen!2scz!4v1753197851752!5m2!1sen!2scz" 
                 width="100%" 
                 height="400" 
                 style="border:0;" 
