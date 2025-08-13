@@ -194,7 +194,7 @@ contact-email: hulchvse@student.cvut.cz
             <h3><i class="fa-solid fa-lightbulb"></i> Submission Topics</h3>
             <p>We invite submissions of novel contributions (up to 4 pages) on topics including, but not limited to:</p>
             <ul>
-                <li>SLAM under perceptual degradation</li>
+                <li>3D LiDAR-centered SLAM under perceptual degradation</li>
                 <li>Radar-based SLAM and sensor fusion</li>
                 <li>Passive and low-cost localization</li>
                 <li>Architectures for failure resilience</li>
@@ -282,6 +282,7 @@ contact-email: hulchvse@student.cvut.cz
 
 <br/>
 
+
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
     <div class="image-info-card">
@@ -327,116 +328,117 @@ contact-email: hulchvse@student.cvut.cz
 </section>
 
 <section id="organizers-section">
-<h2 id="organizers">Organizers</h2>
-<br/>
+    <h2 id="organizers">Organizers</h2>
 
-<div class="image-info-grid small">
-    <div class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}">
-        <div class="card-content">
-            <strong>Vsevolod Hulchuk</strong>
-            <span class="affiliation">CTU in Prague</span>
+    <div class="image-info-grid">
+        <div class="image-info-card">
+            <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}">
+            <div class="card-content">
+                <div>
+                    <strong>Vsevolod Hulchuk</strong>
+                    <span class="organizer-badge">Primary Organizer</span>
+                    <p class="affiliation">CTU in Prague</p>
+                </div>
+                <a href="mailto:hulchvse@student.cvut.cz?subject=ECMR%20SLAM%20Workshop%20-%20contact%20organizers" class="contact-button">
+                    <i class="fa-solid fa-envelope"></i> Contact
+                </a>
+            </div>
         </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">
-        <div class="card-content">
-            <strong>Matteo Luperto</strong>
-            <span class="affiliation">University of Milano, Italy</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">
-        <div class="card-content">
-            <strong>Dyuman Aditya</strong>
-            <span class="affiliation">Ecole Centrale de Nantes, France</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">
-        <div class="card-content">
-            <strong>Vladimír Kubelka</strong>
-            <span class="affiliation">Örebro University, Sweden</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">
-        <div class="card-content">
-            <strong>Martin Magnusson</strong>
-            <span class="affiliation">Örebro University, Sweden</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://loop.frontiersin.org/images/profile/1009756/203' | absolute_url }}">
-        <div class="card-content">
-            <strong>Rudolf Szadkowski</strong>
-            <span class="affiliation">CTU in Prague</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=436,fit=crop,trim=97.2;0;493.2;0/mk30aZBrbGhJDjV5/milos_pragr_960-mv09EaQxO9hkX858.jpg' | absolute_url }}">
-        <div class="card-content">
-            <strong>Miloš Prágr</strong>
-            <span class="affiliation">CTU in Prague</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">
-        <div class="card-content">
-            <strong>Konstantinos Alexis</strong>
-            <span class="affiliation">NTNU</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">
-        <div class="card-content">
-            <strong>Tomasz Kucner</strong>
-            <span class="affiliation">Aalto University, Finland</span>
-        </div>
-    </div>
-    <div class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">
-        <div class="card-content">
-            <strong>Piotr Kicki</strong>
-            <span class="affiliation">Poznan University of Technology, Poland</span>
-        </div>
-    </div>
-</div>
 
-
-<br/>
-<hr>
-
+        <div class="image-info-card">
+            <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">
+            <div class="card-content">
+                <strong>Matteo Luperto</strong>
+                <span class="affiliation">University of Milano, Italy</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">
+            <div class="card-content">
+                <strong>Dyuman Aditya</strong>
+                <span class="affiliation">Ecole Centrale de Nantes, France</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">
+            <div class="card-content">
+                <strong>Vladimír Kubelka</strong>
+                <span class="affiliation">Örebro University, Sweden</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://loop.frontiersin.org/images/profile/1009756/203' | absolute_url }}">
+            <div class="card-content">
+                <strong>Rudolf Szadkowski</strong>
+                <span class="affiliation">CTU in Prague</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">
+            <div class="card-content">
+                <strong>Martin Magnusson</strong>
+                <span class="affiliation">Örebro University, Sweden</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=436,fit=crop,trim=97.2;0;493.2;0/mk30aZBrbGhJDjV5/milos_pragr_960-mv09EaQxO9hkX858.jpg' | absolute_url }}">
+            <div class="card-content">
+                <strong>Miloš Prágr</strong>
+                <span class="affiliation">CTU in Prague</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">
+            <div class="card-content">
+                <strong>Konstantinos Alexis</strong>
+                <span class="affiliation">NTNU</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">
+            <div class="card-content">
+                <strong>Tomasz Kucner</strong>
+                <span class="affiliation">Aalto University, Finland</span>
+            </div>
+        </div>
+        <div class="image-info-card">
+            <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">
+            <div class="card-content">
+                <strong>Piotr Kicki</strong>
+                <span class="affiliation">Poznan University of Technology, Poland</span>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <hr>
 </section>
 
 <section id="venue-and-location-section">
-<h2 id="venue-and-location">Venue and location</h2>
-<div class="section-intro">
-    <p>
-        The workshop will be held at:
-        <br>
-        <strong>Palazzo della Salute</strong>
-        <br>
-        Via S. Francesco, 90
-        <br>
-        I-35121 Padua (Italy)
-    </p>
-    <p>
-        <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+della+Salute,Via+S.+Francesco,90,Padua,Italy" target="_blank" rel="noopener noreferrer">
-            Open in Google Maps
-        </a>
-    </p>
+    <h2 id="venue-and-location">Venue and Location</h2>
 
-    <div style="border-radius: 8px; overflow: hidden; margin-top: 15px;">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2801.1746355862447!2d11.877135669477912!3d45.40581789663544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda50d451f411%3A0x712672e59eeb4c53!2sPalazzo%20della%20Salute!5e0!3m2!1sen!2scz!4v1753197851752!5m2!1sen!2scz" 
-       height="450"
-       width="100%"
-       style="border:0;" 
-       allowfullscreen="" 
-       loading="lazy" 
-       referrerpolicy="no-referrer-when-downgrade">
-       </iframe>
+    <div class="venue-container">
+        <div class="venue-column venue-text">
+            <h3>Workshop Location</h3>
+            <p>
+                <strong>Palazzo della Salute</strong><br>
+                Via S. Francesco, 90<br>
+                I-35121 Padua (Italy)
+            </p>
+            <a href="https://www.google.com/maps/place/Palazzo+della+Salute/@45.405459,11.879038,15z/data=!4m6!3m5!1s0x477eda59d8da5555:0xf065e8f424b5211d!8m2!3d45.405459!4d11.879038!16s%2Fg%2F11b6dr_2r0?hl=en&entry=ttu" target="_blank" rel="noopener noreferrer" class="cta-button">
+                <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
+            </a>
+        </div>
+
+        <div class="venue-column venue-map">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2800.704207839352!2d11.87646307675988!3d45.40546313508122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x477eda59d8da5555%3A0xf065e8f424b5211d!2sPalazzo%20della%20Salute!5e0!3m2!1sen!2scz!4v1723562098254!5m2!1sen!2scz" 
+                width="100%" 
+                height="400" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
     </div>
-</div>
-
-<br/>
+</section>
