@@ -15,36 +15,6 @@ main > hr {
   display: none; /* Hide the <hr> tags for a cleaner look */
 }
 
-/* --- Styles for Hero Section --- */
-
-.hero-section {
-  background-color: var(--dark-color);
-  color: white;
-  text-align: center;
-  padding: 4rem 2rem;
-  margin: 0 -2rem 2rem -2rem; /* Extend to edges and add bottom margin */
-}
-
-.hero-content h1 {
-  color: white;
-  font-size: 3.5rem;
-  margin-bottom: 0.5rem;
-}
-
-.hero-subtitle {
-  font-size: 1.5rem;
-  font-weight: 300;
-  color: var(--gray);
-  margin-bottom: 2rem;
-}
-
-.hero-buttons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap; /* Allows buttons to stack on mobile */
-}
-
 /* Style for the secondary button */
 .cta-button.secondary {
   background-color: transparent;
