@@ -171,39 +171,53 @@ contact-email: hulchvse@student.cvut.cz
 </section>
 
 <section id="call-for-papers-section">
-<h2 id="call-for-papers">Call for Papers</h2>
-<div class="section-intro">
-    <p>We invite submissions of novel contributions aligned with (but not limited to) the following indicative topics:</p>
-    <ul>
-        <li>SLAM under perceptual degradation and degenerative scenarios</li>
-        <li>Radar-based SLAM and radar-visual-inertial fusion</li>
-        <li>Passive and low-cost sensor fusion for localization and mapping</li>
-        <li>Architectures for failure resilience and sensor dropout handling</li>
-        <li>Robust back-end optimization and front-end perception</li>
-        <li>Coupling strategies in multi-sensor SLAM pipelines</li>
-        <li>Benchmarks, datasets, and evaluation metrics for degraded environments</li>
-    </ul>
-    <p>Late-breaking results are welcome, as well as extended contributions related to ECMR submissions.</p>
+    <h2 id="call-for-papers">Call for Papers & Speakers</h2>
+
+    <div class="cfp-container">
+
+        <div class="cfp-topics-column">
+            <h3><i class="fa-solid fa-lightbulb"></i> Submission Topics</h3>
+            <p>We invite submissions of novel contributions (up to 4 pages) on topics including, but not limited to:</p>
+            <ul>
+                <li>SLAM under perceptual degradation</li>
+                <li>Radar-based SLAM and sensor fusion</li>
+                <li>Passive and low-cost localization</li>
+                <li>Architectures for failure resilience</li>
+                <li>Robust back-end optimization</li>
+                <li>Benchmarks, datasets, and metrics</li>
+            </ul>
+            <p>Late-breaking results and extended abstracts of recent work are welcome.</p>
+        </div>
+
+        <div class="cfp-submission-info-column">
+            <h3><i class="fa-solid fa-file-arrow-up"></i> Author Guidelines</h3>
+            <p>Submit an extended abstract (up to 4 pages, incl. references) in IEEE conference format to our chairs.</p>
+            
+            <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation & Publication</h4>
+            <p>Accepted papers will be presented during poster sessions at the workshop in Padova. We are happy to accommodate <strong>online presentations</strong> for those unable to attend in person.</p>
+            <p>The workshop will not have archival proceedings, and accepted papers will be made available on the workshop website.</p>
+            
+            <div class="cta-button-wrapper">
+                <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Paper Submission" class="cta-button">
+                    Submit Your Paper
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="speaker-call-prompt">
+        <h3><i class="fa-solid fa-star"></i> Call for Invited Speakers</h3>
+        <p>Are you a senior researcher or industry expert with significant experience in robust SLAM? We invite you to share your work as an invited speaker. Both in-person and online talks are feasible. Please contact us to propose a talk.</p>
+        <div class="cta-button-wrapper">
+             <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Speaker Proposal" class="cta-button secondary">
+                Propose a Talk
+            </a>
+        </div>
+    </div>
     
-    <p>In addition to the main paper track, we are hosting an exciting <strong>SLAM competition</strong>. This is a great opportunity to test your algorithms on challenging datasets, including scenarios with degenerative LiDAR, low-cost sensors on quadrupeds, and radar in forest environments.</p>
-    <p>While we encourage competition participants to submit an accompanying paper describing their system, this is entirely voluntary. You are free to <strong>submit a paper without competing, or compete without submitting a paper</strong>. You can find all the details and access the training data in the <a href="#competition">Competition Section</a>.</p>
-    <h4>Guide for Authors</h4>
-    <p>Please submit an extended abstract (up to 4 pages, including references) in IEEE conference format to the workshop chairs at: 📧 <a href="mailto:robotmappingws@gmail.com">robotmappingws@gmail.com</a></p>
-    <p>Submissions can include re-elaborations of recently published work. The workshop will not have archival proceedings, and all submissions will be peer-reviewed by the organizing committee based on quality, relevance, and timeliness.</p>
-
-    <h4>Publication and Dissemination</h4>
-    <p>Accepted papers will be presented during the poster session at the workshop, held in conjunction with ECMR 2025 in Padova, Italy. After the event, the posters and accompanying papers will be made available on the workshop's official website.</p>
-</div>
-
-<div class="cta-button-wrapper">
-    <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Submission" class="cta-button">
-        Submit Your Paper
-    </a>
-</div>
-
-
-<br/>
-<hr>
+    <br/>
+    <hr>
+</section>
 
 </section>
 

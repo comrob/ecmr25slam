@@ -1041,6 +1041,78 @@ section:nth-of-type(even) {
   font-size: 1.05rem;
 }
 
+/* --- Call for Papers Section Enhancement --- */
+#call-for-papers-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.cfp-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+.cfp-topics-column {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.cfp-topics-column ul {
+  padding-left: 20px;
+}
+
+.cfp-submission-info-column {
+  flex: 1;
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+}
+
+.cfp-submission-info-column .cta-button-wrapper {
+  margin-top: 1.5rem;
+}
+
+/* --- Call for Speakers Prompt --- */
+.speaker-call-prompt {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 2rem;
+  border-radius: 8px;
+  background-color: #001f3f; /* A dark navy background */
+  color: white;
+}
+
+.speaker-call-prompt h3 {
+  color: white;
+  margin-top: 0;
+}
+
+.speaker-call-prompt p {
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Responsive adjustments --- */
+@media (max-width: 800px) {
+  .cfp-container {
+    flex-direction: column;
+  }
+}
+
+/* General icon styling for this section */
+#call-for-papers-section h3 i {
+  margin-right: 0.75rem;
+  color: #0056b3;
+}
+.speaker-call-prompt h3 i {
+    color: #ffc107; /* A gold color for the star icon */
+}
+
 main > hr {
   display: none; /* Hide the <hr> tags for a cleaner look */
 }
