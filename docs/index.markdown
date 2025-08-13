@@ -23,8 +23,9 @@ contact-email: hulchvse@student.cvut.cz
     </div>
 </div>
 
+<h2 id="about"></h2>
 <section id="about-section">
-    <h2 id="about">About the Workshop</h2>
+    <h2>About the Workshop</h2>
 
     <div class="about-intro-container">
         <div class="about-text-column">
@@ -63,9 +64,9 @@ contact-email: hulchvse@student.cvut.cz
     <hr>
 </section>
 
-
+<h2 id="important-dates"></h2>
 <section id="dates-section">
-<h2 id="important-dates">Important Dates</h2>
+<h2>Important Dates</h2>
 <div class="section-intro">
     <ul class="date-list">
         <li>
@@ -125,8 +126,8 @@ contact-email: hulchvse@student.cvut.cz
   }, 1000);
 </script>
 
+<h2 id="competition"></h2>
 <section id="competition-section">
-    <h2 id="competition"></h2>
     <div class="competition-hero">
         <div class="hero-overlay"></div>
         <img src="images/slam_challenge_banner_v2.png" alt="Robots in a challenging outdoor environment" class="hero-background">
@@ -191,8 +192,9 @@ contact-email: hulchvse@student.cvut.cz
     <hr>
 </section>
 
+<h2 id="call-for-papers"></h2>
 <section id="call-for-papers-section">
-    <h2 id="call-for-papers">Call for Papers & Speakers</h2>
+    <h2>Call for Papers & Speakers</h2>
 
     <div class="cfp-container">
 
@@ -240,9 +242,9 @@ contact-email: hulchvse@student.cvut.cz
     <hr>
 </section>
 
-
+<h2 id="program"></h2>
 <section id="program-section">
-<h2 id="program">Program</h2>
+<h2>Program</h2>
 <div class="section-intro">
 <p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
 
@@ -333,8 +335,9 @@ contact-email: hulchvse@student.cvut.cz
 
 </section>
 
+<h2 id="organizers"></h2>
 <section id="organizers-section">
-    <h2 id="organizers">Organizers</h2>
+    <h2>Organizers</h2>
 
     <div class="image-info-grid">
         <div class="image-info-card">
@@ -419,8 +422,9 @@ contact-email: hulchvse@student.cvut.cz
     <hr>
 </section>
 
+<h2 id="venue-and-location"></h2>
 <section id="venue-and-location-section">
-    <h2 id="venue-and-location">Venue and Location</h2>
+    <h2>Venue and Location</h2>
 
     <div class="venue-container">
         <div class="venue-column venue-text">
