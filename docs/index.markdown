@@ -24,22 +24,37 @@ contact-email: hulchvse@student.cvut.cz
 </div>
 
 <section id="about-section">
-<h2 id="about">About</h2>
-<div class="section-intro">
-    <p>This workshop is a full-day event held in conjunction with the <a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer"><strong>European Conference on Mobile Robots (ECMR) 2025</strong></a>.</p>
-    <strong>Resilient SLAM in Challenging Settings: Recent Advancements, Open Problems, and Competitions</strong>
-    <p>Despite decades of SLAM research, real-world deployment remains challenging, especially in perceptually degraded or structurally complex environments. This workshop aims to unite researchers across Europe to address SLAM robustness in such conditions. Topics include radar-visual-inertial fusion, low-cost sensor configurations, resilience to sensor dropouts, and architectural designs for long-term autonomy. A key goal is fostering discussion on robust SLAM backends, adaptive fusion strategies, and benchmarking under degenerative conditions.</p>
-    <p>The workshop hosts:</p>
-    <ul>
-        <li>A <strong>SLAM competition</strong> to evaluate new methods on real datasets collected with quadruped and wheeled robots using diverse sensors.</li>
-        <li>A <strong>call for papers</strong> to discuss late-breaking results and novel ideas about SLAM.</li>
-    </ul>
-    <p>The workshop will feature invited talks, a World Café-style discussion, poster sessions, oral presentations of contributions sent to the call for papers, and the results of the SLAM competition.</p>
-</div>
+    <h2 id="about">About the Workshop</h2>
 
+    <div class="about-intro-container">
+        <div class="about-text-column">
+            <h3>Resilient SLAM in Challenging Settings</h3>
+            <p class="subtitle">Recent Advancements, Open Problems, and Competitions</p>
+            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle, especially in complex or perceptually-degraded conditions. This full-day workshop, held in conjunction with <strong>ECMR 2025</strong>, aims to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
+        </div>
+    </div>
 
-<br/>
-<hr>
+    <div class="about-features-grid">
+        <div class="feature-card">
+            <h4><i class="fa-solid fa-trophy"></i> SLAM Competition</h4>
+            <p>A competition to benchmark new methods on unique datasets from quadruped and wheeled robots.</p>
+        </div>
+        <div class="feature-card">
+            <h4><i class="fa-solid fa-scroll"></i> Call for Papers</h4>
+            <p>An opportunity to discuss late-breaking results and novel ideas about resilient SLAM.</p>
+        </div>
+        <div class="feature-card">
+            <h4><i class="fa-solid fa-user-tie"></i> Invited Talks</h4>
+            <p>Sessions with leading experts from academia and industry sharing their latest insights.</p>
+        </div>
+        <div class="feature-card">
+            <h4><i class="fa-solid fa-comments"></i> Interactive Sessions</h4>
+            <p>Engage directly with peers during poster sessions and a World Café-style discussion.</p>
+        </div>
+    </div>
+
+    <br/>
+    <hr>
 </section>
 
 
@@ -112,7 +127,7 @@ contact-email: hulchvse@student.cvut.cz
         <div class="hero-content">
             <h2>Competition 🏆</h2>
             <p>Benchmark your SLAM systems in the challenging environments.</p>
-            <a href="https://crl-slam.fel.czut.cz/?page=1" target="_blank" class="cta-button">
+            <a href="https://crl-slam.fel.cvut.cz/?page=1" target="_blank" class="cta-button">
                 Go to Competition Platform
             </a>
         </div>
@@ -194,7 +209,7 @@ contact-email: hulchvse@student.cvut.cz
             <p>Submit an extended abstract (up to 4 pages, incl. references) in IEEE conference format to our chairs.</p>
             
             <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation & Publication</h4>
-            <p>Accepted papers will be presented during poster sessions at the workshop in Padova. We are happy to accommodate <strong>online presentations</strong> for those unable to attend in person.</p>
+            <p>Accepted papers will be presented in a dual format: an oral presentation (up to 20 minutes) and a poster session in Padova. For authors presenting remotely, we are happy to accommodate the <strong>online presentation</strong> (talk only).</p>
             <p>The workshop will not have archival proceedings, and accepted papers will be made available on the workshop website.</p>
             
             <div class="cta-button-wrapper">
@@ -219,7 +234,6 @@ contact-email: hulchvse@student.cvut.cz
     <hr>
 </section>
 
-</section>
 
 <section id="program-section">
 <h2 id="program">Program</h2>

@@ -1113,6 +1113,82 @@ section:nth-of-type(even) {
     color: #ffc107; /* A gold color for the star icon */
 }
 
+/* --- About Section Enhancement --- */
+#about-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.about-intro-container {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-bottom: 2.5rem;
+}
+
+.about-text-column {
+  flex: 2; /* Give more space to the text */
+}
+
+.about-text-column h3 {
+    margin-top: 0;
+    font-size: 1.8rem;
+}
+
+.about-text-column .subtitle {
+    font-weight: 600;
+    color: #555;
+    margin-top: -1rem;
+    margin-bottom: 1.5rem;
+}
+
+.about-image-column {
+  flex: 1;
+  height: 250px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #a0aec0;
+  font-size: 1rem;
+}
+
+.about-image-column i {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.about-features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+/* Use the existing .feature-card style or ensure it's defined */
+.feature-card h4 {
+  margin-top: 0;
+}
+.feature-card i {
+  margin-right: 0.75rem;
+  color: #0056b3;
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .about-intro-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .about-image-column {
+    width: 100%;
+    height: 200px;
+    margin-top: 1rem;
+  }
+}
+
 main > hr {
   display: none; /* Hide the <hr> tags for a cleaner look */
 }
