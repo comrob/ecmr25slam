@@ -30,7 +30,13 @@ contact-email: hulchvse@student.cvut.cz
         <div class="about-text-column">
             <h3>Resilient SLAM in Challenging Settings</h3>
             <p class="subtitle">Recent Advancements, Open Problems, and Competitions</p>
-            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle, especially in complex or perceptually-degraded conditions. This full-day workshop, held in conjunction with <strong>ECMR 2025</strong>, aims to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
+            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle, especially in complex or perceptually-degraded conditions. This full-day workshop, held in conjunction with <strong><a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer">ECMR 2025</a></strong>, aims to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
+            
+            <div class="cta-button-wrapper" style="text-align: left; margin-top: 1.5rem;">
+                <a href="https://ecmr2025.dei.unipd.it/" target="_blank" class="cta-button secondary">
+                    <i class="fa-solid fa-house-chimney"></i> Visit Main Conference Site
+                </a>
+            </div>
         </div>
     </div>
 
