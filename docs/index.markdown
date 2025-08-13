@@ -10,6 +10,7 @@ contact-email: hulchvse@student.cvut.cz
 ---
 <head>
   <link rel="stylesheet" href="assets/css/custom.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <div class="hero-section">
     <div class="hero-content">
@@ -104,58 +105,69 @@ contact-email: hulchvse@student.cvut.cz
 </script>
 
 <section id="competition-section">
-<h2 id="competition">Competition 🏆</h2>
-
-<div class="cta-button-wrapper">
-    <a href="https://crl-slam.fel.cvut.cz/?page=1" target="_blank" class="cta-button">
-        Go to Competition Platform
-    </a>
-</div>
-
-<div class="section-intro">
-    <p>Test the limits of your localization algorithms in our SLAM challenge, featuring unique datasets from quadruped and wheeled robots in perceptually-degraded environments.</p>
-
-    <h3>A Novel Evaluation Approach</h3>
-    <p>This competition uses a unique <strong>server-side evaluation</strong>. Instead of submitting a final trajectory, you submit your entire SLAM system as a <strong>Dockerized ROS1 node</strong>. We run it on our servers against private test data, providing a fair and robust benchmark of your algorithm's real-world performance.</p>
-
-    <h3>Participation & Deadline</h3>
-    <p>Participation is open to everyone globally, and <strong>physical attendance is not required</strong>. The deadline for the official workshop competition is <strong>August 28, 2025</strong>. After this date, the platform will remain open for continued benchmarking. For any questions, please <a href="mailto:robotmappingws@gmail.com"><strong>contact us</strong></a>.</p>
-
-    <h3>Evaluation</h3>
-    <p>Submissions are evaluated based on standard SLAM metrics, including <strong>Absolute Trajectory Error (ATE)</strong> and <strong>Relative Pose Error (RPE)</strong>.</p>
-
-    <h3>Datasets</h3>
-    <p>Participants will have access to the following datasets, with more to be announced:</p>
-</div>
-
-<div class="dataset-grid">
-    <div class="dataset-card">
-        <h4>Outdoor Degenerate LiDAR</h4>
-        <p>An outdoor dataset in open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming.</p>
-        <div class="card-footer">
-            <span class="status-badge available">Available</span>
-            <a href="https://github.com/comrob/CRL25DEG_dataset" target="_blank" class="github-button">View on GitHub</a>
+    <h2 id="competition"></h2>
+    <div class="competition-hero">
+        <div class="hero-overlay"></div>
+        <img src="images/slam_challenge_banner_v2.png" alt="Robots in a challenging outdoor environment" class="hero-background">
+        <div class="hero-content">
+            <h2>Competition 🏆</h2>
+            <p>Benchmark your SLAM systems in the challenging environments.</p>
+            <a href="https://crl-slam.fel.czut.cz/?page=1" target="_blank" class="cta-button">
+                Go to Competition Platform
+            </a>
         </div>
     </div>
-    <div class="dataset-card">
-        <h4>Indoor Quadruped</h4>
-        <p>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.</p>
-        <div class="card-footer">
-            <span class="status-badge integrating">Integrating</span>
-            <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset" target="_blank" class="github-button">View on GitHub</a>
+
+    <div class="competition-details">
+        <div class="feature-card">
+            <h3><i class="fa-brands fa-docker"></i> A Novel Evaluation Approach</h3>
+            <p>This competition uses a unique <strong>server-side evaluation</strong>. You submit your entire <strong>Dockerized ROS1 SLAM system</strong>, and we run it on our servers against private test data.</p>
+        </div>
+        <div class="feature-card">
+            <h3><i class="fa-solid fa-globe"></i> Participation & Deadline</h3>
+            <p>Participation is open globally (no travel required). The deadline for the workshop competition is <strong>August 28, 2025</strong>. The platform will remain open for benchmarking afterward.</p>
+        </div>
+        <div class="feature-card">
+            <h3><i class="fa-solid fa-chart-simple"></i> Evaluation Metrics</h3>
+            <p>Submissions are evaluated using standard metrics, including <strong>Absolute Trajectory Error (ATE)</strong> and <strong>Relative Pose Error (RPE)</strong>.</p>
         </div>
     </div>
-    <div class="dataset-card">
-        <h4>Viking Hill Radar</h4>
-        <p>The Viking Hill Radar Dataset, focusing on challenging navigation in tall grass.</p>
-        <div class="card-footer">
-            <span class="status-badge available">Available</span>
-            <a href="https://github.com/kubelvla/viking_hill_tall_grass" target="_blank" class="github-button">View on GitHub</a>
+
+    <div class="section-intro" style="text-align: center; margin-top: 2rem;">
+        <h3><i class="fa-solid fa-database"></i> Available Datasets</h3>
+    </div>
+
+    <div class="dataset-grid">
+        <div class="dataset-card">
+            <h4>Outdoor Degenerate LiDAR</h4>
+            <p>Open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming.</p>
+            <div class="card-footer">
+                <span class="status-badge available">Available</span>
+                <a href="https://github.com/comrob/CRL25DEG_dataset" target="_blank" class="github-button">View on GitHub</a>
+            </div>
+        </div>
+        <div class="dataset-card">
+            <h4>Indoor Quadruped</h4>
+            <p>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.</p>
+            <div class="card-footer">
+                <span class="status-badge integrating">Integrating</span>
+                <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset" target="_blank" class="github-button">View on GitHub</a>
+            </div>
+        </div>
+        <div class="dataset-card">
+            <h4>Viking Hill Radar</h4>
+            <p>Focusing on challenging navigation in tall grass.</p>
+            <div class="card-footer">
+                <span class="status-badge available">Available</span>
+                <a href="https://github.com/kubelvla/viking_hill_tall_grass" target="_blank" class="github-button">View on GitHub</a>
+            </div>
         </div>
     </div>
-</div>
-<br/>
-<hr>
+    <div class="dataset-contribution-prompt">
+        <p><strong>Want to host your own dataset?</strong> We invite researchers to propose and host new challenging datasets on our platform. <a href="mailto:robotmappingws@gmail.com">Contact us for details!</a></p>
+    </div>
+    <br/>
+    <hr>
 </section>
 
 <section id="call-for-papers-section">

@@ -895,6 +895,152 @@ section:nth-of-type(even) {
   border-radius: var(--border-radius);
 }
 
+
+
+/* --- Competition Section Enhancement --- */
+
+.competition-container {
+  display: flex;
+  align-items: stretch; /* Makes columns of equal height */
+  gap: 2rem;
+  margin-top: 1.5rem;
+}
+
+.competition-image-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+/* Style the image to fit its container perfectly */
+.competition-image-column img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Prevents image distortion */
+  border-radius: 8px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+
+.competition-text-column {
+  flex: 1.5;
+  background-color: #f9f9f9; /* Optional: subtle background for the card */
+  padding: 1.5rem; /* Adds internal spacing */
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Style for the new icons */
+.competition-text-column h3 i {
+  margin-right: 0.75rem; /* Space between icon and text */
+  color: #0056b3; /* A nice accent color; change as needed */
+  width: 25px; /* Ensures icons are aligned */
+  text-align: center;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 800px) {
+  .competition-container {
+    flex-direction: column;
+  }
+  .competition-text-column {
+    padding: 1rem; /* Reduce padding on mobile */
+  }
+}
+
+/* --- Competition Section - Hero Banner Layout --- */
+
+.competition-hero {
+  position: relative; /* Required for overlay and content positioning */
+  width: 100%;
+  height: 400px; /* Adjust height as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  border-radius: 8px;
+  overflow: hidden; /* Keeps all child elements within the rounded corners */
+}
+
+.hero-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+  z-index: 1;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6); /* Dark overlay to make text readable */
+  z-index: 2;
+}
+
+.hero-content {
+  position: relative; /* Puts content above the overlay */
+  z-index: 3;
+  padding: 1rem;
+}
+
+.hero-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  max-width: 600px;
+  margin-bottom: 1.5rem;
+}
+
+/* --- Details Section Below Banner --- */
+
+.competition-details {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Responsive grid */
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.feature-card {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #eee;
+}
+
+.feature-card h3 {
+  margin-top: 0;
+}
+
+.feature-card i {
+  margin-right: 0.75rem;
+  color: #0056b3; /* Accent color */
+}
+
+/* Style for the dataset contribution prompt */
+.dataset-contribution-prompt {
+  background-color: #eef5ff; /* A light blue background */
+  border: 1px solid #cce0ff; /* A matching blue border */
+  border-left: 5px solid #0056b3; /* A prominent left accent border */
+  padding: 1rem 1.5rem;
+  margin: 1.5rem auto; /* Centers the box and adds vertical space */
+  border-radius: 8px;
+  max-width: 800px;
+  text-align: center;
+}
+
+.dataset-contribution-prompt p {
+  margin: 0;
+  font-size: 1.05rem;
+}
+
 main > hr {
   display: none; /* Hide the <hr> tags for a cleaner look */
 }
