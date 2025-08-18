@@ -217,7 +217,7 @@ contact-email: hulchvse@student.cvut.cz
             <p>Submit an extended abstract (up to 4 pages, incl. references) in IEEE conference format to our chairs.</p>
             
             <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation & Publication</h4>
-            <p>Accepted papers will be presented in a dual format: an oral presentation (up to 20 minutes) and a poster session in Padova. For authors presenting remotely, we are happy to accommodate the <strong>online presentation</strong> (talk only).</p>
+            <p>Accepted papers will be presented in a dual format: an oral presentation (15 minutes) and a poster session in Padova. For authors presenting remotely, we are happy to accommodate the <strong>online presentation</strong> (talk only).</p>
             <p>The workshop will not have archival proceedings, and accepted papers will be made available on the workshop website.</p>
             
             <div class="cta-button-wrapper">
@@ -230,7 +230,7 @@ contact-email: hulchvse@student.cvut.cz
 
     <div class="speaker-call-prompt">
         <h3><i class="fa-solid fa-star"></i> Call for Invited Speakers</h3>
-        <p>Are you a senior researcher or industry expert with significant experience in robust SLAM? We invite you to share your work as an invited speaker. Both in-person and online talks are feasible. Please contact us to propose a talk.</p>
+        <p>Are you a senior researcher or industry expert with significant experience in robust SLAM? We invite you to share your work as an invited speaker. Both in-person and online talks (30 minutes) are feasible. Please contact us to propose a talk.</p>
         <div class="cta-button-wrapper">
              <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Speaker Proposal" class="cta-button secondary">
                 Propose a Talk
