@@ -298,7 +298,7 @@ contact-email: hulchvse@student.cvut.cz
         <div class="card-content">
             <strong>Martin Saska</strong>
             <span class="affiliation">Czech Technical University in Prague</span>
-            <i>Topic: Long-term UAV deployment in challenging GNSS-denied conditions</i>
+            <i>Topic: "Long-term UAV deployment in challenging GNSS-denied conditions"</i>
         </div>
     </div>
     <div class="image-info-card">
@@ -306,7 +306,15 @@ contact-email: hulchvse@student.cvut.cz
         <div class="card-content">
             <strong>Matteo Frosi</strong>
             <span class="affiliation">Politecnico di Milano</span>
-            <i>Topic: Beyond Vision: Radar-based SLAM for Robust Localization and Mapping</i>
+            <i>Topic: "Beyond Vision: Radar-based SLAM for Robust Localization and Mapping"</i>
+        </div>
+    </div>
+    <div class="image-info-card">
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/C4D03AQFt9_rXg6b_dQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597151083827?e=1758758400&v=beta&t=4fRVqllLxSsaRiyW_LRDH_uu8opVHg28fbcAwqhdfTM' | absolute_url }}">
+        <div class="card-content">
+            <strong>Johann Laconte</strong>
+            <span class="affiliation">French National Institute for Agriculture, Food, and Environment (INRAE)</span>
+            <i>Topic: "Towards Robust and Resilient SLAM for Field Robotics"</i>
         </div>
     </div>
     <div class="image-info-card">
@@ -314,7 +322,7 @@ contact-email: hulchvse@student.cvut.cz
         <div class="card-content">
             <strong>Luca Di Giammarino <span class="online-badge">online</span></strong>
             <span class="affiliation">Sapienza University of Rome</span>
-            <i>Topic: Active Perception and Mapping: Learning to Localize in Space and Time</i>
+            <i>Topic: "Active Perception and Mapping: Learning to Localize in Space and Time"</i>
             <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
             <div class="abstract-content" style="display:none;">
                 <p>This talk explores recent advances at the intersection of geometry, learning, and probabilistic modeling for robot localization and mapping. We present four complementary approaches that tackle key challenges in active perception: Gaussian splatting for real-time LiDAR odometry, continuous-time pose estimation via Gaussian belief propagation, and learning-based strategies for viewpoint selection in active localization. Together, these works push the boundaries of how autonomous systems perceive, move, and map the world, efficiently and intelligently, in both space and time.</p>
