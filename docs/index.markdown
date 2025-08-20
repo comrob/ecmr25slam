@@ -332,7 +332,7 @@ contact-email: hulchvse@student.cvut.cz
     <div class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/D4D03AQFvYNBWBYZeOg/profile-displayphoto-shrink_800_800/B4DZUQ2ig.HwAc-/0/1739744488368?e=1758758400&v=beta&t=XtqcQmLyfSZFG_jkmZR-KSh3ykaFKV-tEs28OEP6Ijo' | absolute_url }}">
         <div class="card-content">
-            <strong>LMihir Dharmadhikari <span class="online-badge">online</span></strong>
+            <strong>Mihir Dharmadhikari <span class="online-badge">online</span></strong>
             <span class="affiliation">Norwegian University of Science and Technology (NTNU)</span>
             <i>Topic: "Resilient Multi-modal Perception"</i>
             <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
