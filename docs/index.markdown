@@ -278,7 +278,7 @@ contact-email: hulchvse@student.cvut.cz
         <span class="date-value">Poster & Competition Session 2 + Coffee</span>
     </li>
     <li class="event-speech">
-        <span class="date-label"><strong>16:16–17:15</strong></span>
+        <span class="date-label"><strong>16:15–17:15</strong></span>
         <span class="date-value">World Café Discussion</span>
     </li>
     <li class="event-speech">
