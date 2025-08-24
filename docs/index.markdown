@@ -353,12 +353,6 @@ contact-email: hulchvse@student.cvut.cz
             </div>
         </div>
     </div>
-    <div class="image-info-card">
-        <img src="{{ 'images/placeholder.jpg' | absolute_url }}">
-        <div class="card-content">
-            <strong>To be announced</strong>
-        </div>
-    </div>
 </div>
 
 
