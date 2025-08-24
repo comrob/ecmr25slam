@@ -1137,6 +1137,19 @@ section:nth-of-type(even) {
     color: #ffc107; /* A gold color for the star icon */
 }
 
+
+/* --- Program Section Header --- */
+#program-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* --- Dates Section Header --- */
+#dates-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
 /* --- About Section Enhancement --- */
 #about-section h2 {
   text-align: center;
