@@ -342,6 +342,18 @@ contact-email: hulchvse@student.cvut.cz
         </div>
     </div>
     <div class="image-info-card">
+        <img src="{{ 'https://media.licdn.com/dms/image/v2/D5603AQGjUHX9MRCTvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720620910006?e=1758758400&v=beta&t=HFtPZEOZdiFCovy-gkNRqOZ3K__okTh_0cD7Qd-3ml0' | absolute_url }}">
+        <div class="card-content">
+            <strong>Unal Artan <span class="online-badge">online</span></strong>
+            <span class="affiliation">Örebro University</span>
+            <i>Topic: "An unsupervised approach to map quality assessment"</i>
+            <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
+            <div class="abstract-content" style="display:none;">
+                <p>Maps are widely used in the robotics community for localization and path planning and the ability to identify incorrect or inaccurate regions of a map is an area of active research interest. For large environments, manual edits of the map can be very time consuming and a tool which can assist a map editor is needed. In this talk I will talk about the efforts we have taken to apply deep learning tools to create a tool that could be used to assist in evaluating the quality of a produced map (e.g., 2D occupancy grid map or 2D ndt map). The tool (autoencoder) uses only a given map as input to be independent of the underlying mapping algorithm. Where current methods for map quality assessment rely on ground-truth or labelled information for training classifiers, both of which can be difficult to obtain. Results from different environments will be providing highlighting the tools ability to identify regions with sparse data, clutter, and misregistrations. Possible future directions with the research will be shared.</p>
+            </div>
+        </div>
+    </div>
+    <div class="image-info-card">
         <img src="{{ 'images/placeholder.jpg' | absolute_url }}">
         <div class="card-content">
             <strong>To be announced</strong>
