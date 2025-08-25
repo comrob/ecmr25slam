@@ -9,3 +9,8 @@ cd docs
 bundle install
 bundle exec jekyll serve --port 4001
 ```
+## How to install on Ubuntu
+```
+sudo snap install ruby
+# go to How to run locally
+```

@@ -248,22 +248,36 @@ contact-email: hulchvse@student.cvut.cz
 <div class="section-intro">
 <p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
 
+<p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml" target="_blank">View the detailed schedule here.</a></strong></p>
+
 <ul class="date-list">
     <li class="event-speech">
         <span class="date-label"><strong>09:00–09:10</strong></span>
-        <span class="date-value">Welcome & Introduction</span>
+        <span class="date-value">Welcome</span>
     </li>
     <li class="event-speech">
         <span class="date-label"><strong>09:10–10:10</strong></span>
         <span class="date-value">Invited Speakers Session 1</span>
     </li>
-    <li class="event-poster">
-        <span class="date-label"><strong>10:10–11:00</strong></span>
-        <span class="date-value">Poster & Competition Session 1 + Coffee</span>
+    <li class="event-speech">
+        <span class="date-label"><strong>10:10–10:30</strong></span>
+        <span class="date-value">Competition Presentation</span>
+    </li>
+    <li class="event-break">
+        <span class="date-label"><strong>10:30–11:00</strong></span>
+        <span class="date-value">Coffee Break</span>
     </li>
     <li class="event-speech">
-        <span class="date-label"><strong>11:00–13:00</strong></span>
+        <span class="date-label"><strong>11:00–12:00</strong></span>
         <span class="date-value">Presentations of Accepted Papers</span>
+    </li>
+    <li class="event-speech">
+        <span class="date-label"><strong>12:00–12:30</strong></span>
+        <span class="date-value">Invited Speaker Session 2</span>
+    </li>
+    <li class="event-poster">
+        <span class="date-label"><strong>12:30–13:00</strong></span>
+        <span class="date-value">Poster Session</span>
     </li>
     <li class="event-break">
         <span class="date-label"><strong>13:00–14:00</strong></span>
@@ -271,18 +285,18 @@ contact-email: hulchvse@student.cvut.cz
     </li>
     <li class="event-speech">
         <span class="date-label"><strong>14:00–15:30</strong></span>
-        <span class="date-value">Invited Speakers Session 2</span>
+        <span class="date-value">Invited Speakers Session 3</span>
+    </li>
+    <li class="event-break">
+        <span class="date-label"><strong>15:30–16:00</strong></span>
+        <span class="date-value">Coffee Break</span>
     </li>
     <li class="event-poster">
-        <span class="date-label"><strong>15:30–16:15</strong></span>
-        <span class="date-value">Poster & Competition Session 2 + Coffee</span>
-    </li>
-    <li class="event-speech">
-        <span class="date-label"><strong>16:15–17:15</strong></span>
+        <span class="date-label"><strong>16:00–17:00</strong></span>
         <span class="date-value">World Café Discussion</span>
     </li>
     <li class="event-speech">
-        <span class="date-label"><strong>17:15–17:30</strong></span>
+        <span class="date-label"><strong>17:00–17:15</strong></span>
         <span class="date-value">Closing Remarks</span>
     </li>
 </ul>
