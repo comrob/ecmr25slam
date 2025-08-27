@@ -242,14 +242,6 @@ contact-email: hulchvse@student.cvut.cz
     <hr>
 </section>
 
-<h2 id="program"></h2>
-<section id="program-section">
-<h2>Program</h2>
-<div class="section-intro">
-<p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
-
-<p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml?gid=764812166&single=true" target="_blank">View the detailed schedule here.</a></strong></p>
-
 <section id="program-section">
 <h2 id="program">Program</h2>
 <div class="section-intro">
@@ -259,58 +251,106 @@ contact-email: hulchvse@student.cvut.cz
 
 <ul class="date-list">
     <li class="event-speech event-organization">
-        <span class="date-label"><strong>09:00–09:10</strong></span>
-        <span class="date-value">Welcome</span>
-    </li>
+        <div>
+            <span class="date-label"><strong>09:00–09:10</strong></span>
+            <span class="date-value">Welcome</span>
+        </div>
+        </li>
     <li class="event-speech event-invited">
-        <span class="date-label"><strong>09:10–10:15</strong></span>
-        <span class="date-value">Invited Speakers 1</span>
+        <div>
+            <span class="date-label"><strong>09:10–10:15</strong></span>
+            <span class="date-value">Invited Speakers 1</span>
+        </div>
+        <div class="schedule-speakers">
+            <a href="#speaker-artan" data-tooltip="9:10-9:40 - Unal Artan: 'An Unsupervised Approach to Map Quality Assessment'">
+                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D5603AQGjUHX9MRCTvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720620910006?e=1758758400&v=beta&t=HFtPZEOZdiFCovy-gkNRqOZ3K__okTh_0cD7Qd-3ml0' | absolute_url }}" alt="Unal Artan">
+            </a>
+            <a href="#speaker-giammarino" data-tooltip="9:40-10:15 - Luca Di Giammarino: 'Active Perception and Mapping...'">
+                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}" alt="Luca Di Giammarino">
+            </a>
+        </div>
     </li>
     <li class="event-speech event-organization">
-        <span class="date-label"><strong>10:15–10:30</strong></span>
-        <span class="date-value">Competition Presentation</span>
+        <div>
+            <span class="date-label"><strong>10:15–10:30</strong></span>
+            <span class="date-value">Competition Presentation</span>
+        </div>
+        <div class="schedule-speakers">
+            <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}" alt="Vsevolod Hulchuk">
+        </div>
     </li>
     <li class="event-break event-coffee">
-        <span class="date-label"><strong>10:30–11:00</strong></span>
-        <span class="date-value">Coffee Break</span>
+        <div>
+            <span class="date-label"><strong>10:30–11:00</strong></span>
+            <span class="date-value">Coffee Break</span>
+        </div>
     </li>
     <li class="event-speech event-invited">
-        <span class="date-label"><strong>11:00–11:40</strong></span>
-        <span class="date-value">Invited Speaker 2</span>
+        <div>
+            <span class="date-label"><strong>11:00–11:40</strong></span>
+            <span class="date-value">Invited Speaker 2</span>
+        </div>
+        <div class="schedule-speakers">
+            <a href="#speaker-saska" data-tooltip="11:00-11:40 - Martin Saska: 'Long-term UAV deployment...'">
+                <img class="speaker-avatar" src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}" alt="Martin Saska">
+            </a>
+        </div>
     </li>
     <li class="event-speech event-accepted">
-        <span class="date-label"><strong>11:40–13:00</strong></span>
-        <span class="date-value">Accepted Papers</span>
+        <div>
+            <span class="date-label"><strong>11:40–13:00</strong></span>
+            <span class="date-value">Accepted Papers</span>
+        </div>
     </li>
     <li class="event-break lunch">
-        <span class="date-label"><strong>13:00–14:00</strong></span>
-        <span class="date-value">Lunch Break</span>
+        <div>
+            <span class="date-label"><strong>13:00–14:00</strong></span>
+            <span class="date-value">Lunch Break</span>
+        </div>
     </li>
     <li class="event-speech event-invited">
-        <span class="date-label"><strong>14:00–15:30</strong></span>
-        <span class="date-value">Invited Speakers 3</span>
+        <div>
+            <span class="date-label"><strong>14:00–15:30</strong></span>
+            <span class="date-value">Invited Speakers 3</span>
+        </div>
+        <div class="schedule-speakers">
+            <a href="#speaker-frosi" data-tooltip="14:00-14:30 - Matteo Frosi: 'Beyond Vision: Radar-based SLAM...'">
+                <img class="speaker-avatar" src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}" alt="Matteo Frosi">
+            </a>
+            <a href="#speaker-dharmadhikari" data-tooltip="14:30-15:00 - Mihir Dharmadhikari: 'Resilient Multi-modal SLAM'">
+                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D4D03AQFvYNBWBYZeOg/profile-displayphoto-shrink_800_800/B4DZUQ2ig.HwAc-/0/1739744488368?e=1758758400&v=beta&t=XtqcQmLyfSZFG_jkmZR-KSh3ykaFKV-tEs28OEP6Ijo' | absolute_url }}" alt="Mihir Dharmadhikari">
+            </a>
+            <a href="#speaker-laconte" data-tooltip="15:00-15:30 - Johann Laconte: 'Towards Robust and Resilient SLAM...'">
+                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/C4D03AQFt9_rXg6b_dQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597151083827?e=1758758400&v=beta&t=4fRVqllLxSsaRiyW_LRDH_uu8opVHg28fbcAwqhdfTM' | absolute_url }}" alt="Johann Laconte">
+            </a>
+        </div>
     </li>
     <li class="event-poster coffee">
-        <span class="date-label"><strong>15:30–16:15</strong></span>
-        <span class="date-value">Coffee Break & Poster Session</span>
+        <div>
+            <span class="date-label"><strong>15:30–16:15</strong></span>
+            <span class="date-value">Coffee Break & Poster Session</span>
+        </div>
     </li>
     <li class="event-poster event-networking">
-        <span class="date-label"><strong>16:15–16:50</strong></span>
-        <span class="date-value">World Cafe Discussion</span>
-    </li>
+        <div>
+            <span class="date-label"><strong>16:15–16:50</strong></span>
+            <span class="date-value">World Cafe Discussion</span>
+        </div>
+        </li>
     <li class="event-speech event-organization">
-        <span class="date-label"><strong>16:50–17:05</strong></span>
-        <span class="date-value">Closing Remarks</span>
-    </li>
+        <div>
+            <span class="date-label"><strong>16:50–17:05</strong></span>
+            <span class="date-value">Closing Remarks</span>
+        </div>
+        </li>
 </ul>
 </div>
 
 <br/>
 
-
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
-    <div class="image-info-card">
+    <div id="speaker-saska" class="image-info-card">
         <img src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}">
         <div class="card-content">
             <strong>Martin Saska</strong>
@@ -318,7 +358,7 @@ contact-email: hulchvse@student.cvut.cz
             <i>Topic: "Long-term UAV deployment in challenging GNSS-denied conditions"</i>
         </div>
     </div>
-    <div class="image-info-card">
+    <div id="speaker-frosi" class="image-info-card">
         <img src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}">
         <div class="card-content">
             <strong>Matteo Frosi</strong>
@@ -326,7 +366,7 @@ contact-email: hulchvse@student.cvut.cz
             <i>Topic: "Beyond Vision: Radar-based SLAM for Robust Localization and Mapping"</i>
         </div>
     </div>
-    <div class="image-info-card">
+    <div id="speaker-laconte" class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/C4D03AQFt9_rXg6b_dQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597151083827?e=1758758400&v=beta&t=4fRVqllLxSsaRiyW_LRDH_uu8opVHg28fbcAwqhdfTM' | absolute_url }}">
         <div class="card-content">
             <strong>Johann Laconte</strong>
@@ -334,7 +374,7 @@ contact-email: hulchvse@student.cvut.cz
             <i>Topic: "Towards Robust and Resilient SLAM for Field Robotics"</i>
         </div>
     </div>
-    <div class="image-info-card">
+    <div id="speaker-giammarino" class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}">
         <div class="card-content">
             <strong>Luca Di Giammarino <span class="online-badge">online</span></strong>
@@ -346,7 +386,7 @@ contact-email: hulchvse@student.cvut.cz
             </div>
         </div>
     </div>
-    <div class="image-info-card">
+    <div id="speaker-dharmadhikari" class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/D4D03AQFvYNBWBYZeOg/profile-displayphoto-shrink_800_800/B4DZUQ2ig.HwAc-/0/1739744488368?e=1758758400&v=beta&t=XtqcQmLyfSZFG_jkmZR-KSh3ykaFKV-tEs28OEP6Ijo' | absolute_url }}">
         <div class="card-content">
             <strong>Mihir Dharmadhikari <span class="online-badge">online</span></strong>
@@ -358,7 +398,7 @@ contact-email: hulchvse@student.cvut.cz
             </div>
         </div>
     </div>
-    <div class="image-info-card">
+    <div id="speaker-artan" class="image-info-card">
         <img src="{{ 'https://media.licdn.com/dms/image/v2/D5603AQGjUHX9MRCTvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720620910006?e=1758758400&v=beta&t=HFtPZEOZdiFCovy-gkNRqOZ3K__okTh_0cD7Qd-3ml0' | absolute_url }}">
         <div class="card-content">
             <strong>Unal Artan <span class="online-badge">online</span></strong>

@@ -491,6 +491,7 @@ pre {
   border-radius: var(--border-radius);
   background-color: #fff;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  scroll-margin-top: var(--header-height-increased, 0px); /* Uses the JS variable, with a fallback of 80px */
 }
 
 .image-info-card:hover {
@@ -876,6 +877,80 @@ li.event-poster.event-networking .date-value::before {
 li.event-poster .date-value::before { 
   content: '📌 ';
   margin-right: 4px;
+}
+
+ul.date-list li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+/* Container for the speaker images on the right */
+.schedule-speakers {
+  display: flex;
+  align-items: center;
+  padding-left: 15px; /* Space between text and images */
+}
+
+/* Style for each circular avatar */
+.speaker-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Creates the overlapping effect for multiple speakers */
+.speaker-avatar:not(:first-child) {
+  margin-left: -12px;
+}
+
+
+/* --- 1. Enable Smooth Scrolling for Anchor Links --- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- 2. Tooltip Styles for Speaker Avatars --- */
+
+/* The link wrapping the avatar needs to be a positioning context */
+.schedule-speakers a {
+  position: relative;
+  display: block; /* Helps with positioning */
+}
+
+/* The main tooltip bubble */
+.schedule-speakers a::before {
+  content: attr(data-tooltip); /* Pulls text from the HTML data-tooltip attribute */
+  position: absolute;
+  bottom: 125%; /* Position it above the avatar */
+  left: 50%;
+  transform: translateX(-50%);
+  
+  /* Visual styling */
+  background-color: var(--dark-color, #2c3e50);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  white-space: nowrap; /* Keeps the tooltip on one line */
+  
+  /* Hide by default and add a smooth transition */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 100;
+}
+
+/* Show the tooltip when hovering over the link */
+.schedule-speakers a:hover::before {
+  opacity: 1;
+  visibility: visible;
 }
 
 /* --- Styles for Dataset Cards --- */

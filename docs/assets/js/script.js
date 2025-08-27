@@ -61,6 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
     if (header) {
       const headerHeight = header.offsetHeight;
       document.documentElement.style.setProperty('--header-height', `${headerHeight}px`);
+      document.documentElement.style.setProperty('--header-height-increased', `${headerHeight+5}px`);
     }
   };
 
