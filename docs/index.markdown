@@ -213,8 +213,12 @@ contact-email: hulchvse@student.cvut.cz
                 <div>
                     <span class="date-label"><strong>10:15–10:30</strong></span>
                     <span class="date-value">Competition Presentation</span>
-                    <button class="details-toggle-btn" data-open-text="Read More" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
-                    <a href="#competition-section" class="schedule-link-btn"><i class="fa-solid fa-arrow-right"></i> Go to Section</a>
+                    
+                    <div class="schedule-buttons-container">
+                        <button class="details-toggle-btn" data-open-text="Read More" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
+                        <a href="#competition-section" class="schedule-link-btn"><i class="fa-solid fa-arrow-right"></i> Go to Section</a>
+                    </div>
+                    
                     <div class="expandable-details" style="display: none;">{{ site.data.schedule_details.competition_presentation }}</div>
                 </div>
                 <div class="schedule-speakers">

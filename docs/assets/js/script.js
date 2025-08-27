@@ -63,10 +63,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Add this function inside your existing <script> tag
 function toggleDetails(clickedButton) {
-  // Find the parent div that contains both the button and the details
-  const parentDiv = clickedButton.parentElement;
-  // Find the details section within that parent
-  const targetDetails = parentDiv.querySelector('.expandable-details');
+  // Go up two levels to the main container div
+  const mainContainer = clickedButton.parentElement.parentElement;
+  // Find the details section within that main container
+  const targetDetails = mainContainer.querySelector('.expandable-details');
   
   // Check if the section we clicked is already open
   const isCurrentlyOpen = targetDetails.style.display === "block";
