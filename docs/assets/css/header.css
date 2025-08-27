@@ -55,12 +55,16 @@ nav a:hover{
 } 
 
 .sticky {
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 50%;                      /* This moves the header's left edge to the center */
+  transform: translateX(-50%);     /* This shifts the header back by half its own width */
+  width: 100%;
+  max-width: var(--max-width);      /* Ensures it matches your main content width */
   z-index: 100;
-  overflow: clip;
   background-color: white;
-  /* background-color: var(--background-color); */
   border-bottom: 1px solid var(--dark-color);
-  opacity: 1;
+}
+.nav-toggle {
+  display: none;
 }

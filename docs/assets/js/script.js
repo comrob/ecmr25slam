@@ -26,17 +26,6 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 });
 
-// Resposive navigation
-document.addEventListener("DOMContentLoaded", function () {
-  const toggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector("nav");
-
-  toggle.addEventListener("click", () => {
-    toggle.classList.toggle("open");
-    nav.classList.toggle("show");
-  });
-});
-
 // Copy to clipboard
 function copyToClipboard(button) {
   const code = button.nextElementSibling.innerText;
@@ -98,3 +87,32 @@ function toggleDetails(clickedButton) {
     clickedButton.innerHTML = '<i class="fa-solid fa-minus"></i> Show Less';
   }
 }
+
+// --- Combined and Corrected Responsive Navigation ---
+document.addEventListener("DOMContentLoaded", function () {
+  const toggle = document.querySelector(".nav-toggle");
+  const nav = document.querySelector("header nav");
+  const navLinks = document.querySelectorAll("header nav a");
+
+  // Make sure all elements exist before adding listeners
+  if (toggle && nav) {
+    // Logic to open/close the menu with the hamburger button
+    toggle.addEventListener("click", () => {
+      toggle.classList.toggle("open");
+      nav.classList.toggle("show");
+    });
+  }
+
+  // Logic to close the menu when a nav link is clicked
+  if (navLinks.length > 0 && nav) {
+    navLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Check if the menu is open before trying to close it
+        if (nav.classList.contains('show')) {
+          nav.classList.remove('show');
+          toggle.classList.remove('open'); // Also reset the hamburger icon
+        }
+      });
+    });
+  }
+});
