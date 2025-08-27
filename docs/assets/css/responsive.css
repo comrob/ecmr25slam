@@ -1,5 +1,5 @@
 /* =================================================================== */
-/* === Mobile & Tablet Responsive Styles === */
+/* === FINAL Consolidated Mobile & Tablet Responsive Styles === */
 /* =================================================================== */
 
 @media (max-width: 768px) {
@@ -7,51 +7,96 @@
   /* --- 1. General Layout & Typography --- */
 
   body {
-    font-size: 0.95rem; /* Slightly larger base font for readability */
+    align-items: stretch;
+    font-size: 0.95rem;
   }
 
-  /* Remove side margins and shadow from the main content area */
+  /* KEY FIX #1: Restore side padding to the main container */
   main {
-    margin: 0;
-    padding: 0 1rem;
+    margin: 0 !important;
+    padding: 0 1rem !important; /* Add 1rem of side padding back */
     box-shadow: none;
   }
 
-  /* Adjust padding for sections to give more space */
+  /* Sections only need vertical padding now */
   section {
     padding: 2rem 0;
   }
 
-  /* Adjust the alternating background color to the new padding */
+  /* Pull specific, full-bleed sections out to the screen edges */
+  .hero-section,
   section:nth-of-type(even) {
-    margin: 0 -1rem;
-    padding: 2rem 1rem;
+    margin-left: -1rem;
+    margin-right: -1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 0;
   }
 
-  /* Scale down heading sizes for mobile */
-  h1, .hero-section h1 {
-    font-size: 2.2rem;
-  }
-  h2, .competition-hero h2 {
-    font-size: 1.8rem;
-  }
-  h3 {
-    font-size: 1.4rem;
+  h1, .hero-section h1 { font-size: 2.2rem; }
+  h2, .competition-hero h2 { font-size: 1.8rem; }
+  h3 { font-size: 1.4rem; }
+
+  /* --- 2. Header & Navigation --- */
+
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
   }
 
-  /* --- 2. Hero Sections --- */
-  
-  .hero-section {
-    padding: 3rem 1rem;
+  header .logo, header nav {
+    float: none;
   }
-  
+
+  .nav-toggle {
+    display: block;
+    font-size: 2.5rem;
+    padding: 0;
+    border: none;
+    background: none;
+    color: var(--dark-color);
+    cursor: pointer;
+  }
+
+  header nav {
+    display: none;
+    width: 100%;
+    order: 3;
+  }
+
+  header nav.show {
+    display: block;
+    margin-top: 1rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  header nav li {
+    width: 100%;
+    padding: 0.75rem 0;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  header nav a {
+    margin: 0;
+  }
+
+  .nav-toggle .icon-close { display: none; }
+  .nav-toggle.open .icon-hamburger { display: none; }
+  .nav-toggle.open .icon-close { display: inline; }
+
+  /* --- 3. Content Sections & Grids --- */
+
   .competition-hero {
-    height: 300px; /* Make the banner shorter on mobile */
+    height: 300px;
   }
 
-  /* --- 3. Grids (Organizers, Datasets, etc.) --- */
-  
-  /* Collapse all grids into a single, clean column */
   .image-info-grid,
   .dataset-grid,
   .about-features-grid,
@@ -60,12 +105,9 @@
   }
 
   .image-info-card img {
-    height: 200px; /* Adjust image height on mobile */
+    height: 200px;
   }
 
-  /* --- 4. Program Schedule --- */
-
-  /* Stack the schedule items vertically */
   ul.date-list li {
     flex-direction: column;
     align-items: flex-start;
@@ -73,10 +115,9 @@
   }
 
   .schedule-speakers {
-    padding-left: 0; /* Remove padding when stacked */
+    padding-left: 0;
   }
 
-  /* Stack the expandable paper list as well */
   .paper-entry {
     flex-direction: column;
     align-items: flex-start;
@@ -84,12 +125,14 @@
   }
 
   .paper-time {
-    width: auto; /* Remove the fixed width for the time */
+    width: auto;
   }
   
-  /* --- 5. Two-Column Layouts --- */
+  .event-invited .paper-entry {
+    align-items: flex-end;
+    text-align: right;
+  }
 
-  /* Stack the Venue and Call for Papers sections */
   .venue-container,
   .cfp-container {
     flex-direction: column;
@@ -99,93 +142,20 @@
     padding-right: 0;
   }
 
-  /* --- 6. Navigation (Hamburger Menu) --- */
-  /* This keeps your existing functional hamburger menu */
+  /* --- 4. Buttons --- */
 
-  .nav-toggle {
-    display: block; /* Show the hamburger icon */
-    background: none;
-    border: none;
-    font-size: 2rem;
-    cursor: pointer;
-    color: var(--dark-color);
-  }
-
-  header nav {
-    display: none; /* Hide the desktop navigation links */
-    width: 100%;
-    order: 2; /* Place it below the logo/toggle */
-  }
-  
-  header nav ul {
+  /* KEY FIX #2: Make buttons flexible and equal width */
+  .hero-buttons {
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    width: 100%;
-  }
-
-  header nav li {
-    padding: 0.75rem 0;
-    width: 100%;
-    border-bottom: 1px solid #f0f0f0;
+    align-items: stretch; /* Makes buttons the same width */
+    gap: 1rem;
   }
   
-  header nav a {
-      margin: 0;
-  }
-
-  /* This class is toggled by JavaScript to show the menu */
-  header nav.show {
-    display: block;
+  .hero-buttons .cta-button {
+    width: 100%; /* Let the button fill the container */
+    max-width: none;
+    padding: 15px 10px; /* Generous vertical, smaller horizontal padding */
+    font-size: 1em;
   }
 }
-
-
-
-/* In responsive.css */
-
-/* --- Improved Mobile Header Layout & Icons --- */
-
-/* Use Flexbox for the header layout on mobile */
-@media (max-width: 768px) {
-  header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-
-  /* Remove float and let flexbox handle positioning */
-  header .logo, header nav {
-    float: none;
-  }
-  
-  /* The nav toggle button styling */
-  .nav-toggle {
-    /* (b) Move the button to the right */
-    order: 2; 
-
-    /* (c) Make the icon vertically centered and feel larger */
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
-  /* (a) Logic to interchange the hamburger and close icons */
-  .nav-toggle .icon-close {
-    display: none;
-  }
-  .nav-toggle .icon-hamburger {
-    display: inline;
-  }
-  .nav-toggle.open .icon-hamburger {
-    display: none;
-  }
-  .nav-toggle.open .icon-close {
-    display: inline;
-  }
-
-  .event-invited .paper-entry {
-    align-items: flex-end; /* Aligns the content blocks to the right */
-    text-align: left;     /* Aligns the text within the blocks to the right */
-    }
-}
-
