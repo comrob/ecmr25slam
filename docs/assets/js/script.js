@@ -147,3 +147,36 @@ document.addEventListener("DOMContentLoaded", function () {
       document.getElementById("countdown").innerHTML = "<h3>The deadline has passed!</h3>";
     }
   }, 1000);
+
+  function highlightCurrentEvent() {
+    const workshopDate = "2025-09-02"; // Correct format: YYYY-MM-DD
+    const scheduleItems = document.querySelectorAll('.date-list li[data-start]');
+    const now = new Date();
+
+    // Convert current time to a simple "HH:MM" string for comparison
+    const currentTime = now.getHours().toString().padStart(2, '0') + ':' + now.getMinutes().toString().padStart(2, '0');
+    const currentDate = now.toISOString().slice(0, 10);
+
+    // Only run the script on the day of the workshop
+    if (currentDate !== workshopDate) {
+      return; 
+    }
+
+    scheduleItems.forEach(item => {
+      const startTime = item.getAttribute('data-start');
+      const endTime = item.getAttribute('data-end');
+
+      if (currentTime >= startTime && currentTime < endTime) {
+        item.classList.add('current-event');
+        // Optional: scroll the current event into view
+        item.scrollIntoView({ behavior: 'smooth', block: 'center' });
+      } else {
+        item.classList.remove('current-event');
+      }
+    });
+  }
+
+document.addEventListener('DOMContentLoaded', () => {
+  highlightCurrentEvent(); // Run once on load
+  setInterval(highlightCurrentEvent, 60000); // Update every minute
+});

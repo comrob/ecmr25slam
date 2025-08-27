@@ -191,10 +191,10 @@ contact-email: hulchvse@student.cvut.cz
         <p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
         <p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml?gid=764812166&single=true" target="_blank">View the detailed schedule here.</a></strong></p>
         <ul class="date-list">
-            <li class="event-speech event-organization">
+            <li class="event-speech event-organization" data-start="09:00" data-end="09:10">
                 <div><span class="date-label"><strong>09:00–09:10</strong></span><span class="date-value">Welcome</span></div>
             </li>
-            <li class="event-speech event-invited">
+            <li class="event-speech event-invited" data-start="09:10" data-end="10:15">
                 <div>
                     <span class="date-label"><strong>09:10–10:15</strong></span>
                     <span class="date-value">Invited Speakers 1</span>
@@ -209,26 +209,24 @@ contact-email: hulchvse@student.cvut.cz
                     {% assign session_speakers = site.data.speakers | where: "session", 1 %}{% for speaker in session_speakers %}<a href="#{{ speaker.id }}" data-tooltip="{{ speaker.time }} - {{ speaker.name }}: '{{ speaker.topic }}'"><img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}"></a>{% endfor %}
                 </div>
             </li>
-            <li class="event-speech event-organization">
+            <li class="event-speech event-organization" data-start="10:15" data-end="10:30">
                 <div>
                     <span class="date-label"><strong>10:15–10:30</strong></span>
                     <span class="date-value">Competition Presentation</span>
-                    
                     <div class="schedule-buttons-container">
                         <button class="details-toggle-btn" data-open-text="Read More" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
                         <a href="#competition-section" class="schedule-link-btn"><i class="fa-solid fa-arrow-right"></i> Go to Section</a>
                     </div>
-                    
                     <div class="expandable-details" style="display: none;">{{ site.data.schedule_details.competition_presentation }}</div>
                 </div>
                 <div class="schedule-speakers">
                     <img class="speaker-avatar" src="{{ site.data.organizers[0].image | absolute_url }}" alt="Vsevolod Hulchuk">
                 </div>
             </li>
-            <li class="event-break event-coffee">
+            <li class="event-break event-coffee" data-start="10:30" data-end="11:00">
                 <div><span class="date-label"><strong>10:30–11:00</strong></span><span class="date-value">Coffee Break</span></div>
             </li>
-            <li class="event-speech event-invited">
+            <li class="event-speech event-invited" data-start="11:00" data-end="11:40">
                 <div>
                     <span class="date-label"><strong>11:00–11:40</strong></span>
                     <span class="date-value">Invited Speaker 2</span>
@@ -243,7 +241,7 @@ contact-email: hulchvse@student.cvut.cz
                     {% assign session_speakers = site.data.speakers | where: "session", 2 %}{% for speaker in session_speakers %}<a href="#{{ speaker.id }}" data-tooltip="{{ speaker.time }} - {{ speaker.name }}: '{{ speaker.topic }}'"><img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}"></a>{% endfor %}
                 </div>
             </li>
-            <li class="event-speech event-accepted">
+            <li class="event-speech event-accepted" data-start="11:40" data-end="13:00">
                 <div>
                     <span class="date-label"><strong>11:40–13:00</strong></span>
                     <span class="date-value">Accepted Papers</span>
@@ -261,10 +259,10 @@ contact-email: hulchvse@student.cvut.cz
                     <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
                 </div>
             </li>
-            <li class="event-break lunch" data-tooltip="Buon appetito!">
+            <li class="event-break lunch" data-tooltip="Buon appetito!" data-start="13:00" data-end="14:00">
                 <div><span class="date-label"><strong>13:00–14:00</strong></span><span class="date-value">Lunch Break</span></div>
             </li>
-            <li class="event-speech event-invited">
+            <li class="event-speech event-invited" data-start="14:00" data-end="15:30">
                 <div>
                     <span class="date-label"><strong>14:00–15:30</strong></span>
                     <span class="date-value">Invited Speakers 3</span>
@@ -279,10 +277,10 @@ contact-email: hulchvse@student.cvut.cz
                     {% assign session_speakers = site.data.speakers | where: "session", 3 %}{% for speaker in session_speakers %}<a href="#{{ speaker.id }}" data-tooltip="{{ speaker.time }} - {{ speaker.name }}: '{{ speaker.topic }}'"><img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}"></a>{% endfor %}
                 </div>
             </li>
-            <li class="event-poster coffee">
+            <li class="event-poster coffee" data-start="15:30" data-end="16:15">
                 <div><span class="date-label"><strong>15:30–16:15</strong></span><span class="date-value">Coffee Break & Poster Session</span></div>
             </li>
-            <li class="event-poster event-networking">
+            <li class="event-poster event-networking" data-start="16:15" data-end="16:50">
                 <div>
                     <span class="date-label"><strong>16:15–16:50</strong></span>
                     <span class="date-value">World Cafe Discussion</span>
@@ -290,7 +288,7 @@ contact-email: hulchvse@student.cvut.cz
                     <div class="expandable-details" style="display: none;">{{ site.data.schedule_details.world_cafe }}</div>
                 </div>
             </li>
-            <li class="event-speech event-organization">
+            <li class="event-speech event-organization" data-start="16:50" data-end="23:05">
                 <div><span class="date-label"><strong>16:50–17:05</strong></span><span class="date-value">Closing Remarks</span></div>
             </li>
         </ul>
