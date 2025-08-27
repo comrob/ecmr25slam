@@ -327,6 +327,12 @@ contact-email: hulchvse@student.cvut.cz
             a-button">
                 <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
             </a>
+            <p style="font-size: 1.2rem; margin-top: 1rem;">
+                <strong>Room: <span style="color: var(--primary-color);">ELETTRA 1 BLUE</span></strong>
+            </p>
+            <p style="color: var(--dark-gray); font-size: 0.9rem;">
+                Information on how to get to the room will be provided at the main conference registration desk.
+            </p>
         </div>
         <div class="venue-column venue-map">
             <iframe 
