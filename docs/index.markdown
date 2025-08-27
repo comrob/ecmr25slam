@@ -255,18 +255,20 @@ contact-email: hulchvse@student.cvut.cz
             <span class="date-label"><strong>09:00–09:10</strong></span>
             <span class="date-value">Welcome</span>
         </div>
-        </li>
+    </li>
     <li class="event-speech event-invited">
         <div>
             <span class="date-label"><strong>09:10–10:15</strong></span>
             <span class="date-value">Invited Speakers 1</span>
         </div>
         <div class="schedule-speakers">
-            <a href="#speaker-artan" data-tooltip="9:10-9:40 - Unal Artan: 'An Unsupervised Approach to Map Quality Assessment'">
-                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D5603AQGjUHX9MRCTvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720620910006?e=1758758400&v=beta&t=HFtPZEOZdiFCovy-gkNRqOZ3K__okTh_0cD7Qd-3ml0' | absolute_url }}" alt="Unal Artan">
+            {% assign speaker = site.data.speakers | where: "id", "speaker-artan" | first %}
+            <a href="#{{ speaker.id }}" data-tooltip="9:10-9:40 - {{ speaker.name }}: '{{ speaker.topic }}'">
+                <img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}">
             </a>
-            <a href="#speaker-giammarino" data-tooltip="9:40-10:15 - Luca Di Giammarino: 'Active Perception and Mapping...'">
-                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}" alt="Luca Di Giammarino">
+            {% assign speaker = site.data.speakers | where: "id", "speaker-giammarino" | first %}
+            <a href="#{{ speaker.id }}" data-tooltip="9:40-10:15 - {{ speaker.name }}: '{{ speaker.topic }}'">
+                <img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}">
             </a>
         </div>
     </li>
@@ -291,8 +293,9 @@ contact-email: hulchvse@student.cvut.cz
             <span class="date-value">Invited Speaker 2</span>
         </div>
         <div class="schedule-speakers">
-            <a href="#speaker-saska" data-tooltip="11:00-11:40 - Martin Saska: 'Long-term UAV deployment...'">
-                <img class="speaker-avatar" src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}" alt="Martin Saska">
+            {% assign speaker = site.data.speakers | where: "id", "speaker-saska" | first %}
+            <a href="#{{ speaker.id }}" data-tooltip="11:00-11:40 - {{ speaker.name }}: '{{ speaker.topic }}'">
+                <img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}">
             </a>
         </div>
     </li>
@@ -314,14 +317,17 @@ contact-email: hulchvse@student.cvut.cz
             <span class="date-value">Invited Speakers 3</span>
         </div>
         <div class="schedule-speakers">
-            <a href="#speaker-frosi" data-tooltip="14:00-14:30 - Matteo Frosi: 'Beyond Vision: Radar-based SLAM...'">
-                <img class="speaker-avatar" src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}" alt="Matteo Frosi">
+            {% assign speaker = site.data.speakers | where: "id", "speaker-frosi" | first %}
+            <a href="#{{ speaker.id }}" data-tooltip="14:00-14:30 - {{ speaker.name }}: '{{ speaker.topic }}'">
+                <img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}">
             </a>
-            <a href="#speaker-dharmadhikari" data-tooltip="14:30-15:00 - Mihir Dharmadhikari: 'Resilient Multi-modal SLAM'">
-                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D4D03AQFvYNBWBYZeOg/profile-displayphoto-shrink_800_800/B4DZUQ2ig.HwAc-/0/1739744488368?e=1758758400&v=beta&t=XtqcQmLyfSZFG_jkmZR-KSh3ykaFKV-tEs28OEP6Ijo' | absolute_url }}" alt="Mihir Dharmadhikari">
+            {% assign speaker = site.data.speakers | where: "id", "speaker-dharmadhikari" | first %}
+            <a href="#{{ speaker.id }}" data-tooltip="14:30-15:00 - {{ speaker.name }}: '{{ speaker.topic }}'">
+                <img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}">
             </a>
-            <a href="#speaker-laconte" data-tooltip="15:00-15:30 - Johann Laconte: 'Towards Robust and Resilient SLAM...'">
-                <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/C4D03AQFt9_rXg6b_dQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597151083827?e=1758758400&v=beta&t=4fRVqllLxSsaRiyW_LRDH_uu8opVHg28fbcAwqhdfTM' | absolute_url }}" alt="Johann Laconte">
+            {% assign speaker = site.data.speakers | where: "id", "speaker-laconte" | first %}
+            <a href="#{{ speaker.id }}" data-tooltip="15:00-15:30 - {{ speaker.name }}: '{{ speaker.topic }}'">
+                <img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}">
             </a>
         </div>
     </li>
@@ -336,13 +342,13 @@ contact-email: hulchvse@student.cvut.cz
             <span class="date-label"><strong>16:15–16:50</strong></span>
             <span class="date-value">World Cafe Discussion</span>
         </div>
-        </li>
+    </li>
     <li class="event-speech event-organization">
         <div>
             <span class="date-label"><strong>16:50–17:05</strong></span>
             <span class="date-value">Closing Remarks</span>
         </div>
-        </li>
+    </li>
 </ul>
 </div>
 
@@ -350,66 +356,27 @@ contact-email: hulchvse@student.cvut.cz
 
 <h3>Invited speakers</h3>
 <div class="image-info-grid small">
-    <div id="speaker-saska" class="image-info-card">
-        <img src="{{ 'https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif' | absolute_url }}">
+    {% for speaker in site.data.speakers %}
+    <div id="{{ speaker.id }}" class="image-info-card">
+        <img src="{{ speaker.image | absolute_url }}">
         <div class="card-content">
-            <strong>Martin Saska</strong>
-            <span class="affiliation">Czech Technical University in Prague</span>
-            <i>Topic: "Long-term UAV deployment in challenging GNSS-denied conditions"</i>
-        </div>
-    </div>
-    <div id="speaker-frosi" class="image-info-card">
-        <img src="{{ 'https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png' | absolute_url }}">
-        <div class="card-content">
-            <strong>Matteo Frosi</strong>
-            <span class="affiliation">Politecnico di Milano</span>
-            <i>Topic: "Beyond Vision: Radar-based SLAM for Robust Localization and Mapping"</i>
-        </div>
-    </div>
-    <div id="speaker-laconte" class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/C4D03AQFt9_rXg6b_dQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597151083827?e=1758758400&v=beta&t=4fRVqllLxSsaRiyW_LRDH_uu8opVHg28fbcAwqhdfTM' | absolute_url }}">
-        <div class="card-content">
-            <strong>Johann Laconte</strong>
-            <span class="affiliation">French National Institute for Agriculture, Food, and Environment (INRAE)</span>
-            <i>Topic: "Towards Robust and Resilient SLAM for Field Robotics"</i>
-        </div>
-    </div>
-    <div id="speaker-giammarino" class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg' | absolute_url }}">
-        <div class="card-content">
-            <strong>Luca Di Giammarino <span class="online-badge">online</span></strong>
-            <span class="affiliation">Sapienza University of Rome</span>
-            <i>Topic: "Active Perception and Mapping: Learning to Localize in Space and Time"</i>
+            <strong>{{ speaker.name }} 
+                {% if speaker.online %}
+                <span class="online-badge">online</span>
+                {% endif %}
+            </strong>
+            <span class="affiliation">{{ speaker.affiliation }}</span>
+            <i>Topic: "{{ speaker.topic }}"</i>
+            
+            {% if speaker.abstract %}
             <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
             <div class="abstract-content" style="display:none;">
-                <p>This talk explores recent advances at the intersection of geometry, learning, and probabilistic modeling for robot localization and mapping. We present four complementary approaches that tackle key challenges in active perception: Gaussian splatting for real-time LiDAR odometry, continuous-time pose estimation via Gaussian belief propagation, and learning-based strategies for viewpoint selection in active localization. Together, these works push the boundaries of how autonomous systems perceive, move, and map the world, efficiently and intelligently, in both space and time.</p>
+                <p>{{ speaker.abstract }}</p>
             </div>
+            {% endif %}
         </div>
     </div>
-    <div id="speaker-dharmadhikari" class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/D4D03AQFvYNBWBYZeOg/profile-displayphoto-shrink_800_800/B4DZUQ2ig.HwAc-/0/1739744488368?e=1758758400&v=beta&t=XtqcQmLyfSZFG_jkmZR-KSh3ykaFKV-tEs28OEP6Ijo' | absolute_url }}">
-        <div class="card-content">
-            <strong>Mihir Dharmadhikari <span class="online-badge">online</span></strong>
-            <span class="affiliation">Norwegian University of Science and Technology (NTNU)</span>
-            <i>Topic: "Resilient Multi-modal Perception"</i>
-            <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
-            <div class="abstract-content" style="display:none;">
-                <p>The talk discusses methods for resilient localization and mapping - enabling autonomy functionalities - in GPS-denied and visually-degraded environments. Experiences from field deployments, including the winning run in the DARPA Subterranean Challenge are presented.</p>
-            </div>
-        </div>
-    </div>
-    <div id="speaker-artan" class="image-info-card">
-        <img src="{{ 'https://media.licdn.com/dms/image/v2/D5603AQGjUHX9MRCTvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720620910006?e=1758758400&v=beta&t=HFtPZEOZdiFCovy-gkNRqOZ3K__okTh_0cD7Qd-3ml0' | absolute_url }}">
-        <div class="card-content">
-            <strong>Unal Artan <span class="online-badge">online</span></strong>
-            <span class="affiliation">Örebro University</span>
-            <i>Topic: "An Unsupervised Approach to Map Quality Assessment"</i>
-            <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
-            <div class="abstract-content" style="display:none;">
-                <p>Maps are widely used in the robotics community for localization and path planning and the ability to identify incorrect or inaccurate regions of a map is an area of active research interest. For large environments, manual edits of the map can be very time consuming and a tool which can assist a map editor is needed. In this talk I will talk about the efforts we have taken to apply deep learning tools to create a tool that could be used to assist in evaluating the quality of a produced map (e.g., 2D occupancy grid map or 2D ndt map). The tool (autoencoder) uses only a given map as input to be independent of the underlying mapping algorithm. Where current methods for map quality assessment rely on ground-truth or labelled information for training classifiers, both of which can be difficult to obtain. Results from different environments will be providing highlighting the tools ability to identify regions with sparse data, clutter, and misregistrations. Possible future directions with the research will be shared.</p>
-            </div>
-        </div>
-    </div>
+    {% endfor %}
 </div>
 
 

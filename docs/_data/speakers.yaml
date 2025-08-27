@@ -1,0 +1,44 @@
+- id: speaker-saska
+  name: Martin Saska
+  affiliation: Czech Technical University in Prague
+  image: https://ieeexplore.ieee.org/mediastore/IEEE/content/freeimages/8860/10778592/10912745/saska-3547296-small.gif
+  topic: "Long-term UAV deployment in challenging GNSS-denied conditions"
+  online: false
+
+- id: speaker-frosi
+  name: Matteo Frosi
+  affiliation: Politecnico di Milano
+  image: https://airlab.deib.polimi.it/wp-content/uploads/2025/05/MatteoFrosi.png
+  topic: "Beyond Vision: Radar-based SLAM for Robust Localization and Mapping"
+  online: false
+
+- id: speaker-laconte
+  name: Johann Laconte
+  affiliation: French National Institute for Agriculture, Food, and Environment (INRAE)
+  image: https://media.licdn.com/dms/image/v2/C4D03AQFt9_rXg6b_dQ/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1597151083827?e=1758758400&v=beta&t=4fRVqllLxSsaRiyW_LRDH_uu8opVHg28fbcAwqhdfTM
+  topic: "Towards Robust and Resilient SLAM for Field Robotics"
+  online: false
+
+- id: speaker-giammarino
+  name: Luca Di Giammarino
+  affiliation: Sapienza University of Rome
+  image: https://media.licdn.com/dms/image/v2/D4E03AQGpPqYM_m7Blg/profile-displayphoto-shrink_800_800/B4EZWBYSjmHUAc-/0/1741632385313?e=1756944000&v=beta&t=AJks70QtbTCRZt54pP9Lc2FlsAFVwx3FdoPGujWXrPg
+  topic: "Active Perception and Mapping: Learning to Localize in Space and Time"
+  online: true
+  abstract: "This talk explores recent advances at the intersection of geometry, learning, and probabilistic modeling for robot localization and mapping. We present four complementary approaches that tackle key challenges in active perception: Gaussian splatting for real-time LiDAR odometry, continuous-time pose estimation via Gaussian belief propagation, and learning-based strategies for viewpoint selection in active localization. Together, these works push the boundaries of how autonomous systems perceive, move, and map the world, efficiently and intelligently, in both space and time."
+
+- id: speaker-dharmadhikari
+  name: Mihir Dharmadhikari
+  affiliation: Norwegian University of Science and Technology (NTNU)
+  image: https://media.licdn.com/dms/image/v2/D4D03AQFvYNBWBYZeOg/profile-displayphoto-shrink_800_800/B4DZUQ2ig.HwAc-/0/1739744488368?e=1758758400&v=beta&t=XtqcQmLyfSZFG_jkmZR-KSh3ykaFKV-tEs28OEP6Ijo
+  topic: "Resilient Multi-modal Perception"
+  online: true
+  abstract: "The talk discusses methods for resilient localization and mapping - enabling autonomy functionalities - in GPS-denied and visually-degraded environments. Experiences from field deployments, including the winning run in the DARPA Subterranean Challenge are presented."
+
+- id: speaker-artan
+  name: Unal Artan
+  affiliation: Örebro University
+  image: https://media.licdn.com/dms/image/v2/D5603AQGjUHX9MRCTvA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1720620910006?e=1758758400&v=beta&t=HFtPZEOZdiFCovy-gkNRqOZ3K__okTh_0cD7Qd-3ml0
+  topic: "An Unsupervised Approach to Map Quality Assessment"
+  online: true
+  abstract: "Maps are widely used in the robotics community for localization and path planning and the ability to identify incorrect or inaccurate regions of a map is an area of active research interest. For large environments, manual edits of the map can be very time consuming and a tool which can assist a map editor is needed. In this talk I will talk about the efforts we have taken to apply deep learning tools to create a tool that could be used to assist in evaluating the quality of a produced map (e.g., 2D occupancy grid map or 2D ndt map). The tool (autoencoder) uses only a given map as input to be independent of the underlying mapping algorithm. Where current methods for map quality assessment rely on ground-truth or labelled information for training classifiers, both of which can be difficult to obtain. Results from different environments will be providing highlighting the tools ability to identify regions with sparse data, clutter, and misregistrations. Possible future directions with the research will be shared."
