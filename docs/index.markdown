@@ -320,8 +320,11 @@ contact-email: hulchvse@student.cvut.cz
             <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
         </div>
     </li>
-    <li class="event-break lunch">
-        <div><span class="date-label"><strong>13:00–14:00</strong></span><span class="date-value">Lunch Break</span></div>
+    <li class="event-break lunch" data-tooltip="Buon appetito!">
+        <div>
+            <span class="date-label"><strong>13:00–14:00</strong></span>
+            <span class="date-value">Lunch Break</span>
+        </div>
     </li>
     <li class="event-speech event-invited">
         <div>

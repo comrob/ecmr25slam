@@ -998,6 +998,43 @@ html {
   font-size: 1rem;
 }
 
+/* --- Tooltips for Schedule List Items --- */
+
+/* The list item is the positioning context for the tooltip */
+ul.date-list li[data-tooltip] {
+  position: relative;
+}
+
+/* The tooltip bubble that appears on hover */
+ul.date-list li[data-tooltip]::before {
+  content: attr(data-tooltip); /* Pulls text from the HTML */
+  position: absolute;
+  bottom: 100%; /* Position it just above the element */
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 5px;
+  
+  /* Styling */
+  background-color: var(--dark-color, #2c3e50);
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.9rem;
+  white-space: nowrap;
+  
+  /* Hide by default and add a smooth transition */
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 100;
+}
+
+/* Show the tooltip on hover */
+ul.date-list li[data-tooltip]:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Styling for the paper list inside the expandable details */
 /* --- Improved Layout for Accepted Papers List --- */
 
