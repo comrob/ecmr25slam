@@ -73,10 +73,28 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 // Add this function inside your existing <script> tag
-function toggleDetails(button) {
-  const details = button.nextElementSibling;
-  const isHidden = details.style.display === "none" || details.style.display === "";
+function toggleDetails(clickedButton) {
+  // Find the parent div that contains both the button and the details
+  const parentDiv = clickedButton.parentElement;
+  // Find the details section within that parent
+  const targetDetails = parentDiv.querySelector('.expandable-details');
   
-  details.style.display = isHidden ? "block" : "none";
-  button.innerHTML = isHidden ? '<i class="fa-solid fa-minus"></i> Show Less' : '<i class="fa-solid fa-plus"></i> Read More';
+  // Check if the section we clicked is already open
+  const isCurrentlyOpen = targetDetails.style.display === "block";
+
+  // --- Step 1: Close all open sections and reset all buttons ---
+  document.querySelectorAll('.expandable-details').forEach(details => {
+    details.style.display = 'none';
+  });
+
+  document.querySelectorAll('.details-toggle-btn').forEach(button => {
+    const openText = button.getAttribute('data-open-text');
+    button.innerHTML = `<i class="fa-solid fa-plus"></i> ${openText}`;
+  });
+  
+  // --- Step 2: If the section we clicked was closed, open it ---
+  if (!isCurrentlyOpen) {
+    targetDetails.style.display = 'block';
+    clickedButton.innerHTML = '<i class="fa-solid fa-minus"></i> Show Less';
+  }
 }
