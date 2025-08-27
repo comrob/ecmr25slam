@@ -1,0 +1,41 @@
+- name: Vsevolod Hulchuk
+  affiliation: CTU in Prague
+  image: https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw
+  primary: true
+  contact_email: hulchvse@student.cvut.cz
+
+- name: Matteo Luperto
+  affiliation: University of Milano, Italy
+  image: https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto
+
+- name: Dyuman Aditya
+  affiliation: Ecole Centrale de Nantes, France
+  image: https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg
+
+- name: Vladimír Kubelka
+  affiliation: Örebro University, Sweden
+  image: https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg
+
+- name: Rudolf Szadkowski
+  affiliation: CTU in Prague
+  image: https://loop.frontiersin.org/images/profile/1009756/203
+
+- name: Martin Magnusson
+  affiliation: Örebro University, Sweden
+  image: https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790
+
+- name: Miloš Prágr
+  affiliation: CTU in Prague
+  image: https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=436,fit=crop,trim=97.2;0;493.2;0/mk30aZBrbGhJDjV5/milos_pragr_960-mv09EaQxO9hkX858.jpg
+
+- name: Konstantinos Alexis
+  affiliation: NTNU
+  image: https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85
+
+- name: Tomasz Kucner
+  affiliation: Aalto University, Finland
+  image: https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg
+
+- name: Piotr Kicki
+  affiliation: Poznan University of Technology, Poland
+  image: https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno

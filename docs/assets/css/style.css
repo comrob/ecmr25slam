@@ -953,6 +953,111 @@ html {
   visibility: visible;
 }
 
+
+/* --- Styles for Expandable Schedule Details --- */
+.details-toggle-btn {
+  background-color: transparent;
+  border: 1px solid var(--gray);
+  color: var(--dark-gray);
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  transition: all 0.2s ease;
+}
+
+.details-toggle-btn:hover {
+  background-color: var(--gray);
+  color: var(--dark-color);
+}
+
+.details-toggle-btn i {
+  margin-right: 6px;
+}
+
+.expandable-details {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.02);
+  border-radius: 5px;
+  font-size: 0.95rem;
+  border-left: 3px solid var(--primary-color);
+}
+
+/* --- Styles for Default Avatars and Paper List --- */
+
+/* Style for the default placeholder avatar */
+.speaker-avatar.default-avatar {
+  background-color: #e9ecef;
+  color: #adb5bd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+/* Styling for the paper list inside the expandable details */
+/* --- Improved Layout for Accepted Papers List --- */
+
+/* The main list container */
+.paper-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Each paper entry will be a flex container */
+.paper-entry {
+  display: flex;
+  align-items: flex-start; /* Align items to the top */
+  gap: 1rem;               /* Space between time and details */
+  padding: 1rem 0;
+  border-bottom: 1px solid var(--gray);
+}
+
+.paper-entry:last-child {
+  border-bottom: none;
+}
+
+/* The time column on the left */
+.paper-time {
+  flex-shrink: 0; /* Prevent this column from shrinking */
+  width: 85px;    /* Give it a fixed width for alignment */
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+/* The details column on the right */
+.paper-details {
+  flex-grow: 1; /* Allow this to take up the remaining space */
+}
+
+/* Author is now a block, taking up the first line */
+.paper-author {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 0.25rem;
+}
+
+/* Title is a block, taking up the second line */
+.paper-title {
+  display: block;
+  font-style: italic;
+  color: #6c757d;
+  line-height: 1.4;
+}
+
+/* A smaller version of the online badge */
+.online-badge.small {
+  font-size: 0.65rem;
+  padding: 2px 6px;
+  vertical-align: middle;
+  margin-left: 5px;
+}
+
 /* --- Styles for Dataset Cards --- */
 
 .dataset-grid {

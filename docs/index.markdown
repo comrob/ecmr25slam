@@ -276,6 +276,10 @@ contact-email: hulchvse@student.cvut.cz
         <div>
             <span class="date-label"><strong>10:15–10:30</strong></span>
             <span class="date-value">Competition Presentation</span>
+            <button class="details-toggle-btn" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
+            <div class="expandable-details" style="display: none;">
+                {{ site.data.schedule_details.competition_presentation }}
+            </div>
         </div>
         <div class="schedule-speakers">
             <img class="speaker-avatar" src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}" alt="Vsevolod Hulchuk">
@@ -303,6 +307,27 @@ contact-email: hulchvse@student.cvut.cz
         <div>
             <span class="date-label"><strong>11:40–13:00</strong></span>
             <span class="date-value">Accepted Papers</span>
+            <button class="details-toggle-btn" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> View Papers</button>
+            <div class="expandable-details" style="display: none;">
+                <ul class="paper-list">
+                    {% for paper in site.data.papers %}
+                    <li class="paper-entry">
+                        <span class="paper-time">{{ paper.time }}</span>
+                        <strong class="paper-author">
+                            {{ paper.author }}
+                            {% if paper.online %}<span class="online-badge small">online</span>{% endif %}
+                        </strong>
+                        <em class="paper-title">{{ paper.title }}</em>
+                    </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+        <div class="schedule-speakers">
+            <div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div>
+            <div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div>
+            <div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div>
+            <div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div>
         </div>
     </li>
     <li class="event-break lunch">
@@ -341,6 +366,10 @@ contact-email: hulchvse@student.cvut.cz
         <div>
             <span class="date-label"><strong>16:15–16:50</strong></span>
             <span class="date-value">World Cafe Discussion</span>
+            <button class="details-toggle-btn" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
+            <div class="expandable-details" style="display: none;">
+                {{ site.data.schedule_details.world_cafe }}
+            </div>
         </div>
     </li>
     <li class="event-speech event-organization">
@@ -387,86 +416,28 @@ contact-email: hulchvse@student.cvut.cz
 
 <h2 id="organizers"></h2>
 <section id="organizers-section">
-    <h2>Organizers</h2>
+    <h2 id="organizers">Organizers</h2>
 
     <div class="image-info-grid">
+        {% for organizer in site.data.organizers %}
         <div class="image-info-card">
-            <img src="{{ 'https://media.licdn.com/dms/image/v2/D4E03AQE5MzRZjq0poQ/profile-displayphoto-shrink_800_800/B4EZR1EgpCHMAg-/0/1737130904524?e=1756339200&v=beta&t=qO6kKkLkiYI-hRuQ-_dbHWKujQ8G5imRT7r8Unh5Ljw' | absolute_url }}">
+            <img src="{{ organizer.image | absolute_url }}">
             <div class="card-content">
                 <div>
-                    <strong>Vsevolod Hulchuk</strong>
-                    <span class="organizer-badge">Primary Organizer</span>
-                    <p class="affiliation">CTU in Prague</p>
+                    <strong>{{ organizer.name }}</strong>
+                    {% if organizer.primary %}
+                        <span class="organizer-badge">Primary Organizer</span>
+                    {% endif %}
+                    <p class="affiliation">{{ organizer.affiliation }}</p>
                 </div>
-                <a href="mailto:hulchvse@student.cvut.cz?subject=ECMR%20SLAM%20Workshop%20-%20contact%20organizers" class="contact-button">
+                {% if organizer.contact_email %}
+                <a href="mailto:{{ organizer.contact_email }}?subject=ECMR%20SLAM%20Workshop%20-%20contact%20organizers" class="contact-button">
                     <i class="fa-solid fa-envelope"></i> Contact
                 </a>
+                {% endif %}
             </div>
         </div>
-
-        <div class="image-info-card">
-            <img src="{{ 'https://apps.unimi.it/ws/chiedove/media/image/matteo_luperto' | absolute_url }}">
-            <div class="card-content">
-                <strong>Matteo Luperto</strong>
-                <span class="affiliation">University of Milano, Italy</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://dyumanaditya.github.io/assets/img/prof_pic_square.jpg' | absolute_url }}">
-            <div class="card-content">
-                <strong>Dyuman Aditya</strong>
-                <span class="affiliation">Ecole Centrale de Nantes, France</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://intranet.fel.cvut.cz/cz/vv/doktorandi/success-stories/kubelka-vladimir.jpg' | absolute_url }}">
-            <div class="card-content">
-                <strong>Vladimír Kubelka</strong>
-                <span class="affiliation">Örebro University, Sweden</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://loop.frontiersin.org/images/profile/1009756/203' | absolute_url }}">
-            <div class="card-content">
-                <strong>Rudolf Szadkowski</strong>
-                <span class="affiliation">CTU in Prague</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://d2gjqh9j26unp0.cloudfront.net/profilepic/d060e44c62b00db17a5c2c49df3c7790' | absolute_url }}">
-            <div class="card-content">
-                <strong>Martin Magnusson</strong>
-                <span class="affiliation">Örebro University, Sweden</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://assets.zyrosite.com/cdn-cgi/image/format=auto,w=400,h=436,fit=crop,trim=97.2;0;493.2;0/mk30aZBrbGhJDjV5/milos_pragr_960-mv09EaQxO9hkX858.jpg' | absolute_url }}">
-            <div class="card-content">
-                <strong>Miloš Prágr</strong>
-                <span class="affiliation">CTU in Prague</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://backends.it.ntnu.no/user-profile-service/rest/files/9f9c50f3-1be4-3823-a318-e8e53ab77d85' | absolute_url }}">
-            <div class="card-content">
-                <strong>Konstantinos Alexis</strong>
-                <span class="affiliation">NTNU</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://acris.aalto.fi/ws/portalfiles/portal/76318204/Aalto_University_Professor_Tomasz_Kucner_02_11_2021_by_Jaakko_Kahilaniemi_2_Croped_Shrinked.jpg' | absolute_url }}">
-            <div class="card-content">
-                <strong>Tomasz Kucner</strong>
-                <span class="affiliation">Aalto University, Finland</span>
-            </div>
-        </div>
-        <div class="image-info-card">
-            <img src="{{ 'https://media.licdn.com/dms/image/v2/C5603AQEQNmWXEiw2xg/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1575420051107?e=2147483647&v=beta&t=2GYNTpoL-0PcFxd1f58ebz0JF_9MRFNVfmlFM9aLnno' | absolute_url }}">
-            <div class="card-content">
-                <strong>Piotr Kicki</strong>
-                <span class="affiliation">Poznan University of Technology, Poland</span>
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <br/>
     <hr>

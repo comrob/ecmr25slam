@@ -1,0 +1,19 @@
+- time: "11:40-12:00"
+  author: "Sai Puneeth Gottam"
+  title: "“Good Deep Feature to Track: Self-Supervised Feature Extraction and Tracking in Visual Odometry”"
+  online: true
+
+- time: "12:00-12:20"
+  author: "Aaron Kurda"
+  title: "“Reducing Drift of Lidar Odometry by Incorporating OpenStreetMap Building Data”"
+  online: false
+
+- time: "12:20-12:40"
+  author: "Abdel-Raouf Dannaoui"
+  title: "“When and Where Localization Fails: An Analysis of the Iterative Closest Point in Evolving Environment”"
+  online: false
+
+- time: "12:40-13:00"
+  author: "Dyuman Aditya"
+  title: "“Robust Localization, Mapping, and Navigation for Quadruped Robots”"
+  online: false

@@ -71,3 +71,12 @@ document.addEventListener("DOMContentLoaded", function () {
   // Re-set the height if the window is resized
   window.addEventListener("resize", setHeaderHeight);
 });
+
+// Add this function inside your existing <script> tag
+function toggleDetails(button) {
+  const details = button.nextElementSibling;
+  const isHidden = details.style.display === "none" || details.style.display === "";
+  
+  details.style.display = isHidden ? "block" : "none";
+  button.innerHTML = isHidden ? '<i class="fa-solid fa-minus"></i> Show Less' : '<i class="fa-solid fa-plus"></i> Read More';
+}
