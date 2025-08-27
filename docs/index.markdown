@@ -250,48 +250,55 @@ contact-email: hulchvse@student.cvut.cz
 
 <p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml?gid=764812166&single=true" target="_blank">View the detailed schedule here.</a></strong></p>
 
+<section id="program-section">
+<h2 id="program">Program</h2>
+<div class="section-intro">
+<p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
+
+<p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml?gid=764812166&single=true" target="_blank">View the detailed schedule here.</a></strong></p>
+
 <ul class="date-list">
-    <li class="event-speech">
+    <li class="event-speech event-organization">
         <span class="date-label"><strong>09:00–09:10</strong></span>
         <span class="date-value">Welcome</span>
     </li>
-    <li class="event-speech">
+    <li class="event-speech event-invited">
         <span class="date-label"><strong>09:10–10:15</strong></span>
         <span class="date-value">Invited Speakers 1</span>
     </li>
-    <li class="event-speech">
+    <li class="event-speech event-organization">
         <span class="date-label"><strong>10:15–10:30</strong></span>
         <span class="date-value">Competition Presentation</span>
     </li>
-    <li class="event-break">
+    <li class="event-break event-coffee">
         <span class="date-label"><strong>10:30–11:00</strong></span>
         <span class="date-value">Coffee Break</span>
     </li>
-    <li class="event-speech">
+    <li class="event-speech event-invited">
         <span class="date-label"><strong>11:00–11:40</strong></span>
         <span class="date-value">Invited Speaker 2</span>
     </li>
-    <li class="event-speech">
+    <li class="event-speech event-accepted">
         <span class="date-label"><strong>11:40–13:00</strong></span>
         <span class="date-value">Accepted Papers</span>
     </li>
-    <li class="event-break">
+    <li class="event-break lunch">
         <span class="date-label"><strong>13:00–14:00</strong></span>
         <span class="date-value">Lunch Break</span>
     </li>
-    <li class="event-speech">
+    <li class="event-speech event-invited">
         <span class="date-label"><strong>14:00–15:30</strong></span>
         <span class="date-value">Invited Speakers 3</span>
     </li>
-    <li class="event-poster">
+    <li class="event-poster coffee">
         <span class="date-label"><strong>15:30–16:15</strong></span>
         <span class="date-value">Coffee Break & Poster Session</span>
     </li>
-    <li class="event-poster">
+    <li class="event-poster event-networking">
         <span class="date-label"><strong>16:15–16:50</strong></span>
         <span class="date-value">World Cafe Discussion</span>
     </li>
-    <li class="event-speech">
+    <li class="event-speech event-organization">
         <span class="date-label"><strong>16:50–17:05</strong></span>
         <span class="date-value">Closing Remarks</span>
     </li>

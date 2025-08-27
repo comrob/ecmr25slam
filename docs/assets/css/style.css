@@ -822,35 +822,60 @@ pre {
 /* This section provides soft, distinct background colors for each event type. */
 
 /* Speeches and Presentations 🎤 */
-li.event-speech {
-  background-color: #eef7ff; /* Soft Blue */
-  border-color: #dbeafe;
-}
+/* --- Schedule Coloring to Match Screenshot --- */
+
+/* Peach/Tan: For all talks and main sessions */
+
 li.event-speech .date-value::before {
-    content: '🎤';
+  content: '🎤 '; 
 }
 
-/* Poster/Competition Sessions 📌 */
+li.event-speech.event-organization {
+  background-color: #fdefeb; 
+}
+
+li.event-invited {
+  background-color: #ddf4ff; 
+}
+
+li.event-accepted {
+  background-color: #eaffdb; 
+}
+
+li.event
+
+/* Blue: For the Competition Presentation */
+li.event-competition {
+  background-color: #e2eef7;
+}
+
+/* Lavender: For posters and interactive discussions */
 li.event-poster {
-  background-color: #fff4e6; /* Soft Orange */
-  border-color: #ffe8cc;
-}
-li.event-poster .date-value::before {
-    content: '📌';
+  background-color: #efe1ff;
 }
 
-/* Breaks (Coffee, Lunch) ☕ */
+/* Green: For all breaks (coffee, lunch) */
 li.event-break {
-  background-color: #e9f5ee; /* Soft Green */
-  border-color: #d1e7dd;
-}
-li.event-break .date-value::before {
-    content: '☕';
+  background-color: #fffdfd;
 }
 
-/* Optional class for a different lunch icon */
+
 li.event-break.lunch .date-value::before {
-    content: '🍽️';
+    content: '🍽️ '; /* The space adds nice padding after the emoji */
+    margin-right: 4px;
+}
+
+li.event-coffee .date-value::before {
+    content: '☕ '; /* The space adds nice padding after the emoji */
+    margin-right: 4px;
+}
+li.event-poster.event-networking .date-value::before {
+    content: '🌍 '; /* globe emoji */
+    margin-right: 4px;
+}
+li.event-poster .date-value::before { 
+  content: '📌 ';
+  margin-right: 4px;
 }
 
 /* --- Styles for Dataset Cards --- */
