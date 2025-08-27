@@ -43,8 +43,8 @@ contact-email: hulchvse@student.cvut.cz
 
     <div class="about-features-grid">
         <div class="feature-card">
-            <h4><i class="fa-solid fa-trophy"></i> SLAM Competition</h4>
-            <p>A competition to benchmark new methods on unique datasets from quadruped and wheeled robots.</p>
+            <h4><i class="fa-solid fa-trophy"></i> SLAM Benchmark</h4>
+            <p>We will present our SLAM auto-evaluation benchmark, designed for challenging private datasets.</p>
         </div>
         <div class="feature-card">
             <h4><i class="fa-solid fa-scroll"></i> Call for Papers</h4>
@@ -64,23 +64,27 @@ contact-email: hulchvse@student.cvut.cz
     <hr>
 </section>
 
+
 <h2 id="important-dates"></h2>
 <section id="dates-section">
 <h2>Important Dates</h2>
 <div class="section-intro">
     <ul class="date-list">
-        <li>
+        <li class="passed">
             <span class="date-label">Paper submission deadline:</span>
             <span class="date-value"><strong>August 20, 2025</strong></span>
         </li>
+        
+        <li class="passed">
+            <span class="date-label">Notification of acceptance:</span>
+            <span class="date-value"><strong>August 28, 2025</strong></span>
+        </li>
+
         <li>
             <span class="date-label">Competition deadline:</span>
             <span class="date-value"><strong>August 28, 2025</strong></span>
         </li>
-        <li>
-            <span class="date-label">Notification of acceptance:</span>
-            <span class="date-value"><strong>August 28, 2025</strong></span>
-        </li>
+
         <li>
             <span class="date-label">Workshop Day:</span>
             <span class="date-value"><strong>September 2, 2025</strong></span>
@@ -89,42 +93,7 @@ contact-email: hulchvse@student.cvut.cz
 </div>
 
 <div class="countdown-timer" id="countdown"></div>
-
-<br/>
-<hr>
-
 </section>
-
-<script>
-  // Set the date we're counting down to (August 28, 2025)
-  const countDownDate = new Date("Aug 28, 2025 23:59:59").getTime();
-
-  // Update the count down every 1 second
-  const x = setInterval(function() {
-    const now = new Date().getTime();
-    const distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result in the element with id="countdown"
-    document.getElementById("countdown").innerHTML = `
-      <div><span>${days}</span><p>Days</p></div>
-      <div><span>${hours}</span><p>Hours</p></div>
-      <div><span>${minutes}</span><p>Minutes</p></div>
-      <div><span>${seconds}</span><p>Seconds</p></div>
-    `;
-
-    // If the count down is finished, write some text
-    if (distance < 0) {
-      clearInterval(x);
-      document.getElementById("countdown").innerHTML = "<h3>The deadline has passed!</h3>";
-    }
-  }, 1000);
-</script>
 
 <h2 id="competition"></h2>
 <section id="competition-section">
@@ -194,13 +163,12 @@ contact-email: hulchvse@student.cvut.cz
 
 <h2 id="call-for-papers"></h2>
 <section id="call-for-papers-section">
-    <h2>Call for Papers & Speakers</h2>
+    <h2 id="call-for-papers">Submissions & Presentations</h2>
 
     <div class="cfp-container">
-
         <div class="cfp-topics-column">
             <h3><i class="fa-solid fa-lightbulb"></i> Submission Topics</h3>
-            <p>We invite submissions of novel contributions (up to 4 pages) on topics including, but not limited to:</p>
+            <p>The call for papers invited contributions on topics including, but not limited to:</p>
             <ul>
                 <li>3D LiDAR-centered SLAM under perceptual degradation</li>
                 <li>Radar-based SLAM and sensor fusion</li>
@@ -209,32 +177,27 @@ contact-email: hulchvse@student.cvut.cz
                 <li>Robust back-end optimization</li>
                 <li>Benchmarks, datasets, and metrics</li>
             </ul>
-            <p>Late-breaking results and extended abstracts of recent work are welcome.</p>
         </div>
 
         <div class="cfp-submission-info-column">
-            <h3><i class="fa-solid fa-file-arrow-up"></i> Author Guidelines</h3>
-            <p>Submit an extended abstract (up to 4 pages, incl. references) in IEEE conference format to our chairs.</p>
+            <h3><i class="fa-solid fa-file-arrow-up"></i> Presentation Guidelines</h3>
+            <p>The Call for Papers is <strong>now closed</strong>. Thank you to everyone who submitted. Accepted papers will be made available on this website after the workshop.</p>
             
-            <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation & Publication</h4>
-            <p>Accepted papers will be presented in a dual format: an oral presentation (15 minutes) and a poster session in Padova. For authors presenting remotely, we are happy to accommodate the <strong>online presentation</strong> (talk only).</p>
-            <p>The workshop will not have archival proceedings, and accepted papers will be made available on the workshop website.</p>
+            <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation Formats</h4>
+            <ul>
+                <li><strong>Accepted Papers:</strong> Oral presentations are scheduled for <strong>15 minutes, followed by a 5-minute Q&A</strong>. In-person presenters are also required to prepare a poster for the interactive sessions.</li>
+                <li><strong>Invited Talks:</strong> Talks are scheduled for <strong>30 minutes, including Q&A</strong>. This may be adjusted by contacting the organizers.</li>
+            </ul>
+            <p>Please see the <a href="#program">Program section</a> for allocated time slots.</p>
             
+            <h4><i class="fa-solid fa-headset"></i> Guidelines for Online Presenters</h4>
+            <p>Online speakers will be provided with a camera overview of the audience. We kindly ask that you be ready <strong>15 minutes before</strong> your scheduled time slot to ensure smooth schedule flow.</p>
+
             <div class="cta-button-wrapper">
-                <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Paper Submission" class="cta-button">
-                    Submit Your Paper
+                <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Late Inquiry" class="cta-button inactive">
+                    Submissions Closed (Contact)
                 </a>
             </div>
-        </div>
-    </div>
-
-    <div class="speaker-call-prompt">
-        <h3><i class="fa-solid fa-star"></i> Call for Invited Speakers</h3>
-        <p>Are you a senior researcher or industry expert with significant experience in robust SLAM? We invite you to share your work as an invited speaker. Both in-person and online talks (30 minutes) are feasible. Please contact us to propose a talk.</p>
-        <div class="cta-button-wrapper">
-             <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Speaker Proposal" class="cta-button secondary">
-                Propose a Talk
-            </a>
         </div>
     </div>
     

@@ -188,6 +188,12 @@ main > hr {
   margin-right: 6px;
 }
 
+/* Style for deadlines that have passed */
+.date-list li.passed {
+  color: #9ca3af; /* A muted gray color */
+  text-decoration: line-through;
+  opacity: 0.8;
+}
 
 @media (min-width: 769px) {
   
@@ -207,4 +213,17 @@ main > hr {
     padding-left: 0; /* Remove padding if any */
   }
 
+}
+
+/* Style for buttons whose deadline has passed but are still contact links */
+.cta-button.inactive {
+  background-color: #e5e7eb; /* Light gray */
+  border-color: #e5e7eb;
+  color: #6b7280;          /* Muted text color */
+  cursor: help;             /* Changes cursor to a question mark */
+}
+
+.cta-button.inactive:hover {
+  background-color: #d1d5db; /* Slightly darker on hover */
+  color: #4b5563;
 }
