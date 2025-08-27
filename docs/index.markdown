@@ -314,7 +314,10 @@ contact-email: hulchvse@student.cvut.cz
             </div>
         </div>
         <div class="schedule-speakers">
-            <div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div><div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div><div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div><div class="speaker-avatar default-avatar"><i class="fa-solid fa-user"></i></div>
+            <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
+            <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
+            <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
+            <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
         </div>
     </li>
     <li class="event-break lunch">
