@@ -188,3 +188,75 @@ section:nth-of-type(even) {
   width: 100%;
   height: 400px;
 }
+
+/* --- Program Section Intro Box --- */
+
+#program-section .section-intro {
+  max-width: 800px;            /* Constrain width for readability */
+  margin: 0 auto 2.5rem auto;  /* Center the box and add space below it */
+  padding: 1.5rem 2rem;
+  background-color: #f8f9fa;   /* A very light gray background */
+  border-radius: var(--border-radius);
+  text-align: center;
+}
+
+/* Style the text inside the box */
+#program-section .section-intro p {
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+/* Style the link inside the box */
+#program-section .section-intro a {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+#program-section .section-intro a:hover {
+  text-decoration: underline;
+}
+
+/* --- Restyled Submissions/Presenter Info Section --- */
+
+/* Use flexbox for a main content area and a sidebar */
+#submissions-section .cfp-container {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+}
+
+/* Main column takes up more space */
+#submissions-section .cfp-main-column {
+  flex: 3; /* Give this column 3 units of space */
+}
+
+/* Sidebar takes up less space and is styled like a card */
+#submissions-section .cfp-sidebar {
+  flex: 2; /* Give this column 2 units of space */
+  background-color: #f8f9fa;
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border: 1px solid #eee;
+}
+
+/* General styling for headings and lists in this section */
+#submissions-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+}
+
+#submissions-section h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 0.75rem;
+}
+
+#submissions-section ul {
+  padding-left: 20px;
+  line-height: 1.8;
+}
+
+#submissions-section .cta-button-wrapper {
+  margin-top: 1.5rem;
+}

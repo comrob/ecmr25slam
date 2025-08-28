@@ -243,3 +243,67 @@ document.addEventListener('DOMContentLoaded', () => {
   highlightCurrentEvent(); // Run once on load
   setInterval(highlightCurrentEvent, 60000); // Update every minute
 });
+
+// --- Scrollspy for Active Navigation Link (Final Version for Sibling Sections) ---
+
+// --- Scrollspy for Active Navigation Link (Definitive Version) ---
+
+window.onload = () => {
+  const navLinks = document.querySelectorAll("header nav a[href^='#']");
+  const header = document.querySelector("header");
+
+  if (!header) {
+    console.error("Scrollspy Error: Header element not found.");
+    return;
+  }
+
+  const sectionsToObserve = Array.from(navLinks).map(link => {
+    const targetId = link.getAttribute("href");
+    const anchorElement = document.querySelector(targetId);
+    const section = anchorElement ? anchorElement.nextElementSibling : null;
+    
+    if (section && section.tagName === 'SECTION') {
+      return { link: link, section: section };
+    }
+    return null;
+  }).filter(item => item);
+
+  // If there are no sections, stop the script.
+  if (sectionsToObserve.length === 0) {
+    console.warn("Scrollspy Warning: No sections found to observe.");
+    return; 
+  }
+
+  // ✅ NEW: Get a reference to the very last navigation link
+  const lastNavLink = sectionsToObserve[sectionsToObserve.length - 1].link;
+
+  const highlightNavOnScroll = () => {
+    const scrollY = window.scrollY;
+    let activeLink = null;
+
+    sectionsToObserve.forEach(item => {
+      const sectionTop = item.section.offsetTop - header.offsetHeight - 20;
+      if (scrollY >= sectionTop) {
+        activeLink = item.link;
+      }
+    });
+
+    // ✅ NEW: SPECIAL CASE for the bottom of the page
+    // If the user's viewport is at the very bottom, force the last link to be active.
+    const atBottom = (window.innerHeight + scrollY) >= document.documentElement.scrollHeight - 2; // 2px buffer
+    if (atBottom) {
+      activeLink = lastNavLink;
+    }
+
+    navLinks.forEach(link => {
+      if (link === activeLink) {
+        link.classList.add("active");
+      } else {
+        link.classList.remove("active");
+      }
+    });
+  };
+
+  window.addEventListener("scroll", highlightNavOnScroll);
+  highlightNavOnScroll();
+};

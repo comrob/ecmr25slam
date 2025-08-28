@@ -26,13 +26,12 @@
     <nav>
         <ul>
         {% for item in navigation %}
-        {% assign it = item | downcase | replace: " ", "-" %}
-        <li><a href="#{{ it }}" class="
-                {% if item == 'Important dates' %} highlight {% endif %}
-                ">
-            {{ item }}
-            </a>
-        </li>
+            {% assign it = item | downcase | replace: " ", "-" %}
+            <li>
+                <a href="#{{ it }}" class="{% if item == 'Program' %}cta-nav-button{% endif %}">
+                    {{ item }}
+                </a>
+            </li>
         {% endfor %}
         </ul>
     </nav>

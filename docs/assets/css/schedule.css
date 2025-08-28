@@ -130,7 +130,7 @@
   background-color: rgba(0,0,0,0.02);
   border-radius: 5px;
   font-size: 0.95rem;
-  border-left: 3px solid var(--primary-color);
+  border-left: 3px solid rgba(0, 122, 204, 0.2);
 }
 
 #program-section .paper-list { list-style: none; padding: 0; margin: 0; }

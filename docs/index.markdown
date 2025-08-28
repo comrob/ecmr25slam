@@ -3,13 +3,12 @@ layout: event
 title: ECMR Workshop 2025
 logo: images/home-logo.png
 permlink: /ecmr-workshop-2025
-navigation: About;Important dates;Competition;Submissions;Program;Organizers;Venue and location
+navigation: About;Important dates;Competition;Presenter Info;Program;Organizers;Venue and location
 logos: https://www.cvut.cz/,images/logo_ctu.jpg
 contact: Vsevolod Hulchuk
 contact-email: hulchvse@student.cvut.cz
 ---
 <head>
-  <link rel="stylesheet" href="assets/css/custom.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <div class="hero-section">
@@ -147,13 +146,27 @@ contact-email: hulchvse@student.cvut.cz
     <br/><hr>
 </section>
 
-<h2 id="submissions"></h2>
+<h2 id="presenter-info"></h2>
 <section id="submissions-section">
-    <h2>Submissions and Presentations</h2>
+    <h2>Presenter Information</h2>
     <div class="cfp-container">
-        <div class="cfp-topics-column">
-            <h3><i class="fa-solid fa-lightbulb"></i> Submission Topics</h3>
-            <p>The call for papers invited contributions on topics including, but not limited to:</p>
+
+        <div class="cfp-main-column">
+            <h3><i class="fa-solid fa-file-arrow-up"></i> Presentation Guidelines</h3>
+            
+            <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation Formats</h4>
+            <ul>
+                <li><strong>Accepted Papers:</strong> Oral presentations are scheduled for <strong>15 minutes, followed by a 5-minute Q&A</strong>. In-person presenters are also required to prepare a poster for the interactive sessions.</li>
+                <li><strong>Invited Talks:</strong> Talks are scheduled for <strong>30 minutes, including Q&A</strong>. This may be adjusted by contacting the organizers.</li>
+            </ul>
+
+            <h4><i class="fa-solid fa-circle-info"></i> General Instructions</h4>
+            <p>Please see the <a href="#program">Program section</a> for your allocated time slot. Online speakers will be provided with a camera overview of the audience. We kindly ask that you be ready <strong>15 minutes before</strong> your scheduled time to test your connection and setup.</p>
+        </div>
+
+        <div class="cfp-sidebar">
+            <h4><i class="fa-solid fa-lightbulb"></i> Submission Topics</h4>
+            <p>The call for papers invited contributions on topics including:</p>
             <ul>
                 <li>3D LiDAR-centered SLAM under perceptual degradation</li>
                 <li>Radar-based SLAM and sensor fusion</li>
@@ -162,24 +175,13 @@ contact-email: hulchvse@student.cvut.cz
                 <li>Robust back-end optimization</li>
                 <li>Benchmarks, datasets, and metrics</li>
             </ul>
-        </div>
-        <div class="cfp-submission-info-column">
-            <h3><i class="fa-solid fa-file-arrow-up"></i> Presentation Guidelines</h3>
-            <p>The Call for Papers is <strong>now closed</strong>. Thank you to everyone who submitted. Accepted papers will be made available on this website after the workshop.</p>
-            <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation Formats</h4>
-            <ul>
-                <li><strong>Accepted Papers:</strong> Oral presentations are scheduled for <strong>15 minutes, followed by a 5-minute Q&A</strong>. In-person presenters are also required to prepare a poster for the interactive sessions.</li>
-                <li><strong>Invited Talks:</strong> Talks are scheduled for <strong>30 minutes, including Q&A</strong>. This may be adjusted by contacting the organizers.</li>
-            </ul>
-            <p>Please see the <a href="#program">Program section</a> for allocated time slots.</p>
-            <h4><i class="fa-solid fa-headset"></i> Guidelines for Online Presenters</h4>
-            <p>Online speakers will be provided with a camera overview of the audience. We kindly ask that you be ready <strong>15 minutes before</strong> your scheduled time slot to test your connection and setup.</p>
             <div class="cta-button-wrapper">
                 <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Late Inquiry" class="cta-button inactive">
                     Submissions Closed (Contact)
                 </a>
             </div>
         </div>
+        
     </div>
     <br/><hr>
 </section>
@@ -305,7 +307,7 @@ contact-email: hulchvse@student.cvut.cz
 <section id="organizers-section">
     <h2>Organizers</h2>
     <div class="image-info-grid">
-        {% for organizer in site.data.organizers %}<div class="image-info-card"><img src="{{ organizer.image | absolute_url }}"><div class="card-content"><div><strong>{{ organizer.name }}</strong>{% if organizer.primary %}<span class="organizer-badge">Primary Organizer</span>{% endif %}<p class="affiliation">{{ organizer.affiliation }}</p></div>{% if organizer.contact_email %}<a href="mailto:{{ organizer.contact_email }}?subject=ECMR%20SLAM%20Workshop%20-%20contact%20organizers" class="contact-button"><i class="fa-solid fa-envelope"></i> Contact</a>{% endif %}</div></div>{% endfor %}
+        {% for organizer in site.data.organizers %}<div class="image-info-card"><img src="{{ organizer.image | absolute_url }}" loading="lazy"><div class="card-content"><div><strong>{{ organizer.name }}</strong>{% if organizer.primary %}<span class="organizer-badge">Primary Organizer</span>{% endif %}<p class="affiliation">{{ organizer.affiliation }}</p></div>{% if organizer.contact_email %}<a href="mailto:{{ organizer.contact_email }}?subject=ECMR%20SLAM%20Workshop%20-%20contact%20organizers" class="contact-button"><i class="fa-solid fa-envelope"></i> Contact</a>{% endif %}</div></div>{% endfor %}
     </div>
     <br/><hr>
 </section>

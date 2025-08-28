@@ -1,14 +1,33 @@
+/* --- Modern Flexbox Header --- */
+
 header {
   width: 100%;
-  padding: 1rem 0;
-  /* border-bottom: 1px solid var(--gray); */
+  padding: 1rem 1rem;
+  
+  /* 1. Make the header a flex container */
+  display: flex;
+  justify-content: space-between; /* Pushes logo and nav to opposite ends */
+  align-items: center;            /* This is the key: vertically centers everything */
+}
+
+.logo a {
+  display: flex; /* Helps with alignment */
+  align-items: center;
+}
+
+.logo img {
+  height: 2.5rem; /* A more balanced size for an icon */
+  display: block;   /* Removes extra space below the image */
+}
+
+.logo img:hover {
+  opacity: 0.7;
 }
 
 nav {
-  margin: 0 auto;
+  margin: 0;
   display: flex;
   align-items: center;
-  float: right;
 }
 
 nav ul {
@@ -19,52 +38,84 @@ nav ul {
   text-transform: uppercase;
   text-align: center;
   width: 100%;
+  align-items: center; /* Ensures nav items are centered */
+  gap: 1.5rem; /* Adds consistent spacing between nav items */
 }
 
 nav li {
-  padding-top: 1.2rem;
+  /* The rigid top padding is no longer needed */
 }
 
 nav a {
-  margin: 1em;
-  padding-top: 2rem;
+  /* margin: 1em; DEPRECATED - using gap now */
+  padding: 0.5rem 0; /* Add some vertical padding for a better click area */
   text-decoration: none;
   font-weight: bold;
   color: var(--text-color);
+  border-bottom: 2px solid transparent; /* Prepare for a cleaner active state */
+  transition: color 0.2s;
 }
 
 nav a.highlight {
   color: var(--primary-color);
 }
 
-nav a.active {
-  border-bottom: 1px solid var(--primary-color);
+nav a.active,
+nav a:hover {
+  color: var(--primary-color);
+  border-bottom-color: var(--primary-color); /* An underline appears on hover/active */
 }
 
-nav a:hover{
-  opacity: 0.5;
+/* --- Styles for the Nav CTA Button --- */
+a.cta-nav-button {
+  background-color: var(--primary-color);
+  color: white !important;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background-color 0.2s ease;
+  border-bottom: none; /* No underline for the button */
 }
 
-.logo img {
-  height: 4rem;
-  float: left;
+a.cta-nav-button:hover {
+  color: white !important;
+  background-color: var(--secondary-color);
+  transform: scale(1.05);
+  border-bottom: none;
 }
 
-.logo img:hover{
-  opacity: 0.5;
-} 
-
+/* --- Sticky Header & Mobile Toggle --- */
 .sticky {
   position: fixed;
   top: 0;
-  left: 50%;                      /* This moves the header's left edge to the center */
-  transform: translateX(-50%);     /* This shifts the header back by half its own width */
+  left: 50%;
+  transform: translateX(-50%);
   width: 100%;
-  max-width: var(--max-width);      /* Ensures it matches your main content width */
+  max-width: var(--max-width);
   z-index: 100;
   background-color: white;
-  border-bottom: 1px solid var(--dark-color);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
+
 .nav-toggle {
   display: none;
+}
+
+/* Add a subtle shadow when the header is sticky */
+header.sticky {
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the call-to-action button in the nav bar */
+a.cta-nav-button {
+  background-color: var(--primary-color);
+  color: white !important; /* Use important to override other link styles */
+  padding: 8px 16px;
+  border-radius: 5px;
+  margin-top: 0.75rem; /* Adjust vertical alignment */
+  transition: transform 0.2s ease;
+}
+
+a.cta-nav-button:hover {
+  opacity: 1; /* Override the default link hover opacity */
+  transform: scale(1.05);
 }
