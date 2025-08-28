@@ -162,10 +162,10 @@
     padding-left: 0.5rem;
     padding-right: 0.5rem;
   } */
-   #program-section .date-list {
-  margin-left: -0.5rem;
-  margin-right: -0.5rem;
-}
+  #program-section .date-list {
+   margin-left: -0.5rem;
+   margin-right: -0.5rem;
+  }
 
 .schedule-buttons-container {
   display: flex;
@@ -179,6 +179,80 @@
 .expandable-details .paper-list .paper-details {
   padding-left: 0;
   margin-left: 0;
+}
+
+/* ... at the end of the file, but INSIDE the final } of the @media block ... */
+
+/* --- 5. Improved Mobile Schedule Layout --- */
+
+/* Use CSS Grid for the main content of a schedule item */
+#program-section .date-list li > div:first-child {
+  display: grid;
+  grid-template-columns: 80px 1fr; /* 80px column for time, the rest for the title */
+  align-items: center;
+  width: 100%;
+  gap: 0 1rem; /* 1rem gap between columns only */
+}
+
+/* Place the time in the first column */
+#program-section .date-list li .date-label {
+  grid-column: 1 / 2;
+  font-weight: 600; /* Make the time bold */
+}
+
+/* Place the title in the second column */
+#program-section .date-list li .date-value {
+  grid-column: 2 / 3;
+}
+
+/* Place the buttons below the title, in the second column */
+#program-section .date-list li .schedule-buttons-container,
+#program-section .date-list li .details-toggle-btn {
+  grid-column: 2 / 3;
+  margin-left: 0; /* Override the desktop 'auto' margin */
+  margin-top: 0.5rem;
+}
+
+/* Align the speaker avatars to the right on their own line */
+#program-section .schedule-speakers {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end; /* Pushes avatars to the right */
+  padding-top: 0.5rem;
+}
+
+
+/* ... at the end of the file, but INSIDE the final } of the @media block ... */
+
+/* --- 6. Fix for Expanded Details on Mobile --- */
+
+/* Tell the expandable panel to span all columns of its parent's grid */
+#program-section .expandable-details {
+  grid-column: 1 / -1; /* This is the key fix */
+  margin-top: 1rem;
+}
+
+/* Ensure the paper list inside has clean padding */
+#program-section .expandable-details .paper-list {
+  padding-left: 0;
+}
+
+/* Stack content vertically inside the expanded view for better readability */
+#program-section .expandable-details .paper-entry {
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+/* Give the moved avatar some space */
+#program-section .expandable-details .paper-entry > a.is-moved {
+  margin-bottom: 0.5rem;
+}
+
+/* Improve the focus style for all toggle buttons */
+#program-section .details-toggle-btn:focus {
+  outline: none; /* Remove the default orange/blue outline */
+  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.4); /* Add a soft, styled glow */
 }
 
 }

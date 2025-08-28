@@ -180,3 +180,22 @@
   justify-content: flex-end; /* Aligns icons to the right */
   padding-top: 1rem;       /* Adds some space above the icons */
 }
+
+/* --- Tidy Up Schedule Row Layout --- */
+
+/* Turn the main content container into a flexbox */
+#program-section .date-list li > div:first-child {
+  display: flex;
+  align-items: center; /* Vertically align time, title, and buttons */
+  flex-wrap: wrap;     /* Allow items to wrap to the next line if needed */
+  flex-grow: 1;
+  gap: 1rem;           /* Add spacing between items on the same line */
+}
+
+/* This is the container for "Read More" and "Go to Section" buttons */
+.schedule-buttons-container {
+  /* REMOVED margin-left: auto to let it sit next to the title */
+  display: flex;
+  gap: 0.5rem;
+  align-items: center; /* ADDED to vertically align the buttons with each other */
+}
