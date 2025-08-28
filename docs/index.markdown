@@ -198,7 +198,7 @@ contact-email: hulchvse@student.cvut.cz
                 <div>
                     <span class="date-label"><strong>09:10–10:15</strong></span>
                     <span class="date-value">Invited Speakers 1</span>
-                    <button class="details-toggle-btn" data-open-text="View Speakers" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> View Speakers</button>
+                    <button class="details-toggle-btn" data-open-text="Session Breakdown" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
                             {% assign session_speakers = site.data.speakers | where: "session", 1 %}{% for speaker in session_speakers %}<li class="paper-entry" data-speaker-id="{{ speaker.id }}"><span class="paper-time">{{ speaker.time }}</span><div class="paper-details"><strong class="paper-author">{{ speaker.name }} {% if speaker.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">"{{ speaker.topic }}"</em></div></li>{% endfor %}
@@ -230,7 +230,7 @@ contact-email: hulchvse@student.cvut.cz
                 <div>
                     <span class="date-label"><strong>11:00–11:40</strong></span>
                     <span class="date-value">Invited Speaker 2</span>
-                    <button class="details-toggle-btn" data-open-text="View Speaker" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> View Speaker</button>
+                    <button class="details-toggle-btn" data-open-text="Session Breakdown" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
                             {% assign session_speakers = site.data.speakers | where: "session", 2 %}{% for speaker in session_speakers %}<li class="paper-entry" data-speaker-id="{{ speaker.id }}"><span class="paper-time">{{ speaker.time }}</span><div class="paper-details"><strong class="paper-author">{{ speaker.name }}</strong><em class="paper-title">"{{ speaker.topic }}"</em></div></li>{% endfor %}
@@ -245,7 +245,7 @@ contact-email: hulchvse@student.cvut.cz
                 <div>
                     <span class="date-label"><strong>11:40–13:00</strong></span>
                     <span class="date-value">Accepted Papers</span>
-                    <button class="details-toggle-btn" data-open-text="View Papers" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> View Papers</button>
+                    <button class="details-toggle-btn" data-open-text="View Papers" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
                             {% for paper in site.data.papers %}<li class="paper-entry"><span class="paper-time">{{ paper.time }}</span><div class="paper-details"><strong class="paper-author">{{ paper.author }} {% if paper.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">{{ paper.title }}</em></div></li>{% endfor %}
@@ -266,7 +266,7 @@ contact-email: hulchvse@student.cvut.cz
                 <div>
                     <span class="date-label"><strong>14:00–15:30</strong></span>
                     <span class="date-value">Invited Speakers 3</span>
-                    <button class="details-toggle-btn" data-open-text="View Speakers" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> View Speakers</button>
+                    <button class="details-toggle-btn" data-open-text="Session Breakdown" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
                             {% assign session_speakers = site.data.speakers | where: "session", 3 %}{% for speaker in session_speakers %}<li class="paper-entry" data-speaker-id="{{ speaker.id }}"><span class="paper-time">{{ speaker.time }}</span><div class="paper-details"><strong class="paper-author">{{ speaker.name }} {% if speaker.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">"{{ speaker.topic }}"</em></div></li>{% endfor %}
