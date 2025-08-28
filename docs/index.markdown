@@ -298,7 +298,36 @@ contact-email: hulchvse@student.cvut.cz
     <br/>
     <h3>Invited speakers</h3>
     <div class="image-info-grid small">
-        {% assign sorted_speakers = site.data.speakers | sort: "order" %}{% for speaker in sorted_speakers %}<div id="{{ speaker.id }}" class="image-info-card"><img src="{{ speaker.image | absolute_url }}"><div class="card-content"><strong>{{ speaker.name }} {% if speaker.online %}<span class="online-badge">online</span>{% endif %}</strong><span class="affiliation">{{ speaker.affiliation }}</span><i>Topic: "{{ speaker.topic }}"</i>{% if speaker.abstract %}<button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent === 'Read Abstract' ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button><div class="abstract-content" style="display:none;"><p>{{ speaker.abstract }}</p></div>{% endif %}</div></div>{% endfor %}
+        {% assign sorted_speakers = site.data.speakers | sort: "order" %}
+
+        {% for speaker in sorted_speakers %}
+        <div id="{{ speaker.id }}" class="image-info-card">
+            <img src="{{ speaker.image | absolute_url }}">
+            <div class="card-content">
+                <strong>{{ speaker.name }} 
+                    {% if speaker.online %}
+                    <span class="online-badge">online</span>
+                    {% endif %}
+                </strong>
+                <span class="affiliation">{{ speaker.affiliation }}</span>
+                <i>Topic: "{{ speaker.topic }}"</i>
+                
+                {% if speaker.abstract %}
+                <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.startsWith('Read') ? 'Hide Abstract' : 'Read Abstract';">Read Abstract</button>
+                <div class="abstract-content" style="display:none;">
+                    <p>{{ speaker.abstract }}</p>
+                </div>
+                {% endif %}
+
+                {% if speaker.bio %}
+                <button class="abstract-btn" onclick="this.nextElementSibling.style.display = this.nextElementSibling.style.display === 'none' ? 'block' : 'none'; this.textContent = this.textContent.startsWith('Read') ? 'Hide Bio' : 'Read Bio';">Read Bio</button>
+                <div class="abstract-content" style="display:none;">
+                    <p>{{ speaker.bio | newline_to_br }}</p>
+                </div>
+                {% endif %}
+            </div>
+        </div>
+        {% endfor %}
     </div>
     <br/><hr>
 </section>

@@ -63,6 +63,35 @@
   color: white;
 }
 
+/* Styling for the expanded abstract/bio content */
+.abstract-content {
+  background-color: var(--background-color); /* Corrected: Use your defined variable */
+  border-left: 3px solid var(--primary-color); /* Added for visual consistency */
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0.75rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: var(--text-color);
+}
+
+.abstract-content p {
+  margin-bottom: 0.5rem;
+}
+
+.abstract-content p:last-child {
+  margin-bottom: 0;
+}
+
+.abstract-content a {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+.abstract-content a:hover {
+  text-decoration: none;
+}
+
 .github-button {
   background-color: var(--dark-color);
   color: white;
