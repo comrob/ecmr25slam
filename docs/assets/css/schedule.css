@@ -151,3 +151,32 @@
   box-shadow: 0 0 20px rgba(0, 122, 204, 0.2);
   transform: scale(1.02);
 }
+
+/* --- Styles for Moved Speaker Avatars --- */
+
+/* Make the paper entry a flex container to hold the avatar */
+#program-section .paper-entry {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Space between avatar and text */
+}
+
+/* Style for the avatar link AFTER it's moved */
+#program-section .paper-entry > a {
+  flex-shrink: 0; /* Prevent the avatar from shrinking */
+}
+
+/* Resize the avatar image when it's inside the details panel */
+#program-section .paper-entry .speaker-avatar {
+  width: 48px;
+  height: 48px;
+}
+
+/* --- Styling for Accepted Papers Avatars (Bottom Position) --- */
+
+/* Style the icon container after it's been moved to the bottom */
+.event-accepted .expandable-details > .schedule-speakers {
+  display: flex;
+  justify-content: flex-end; /* Aligns icons to the right */
+  padding-top: 1rem;       /* Adds some space above the icons */
+}

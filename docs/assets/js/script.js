@@ -63,26 +63,89 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Add this function inside your existing <script> tag
 function toggleDetails(clickedButton) {
-  // Go up two levels to the main container div
-  const mainContainer = clickedButton.parentElement.parentElement;
-  // Find the details section within that main container
+  // Find the direct containers for the clicked item
+  const mainContainer = clickedButton.closest('li');
   const targetDetails = mainContainer.querySelector('.expandable-details');
-  
-  // Check if the section we clicked is already open
   const isCurrentlyOpen = targetDetails.style.display === "block";
 
-  // --- Step 1: Close all open sections and reset all buttons ---
-  document.querySelectorAll('.expandable-details').forEach(details => {
-    details.style.display = 'none';
-  });
+  // Check if this is the special "Accepted Papers" section
+  const isAcceptedPapers = mainContainer.classList.contains('event-accepted');
 
-  document.querySelectorAll('.details-toggle-btn').forEach(button => {
-    const openText = button.getAttribute('data-open-text');
-    button.innerHTML = `<i class="fa-solid fa-plus"></i> ${openText}`;
+  // --- Define Avatar Movement Functions ---
+
+  function moveAvatarsIn(container) {
+    const detailsPanel = container.querySelector('.expandable-details');
+    const avatarContainer = container.querySelector('.schedule-speakers');
+    if (!avatarContainer) return;
+
+    const avatars = avatarContainer.querySelectorAll('a[data-speaker-id]');
+    
+    avatars.forEach(avatarLink => {
+      const speakerId = avatarLink.dataset.speakerId;
+      const targetRow = detailsPanel.querySelector(`.paper-entry[data-speaker-id="${speakerId}"]`);
+      if (targetRow) {
+        avatarLink.classList.add('is-moved');
+        targetRow.appendChild(avatarLink); 
+      }
+    });
+  }
+
+  function moveAvatarsOut(container) {
+    const detailsPanel = container.querySelector('.expandable-details');
+    const avatarContainer = container.querySelector('.schedule-speakers');
+    if (!avatarContainer) return;
+
+    const movedAvatars = detailsPanel.querySelectorAll('a.is-moved[data-speaker-id]');
+
+    movedAvatars.forEach(avatarLink => {
+      avatarLink.classList.remove('is-moved');
+      avatarContainer.appendChild(avatarLink);
+    });
+  }
+
+
+  // --- Main Logic ---
+
+  // First, close any OTHER section that is currently open
+  document.querySelectorAll('.expandable-details').forEach(detailsPanel => {
+    if (detailsPanel !== targetDetails && detailsPanel.style.display === 'block') {
+      const openContainer = detailsPanel.closest('li');
+      // Move avatars back for the closing section (handle both cases)
+      if (openContainer.classList.contains('event-accepted')) {
+        const speakersContainer = detailsPanel.querySelector('.schedule-speakers');
+        if (speakersContainer) openContainer.appendChild(speakersContainer);
+      } else {
+        moveAvatarsOut(openContainer);
+      }
+      detailsPanel.style.display = 'none';
+      
+      const button = openContainer.querySelector('.details-toggle-btn');
+      const openText = button.getAttribute('data-open-text');
+      button.innerHTML = `<i class="fa-solid fa-plus"></i> ${openText}`;
+    }
   });
   
-  // --- Step 2: If the section we clicked was closed, open it ---
-  if (!isCurrentlyOpen) {
+  // Now, toggle the CLICKED section
+  if (isCurrentlyOpen) {
+    // Action: CLOSE the clicked section
+    if (isAcceptedPapers) {
+      const speakersContainer = targetDetails.querySelector('.schedule-speakers');
+      if (speakersContainer) mainContainer.appendChild(speakersContainer);
+    } else {
+      moveAvatarsOut(mainContainer);
+    }
+    targetDetails.style.display = 'none';
+    const openText = clickedButton.getAttribute('data-open-text');
+    clickedButton.innerHTML = `<i class="fa-solid fa-plus"></i> ${openText}`;
+  } else {
+    // Action: OPEN the clicked section
+    if (isAcceptedPapers) {
+      const speakersContainer = mainContainer.querySelector('.schedule-speakers');
+      // ✅ CHANGE: Use appendChild to move the icons to the BOTTOM of the section
+      if (speakersContainer) targetDetails.appendChild(speakersContainer);
+    } else {
+      moveAvatarsIn(mainContainer);
+    }
     targetDetails.style.display = 'block';
     clickedButton.innerHTML = '<i class="fa-solid fa-minus"></i> Show Less';
   }
