@@ -247,7 +247,7 @@ contact-email: hulchvse@student.cvut.cz
                 <div>
                     <span class="date-label"><strong>11:40–13:00</strong></span>
                     <span class="date-value">Accepted Papers</span>
-                    <button class="details-toggle-btn" data-open-text="View Papers" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
+                    <button class="details-toggle-btn" data-open-text="Session Breakdown" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
                             {% for paper in site.data.papers %}<li class="paper-entry"><span class="paper-time">{{ paper.time }}</span><div class="paper-details"><strong class="paper-author">{{ paper.author }} {% if paper.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">{{ paper.title }}</em></div></li>{% endfor %}
