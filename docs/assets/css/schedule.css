@@ -1,0 +1,153 @@
+/* --- Program Schedule --- */
+#program-section .date-list {
+    list-style: none;
+    padding: 0;
+    margin: 2rem auto;
+    max-width: 800px;
+}
+
+/* FIX: Changed flexbox model for better alignment */
+#program-section .date-list li {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem; /* Adds space between text and avatars */
+    padding: 1rem 1.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    border: 1px solid transparent;
+    transition: transform 0.2s, box-shadow 0.2s, border-left 0.2s;
+}
+
+/* FIX: This new rule makes the text container grow, pushing avatars to the right */
+#program-section .date-list li > div:first-child {
+    flex-grow: 1;
+}
+
+
+#program-section .date-list li:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.06);
+}
+
+#program-section .date-label {
+    flex-shrink: 0; /* Prevents the time from wrapping */
+    font-weight: 500;
+    color: #4b5563;
+    display: inline-block; /* Helps with alignment */
+    width: 110px;
+}
+
+#program-section .date-value {
+    font-weight: 500;
+    color: #1f2937;
+}
+
+/* --- Color Coding & Icons --- */
+#program-section li.event-organization { background-color: #fdefeb; }
+#program-section li.event-invited { background-color: #ddf4ff; }
+#program-section li.event-accepted { background-color: #eaffdb; }
+#program-section li.event-competition { background-color: #e2eef7; }
+#program-section li.event-poster { background-color: #efe1ff; }
+#program-section li.event-break { background-color: #f9fafb; }
+
+#program-section li.event-speech .date-value::before { content: '🎤 '; }
+#program-section li.event-break.lunch .date-value::before { content: '🍽️ '; margin-right: 4px; }
+#program-section li.event-coffee .date-value::before { content: '☕ '; margin-right: 4px; }
+#program-section li.event-poster.event-networking .date-value::before { content: '🌍 '; margin-right: 4px; }
+#program-section li.event-poster .date-value::before { content: '📌 '; margin-right: 4px; }
+
+/* --- Avatars and Tooltips --- */
+#program-section .schedule-speakers {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0; /* Prevents avatars from wrapping or shrinking */
+}
+
+#program-section .speaker-avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid white;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+#program-section .speaker-avatar:not(:first-child) {
+  margin-left: -12px;
+}
+
+#program-section .schedule-speakers a {
+  position: relative;
+  display: block;
+}
+
+#program-section .schedule-speakers a::before,
+#program-section ul.date-list li[data-tooltip]::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--dark-color, #2c3e50);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.2s, visibility 0.2s;
+  z-index: 100;
+}
+
+#program-section .schedule-speakers a:hover::before,
+#program-section ul.date-list li[data-tooltip]:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* --- Expandable Details & Paper List --- */
+#program-section .details-toggle-btn {
+  background-color: transparent;
+  border: 1px solid var(--gray);
+  color: var(--dark-gray);
+  padding: 4px 10px;
+  font-size: 0.8rem;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 0.75rem;
+  transition: all 0.2s ease;
+}
+#program-section .details-toggle-btn:hover {
+  background-color: var(--gray);
+  color: var(--dark-color);
+}
+#program-section .details-toggle-btn i { margin-right: 6px; }
+
+#program-section .expandable-details {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: rgba(0,0,0,0.02);
+  border-radius: 5px;
+  font-size: 0.95rem;
+  border-left: 3px solid var(--primary-color);
+}
+
+#program-section .paper-list { list-style: none; padding: 0; margin: 0; }
+#program-section .paper-entry {
+  display: flex;
+  padding: 0.75rem 0;
+  border-bottom: 1px dashed var(--gray);
+}
+#program-section .paper-entry:last-child { border-bottom: none; }
+#program-section .paper-time { flex-shrink: 0; width: 85px; font-weight: 600; color: var(--dark-gray); }
+#program-section .paper-details { flex-grow: 1; }
+#program-section .paper-author { display: block; font-weight: 600; margin-bottom: 0.25rem; }
+#program-section .paper-title { display: block; font-style: italic; color: #6c757d; }
+
+/* --- Current Event Highlighting --- */
+#program-section .date-list li.current-event {
+  border-left: 5px solid var(--primary-color);
+  box-shadow: 0 0 20px rgba(0, 122, 204, 0.2);
+  transform: scale(1.02);
+}
