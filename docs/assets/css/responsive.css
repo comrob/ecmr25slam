@@ -11,19 +11,12 @@
     font-size: 0.95rem;
   }
 
-  /* KEY FIX #1: Restore side padding to the main container */
   main {
     margin: 0 !important;
-    padding: 0 1rem !important; /* Add 1rem of side padding back */
+    padding: 0 1rem !important;
     box-shadow: none;
   }
 
-  /* Sections only need vertical padding now */
-  section {
-    padding: 2rem 0;
-  }
-
-  /* Pull specific, full-bleed sections out to the screen edges */
   .hero-section,
   section:nth-of-type(even) {
     margin-left: -1rem;
@@ -31,6 +24,10 @@
     padding-left: 1rem;
     padding-right: 1rem;
     border-radius: 0;
+  }
+
+  section {
+    padding: 2rem 0;
   }
 
   h1, .hero-section h1 { font-size: 2.2rem; }
@@ -91,7 +88,60 @@
   .nav-toggle.open .icon-hamburger { display: none; }
   .nav-toggle.open .icon-close { display: inline; }
 
-  /* --- 3. Content Sections & Grids --- */
+
+  /* --- 3. Program Schedule (New Mobile Layout) --- */
+
+  #program-section .date-list {
+    margin-left: -0.5rem;
+    margin-right: -0.5rem;
+  }
+  
+  #program-section .date-list li {
+    display: block; /* Change from flex to block */
+    padding: 1rem;
+  }
+  
+  /* Row 1: Time */
+  #program-section .date-label {
+    display: block;
+    width: 100%;
+    font-weight: 600;
+  }
+  
+  /* Row 2: Event Title */
+  #program-section .date-value {
+    display: block;
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  /* Row 3: Buttons and Avatars Container */
+  .schedule-buttons-container,
+  .schedule-speakers,
+  #program-section li > div:first-child > .details-toggle-btn {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start; /* This groups items together on the left */
+    align-items: center;
+    gap: 0.75rem; /* This adds a consistent space between each item */
+    width: 100%;
+    margin-top: 1rem;
+  }
+
+  /* Ensure avatars are on the right */
+  .schedule-speakers {
+    margin-left: auto;
+    padding-left: 0;
+  }
+  
+  /* In cases with both buttons AND avatars, stack them */
+  #program-section .date-list li > div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  /* --- 4. Other Sections --- */
 
   .competition-hero {
     height: 300px;
@@ -108,31 +158,17 @@
     height: 200px;
   }
 
-  ul.date-list li {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.75rem;
-  }
-
-  .schedule-speakers {
-    padding-left: 0;
-  }
-
-  .paper-entry {
+  .paper-entry, .event-invited .paper-entry {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+    text-align: left !important; /* Force left align on mobile */
   }
 
   .paper-time {
     width: auto;
   }
   
-  .event-invited .paper-entry {
-    align-items: flex-end;
-    text-align: right;
-  }
-
   .venue-container,
   .cfp-container {
     flex-direction: column;
@@ -142,117 +178,17 @@
     padding-right: 0;
   }
 
-  /* --- 4. Buttons --- */
-
-  /* KEY FIX #2: Make buttons flexible and equal width */
   .hero-buttons {
     display: flex;
     flex-direction: column;
-    align-items: stretch; /* Makes buttons the same width */
+    align-items: stretch;
     gap: 1rem;
   }
   
   .hero-buttons .cta-button {
-    width: 100%; /* Let the button fill the container */
+    width: 100%;
     max-width: none;
-    padding: 15px 10px; /* Generous vertical, smaller horizontal padding */
+    padding: 15px 10px;
     font-size: 1em;
   }
-  /* #program-section {
-    padding-left: 0.5rem;
-    padding-right: 0.5rem;
-  } */
-  #program-section .date-list {
-   margin-left: -0.5rem;
-   margin-right: -0.5rem;
-  }
-
-.schedule-buttons-container {
-  display: flex;
-  flex-wrap: wrap; /* This allows buttons to stack on new lines */
-  gap: 0.5rem;     /* Adds a small space between the buttons */
-  margin-top: 0.75rem; /* Space above the button group */
-}
-
-.expandable-details .paper-list,
-.expandable-details .paper-list .paper-entry,
-.expandable-details .paper-list .paper-details {
-  padding-left: 0;
-  margin-left: 0;
-}
-
-/* ... at the end of the file, but INSIDE the final } of the @media block ... */
-
-/* --- 5. Improved Mobile Schedule Layout --- */
-
-/* Use CSS Grid for the main content of a schedule item */
-#program-section .date-list li > div:first-child {
-  display: grid;
-  grid-template-columns: 80px 1fr; /* 80px column for time, the rest for the title */
-  align-items: center;
-  width: 100%;
-  gap: 0 1rem; /* 1rem gap between columns only */
-}
-
-/* Place the time in the first column */
-#program-section .date-list li .date-label {
-  grid-column: 1 / 2;
-  font-weight: 600; /* Make the time bold */
-}
-
-/* Place the title in the second column */
-#program-section .date-list li .date-value {
-  grid-column: 2 / 3;
-}
-
-/* Place the buttons below the title, in the second column */
-#program-section .date-list li .schedule-buttons-container,
-#program-section .date-list li .details-toggle-btn {
-  grid-column: 2 / 3;
-  margin-left: 0; /* Override the desktop 'auto' margin */
-  margin-top: 0.5rem;
-}
-
-/* Align the speaker avatars to the right on their own line */
-#program-section .schedule-speakers {
-  width: 100%;
-  display: flex;
-  justify-content: flex-end; /* Pushes avatars to the right */
-  padding-top: 0.5rem;
-}
-
-
-/* ... at the end of the file, but INSIDE the final } of the @media block ... */
-
-/* --- 6. Fix for Expanded Details on Mobile --- */
-
-/* Tell the expandable panel to span all columns of its parent's grid */
-#program-section .expandable-details {
-  grid-column: 1 / -1; /* This is the key fix */
-  margin-top: 1rem;
-}
-
-/* Ensure the paper list inside has clean padding */
-#program-section .expandable-details .paper-list {
-  padding-left: 0;
-}
-
-/* Stack content vertically inside the expanded view for better readability */
-#program-section .expandable-details .paper-entry {
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 0.5rem;
-}
-
-/* Give the moved avatar some space */
-#program-section .expandable-details .paper-entry > a.is-moved {
-  margin-bottom: 0.5rem;
-}
-
-/* Improve the focus style for all toggle buttons */
-#program-section .details-toggle-btn:focus {
-  outline: none; /* Remove the default orange/blue outline */
-  box-shadow: 0 0 0 2px rgba(0, 122, 204, 0.4); /* Add a soft, styled glow */
-}
-
 }
