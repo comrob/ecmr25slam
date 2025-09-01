@@ -3,6 +3,12 @@ Webpage for ECMR Workshop 2025:
 
 https://comrob.github.io/ecmr25slam/
 
+## Dependencies
+- Ruby 3.0+
+```bash
+sudo snap install ruby --classic
+```
+
 ## How to run locally
 ```
 cd docs

@@ -19,7 +19,8 @@
   session: 3
   time: "14:00-14:30"
   order: 2
-
+  bio: |
+    Matteo Frosi is a Research Assistant at the Artificial Intelligence and Robotics Laboratory (AIRLab) of Politecnico di Milano, where he also earned his Ph.D. His primary accomplishment lies in the development of versatile and robust Simultaneous Localization and Mapping (SLAM) systems for robots operating in challenging environments. A key achievement has been his success in bridging advanced theory with real-world application, successfully deploying his multi-sensor fusion frameworks (using LiDAR, camera, and radar) in industrial collaborations. These projects have solved critical problems in agricultural automation and autonomous inspection, enabling reliable navigation in unstructured terrain and ensuring long-term autonomy. Beyond this, Matteo actively contributes to the academic community by mentoring Master’s students and disseminating his research at major international conferences.
 - id: speaker-dharmadhikari
   name: Mihir Dharmadhikari
   affiliation: Norwegian University of Science and Technology (NTNU)
@@ -40,6 +41,8 @@
   session: 3
   time: "15:00-15:30"
   order: 3
+  bio: |
+    Johann Laconte's research focuses on mobile robotics and interactions with deformable, ever-changing environments. During his Ph.D., he participated in robotic deployments in unstructured environments like subarctic forests, work that earned him the second prize for the best French Ph.D. thesis in robotics. After postdoctoral research at Norlab and the University of Toronto (ASRL), he is now a Junior Research Chair at INRAE.
 
 - id: speaker-artan
   name: Unal Artan
