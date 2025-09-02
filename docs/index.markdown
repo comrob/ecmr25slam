@@ -192,6 +192,16 @@ contact-email: hulchvse@student.cvut.cz
     <div class="section-intro">
         <p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
         <p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml?gid=764812166&single=true" target="_blank">View the detailed schedule here.</a></strong></p>
+        
+        <div class="zoom-info" style="background-color: #f9f9f9; border-left: 4px solid #007bff; padding: 10px 20px; margin: 15px 0;">
+            <p><strong>Join the workshop online via Zoom:</strong><br>
+            The session will be open from <strong>8:00 AM Rome time</strong>.</p>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li><strong>Meeting Link:</strong> <a href="https://us02web.zoom.us/j/83456735323?pwd=40M3LvQb0nJy1FtQqIF12JhQxLB4w7.1" target="_blank">https://us02web.zoom.us/j/83456735323?pwd=...</a></li>
+                <li><strong>Meeting ID:</strong> 834 5673 5323</li>
+                <li><strong>Passcode:</strong> 298957</li>
+            </ul>
+        </div>
         <ul class="date-list">
             <li class="event-speech event-organization" data-start="09:00" data-end="09:10">
                 <div><span class="date-label"><strong>09:00–09:10</strong></span><span class="date-value">Welcome</span></div>
