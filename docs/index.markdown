@@ -202,6 +202,7 @@ contact-email: hulchvse@student.cvut.cz
                 <li><strong>Passcode:</strong> 298957</li>
             </ul>
         </div>
+        
         <ul class="date-list">
             <li class="event-speech event-organization" data-start="09:00" data-end="09:10">
                 <div><span class="date-label"><strong>09:00–09:10</strong></span><span class="date-value">Welcome</span></div>
@@ -219,20 +220,6 @@ contact-email: hulchvse@student.cvut.cz
                 </div>
                 <div class="schedule-speakers">
                     {% assign session_speakers = site.data.speakers | where: "session", 1 %}{% for speaker in session_speakers %}<a href="#{{ speaker.id }}" data-tooltip="{{ speaker.time }} - {{ speaker.name }}: '{{ speaker.topic }}'" data-speaker-id="{{ speaker.id }}"><img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}"></a>{% endfor %}
-                </div>
-            </li>
-            <li class="event-speech event-organization" data-start="10:15" data-end="10:30">
-                <div>
-                    <span class="date-label"><strong>10:15–10:30</strong></span>
-                    <span class="date-value">Competition Presentation</span>
-                    <div class="schedule-buttons-container">
-                        <button class="details-toggle-btn" data-open-text="Read More" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
-                        <a href="#competition-section" class="schedule-link-btn"><i class="fa-solid fa-arrow-right"></i> Go to Section</a>
-                    </div>
-                    <div class="expandable-details" style="display: none;">{{ site.data.schedule_details.competition_presentation }}</div>
-                </div>
-                <div class="schedule-speakers">
-                    <img class="speaker-avatar" src="{{ site.data.organizers[0].image | absolute_url }}" alt="Vsevolod Hulchuk">
                 </div>
             </li>
             <li class="event-break event-coffee" data-start="10:30" data-end="11:00">
@@ -253,19 +240,27 @@ contact-email: hulchvse@student.cvut.cz
                     {% assign session_speakers = site.data.speakers | where: "session", 2 %}{% for speaker in session_speakers %}<a href="#{{ speaker.id }}" data-tooltip="{{ speaker.time }} - {{ speaker.name }}: '{{ speaker.topic }}'" data-speaker-id="{{ speaker.id }}"><img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}"></a>{% endfor %}
                 </div>
             </li>
-            <li class="event-speech event-accepted" data-start="11:40" data-end="13:00">
+            <li class="event-speech event-accepted" data-start="11:40" data-end="12:40">
                 <div>
-                    <span class="date-label"><strong>11:40–13:00</strong></span>
+                    <span class="date-label"><strong>11:40–12:40</strong></span>
                     <span class="date-value">Accepted Papers</span>
                     <button class="details-toggle-btn" data-open-text="Session Breakdown" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
-                            {% for paper in site.data.papers %}<li class="paper-entry"><span class="paper-time">{{ paper.time }}</span><div class="paper-details"><strong class="paper-author">{{ paper.author }} {% if paper.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">{{ paper.title }}</em></div></li>{% endfor %}
+                            {% assign session1_papers = site.data.papers | where: "session", 1 %}
+                            {% for paper in session1_papers %}
+                            <li class="paper-entry">
+                                <span class="paper-time">{{ paper.time }}</span>
+                                <div class="paper-details">
+                                    <strong class="paper-author">{{ paper.author }} {% if paper.online %}<span class="online-badge small">online</span>{% endif %}</strong>
+                                    <em class="paper-title">{{ paper.title }}</em>
+                                </div>
+                            </li>
+                            {% endfor %}
                         </ul>
                     </div>
                 </div>
                 <div class="schedule-speakers">
-                    <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
                     <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
                     <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
                     <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="Default Scholar Avatar">
@@ -281,7 +276,7 @@ contact-email: hulchvse@student.cvut.cz
                     <button class="details-toggle-btn" data-open-text="Session Breakdown" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
-                            {% assign session_speakers = site.data.speakers | where: "session", 3 %}{% for speaker in session_speakers %}<li class="paper-entry" data-speaker-id="{{ speaker.id }}"><span class="paper-time">{{ speaker.time }}</span><div class="paper-details"><strong class="paper-author">{{ speaker.name }} {% if speaker.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">"{{ speaker.topic }}"</em></div></li>{% endfor %}
+                            {% assign session_speakers = site.data.speakers | where: "session", 3 %}{% for speaker in session_speakers %}<li class="paper-entry" data-speaker-id="{{ speaker.id }}"><span class="paper-time">{{ paper.time }}</span><div class="paper-details"><strong class="paper-author">{{ speaker.name }} {% if speaker.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">"{{ speaker.topic }}"</em></div></li>{% endfor %}
                         </ul>
                     </div>
                 </div>
@@ -289,19 +284,47 @@ contact-email: hulchvse@student.cvut.cz
                     {% assign session_speakers = site.data.speakers | where: "session", 3 %}{% for speaker in session_speakers %}<a href="#{{ speaker.id }}" data-tooltip="{{ speaker.time }} - {{ speaker.name }}: '{{ speaker.topic }}'" data-speaker-id="{{ speaker.id }}"><img class="speaker-avatar" src="{{ speaker.image | absolute_url }}" alt="{{ speaker.name }}"></a>{% endfor %}
                 </div>
             </li>
-            <li class="event-poster coffee" data-start="15:30" data-end="16:15">
-                <div><span class="date-label"><strong>15:30–16:15</strong></span><span class="date-value">Coffee Break & Poster Session</span></div>
+            <li class="event-poster coffee" data-start="15:30" data-end="16:00">
+                <div><span class="date-label"><strong>15:30–16:00</strong></span><span class="date-value">Coffee Break & Poster Session</span></div>
             </li>
-            <li class="event-poster event-networking" data-start="16:15" data-end="16:50">
+            <li class="event-speech event-accepted" data-start="16:00" data-end="16:20">
+                {% assign session2_papers = site.data.papers | where: "session", 2 %}
+                {% for paper in session2_papers %}
                 <div>
-                    <span class="date-label"><strong>16:15–16:50</strong></span>
+                    <span class="date-label"><strong>{{ paper.time }}</strong></span>
+                    <span class="date-value">Accepted Paper: {{ paper.author }}</span>
+                    <button class="details-toggle-btn" data-open-text="View Title" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> View Title</button>
+                    <div class="expandable-details" style="display: none;"><em>{{ paper.title }}</em></div>
+                </div>
+                <div class="schedule-speakers">
+                    <img class="speaker-avatar" src="https://scholar.google.ch/citations/images/avatar_scholar_128.png" alt="{{ paper.author }}">
+                </div>
+                {% endfor %}
+            </li>
+            <li class="event-speech event-organization" data-start="16:20" data-end="16:30">
+                <div>
+                    <span class="date-label"><strong>16:20–16:30</strong></span>
+                    <span class="date-value">Competition Presentation</span>
+                    <div class="schedule-buttons-container">
+                        <button class="details-toggle-btn" data-open-text="Read More" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
+                        <a href="#competition-section" class="schedule-link-btn"><i class="fa-solid fa-arrow-right"></i> Go to Section</a>
+                    </div>
+                    <div class="expandable-details" style="display: none;">{{ site.data.schedule_details.competition_presentation }}</div>
+                </div>
+                <div class="schedule-speakers">
+                    <img class="speaker-avatar" src="{{ site.data.organizers[0].image | absolute_url }}" alt="Vsevolod Hulchuk">
+                </div>
+            </li>
+            <li class="event-poster event-networking" data-start="16:30" data-end="17:05">
+                <div>
+                    <span class="date-label"><strong>16:30–17:05</strong></span>
                     <span class="date-value">World Cafe Discussion</span>
                     <button class="details-toggle-btn" data-open-text="Read More" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Read More</button>
                     <div class="expandable-details" style="display: none;">{{ site.data.schedule_details.world_cafe }}</div>
                 </div>
             </li>
-            <li class="event-speech event-organization" data-start="16:50" data-end="23:05">
-                <div><span class="date-label"><strong>16:50–17:05</strong></span><span class="date-value">Closing Remarks</span></div>
+            <li class="event-speech event-organization" data-start="17:05" data-end="17:15">
+                <div><span class="date-label"><strong>17:05–17:15</strong></span><span class="date-value">Closing Remarks</span></div>
             </li>
         </ul>
     </div>
