@@ -9,6 +9,8 @@
   order: 1
   bio: |
     Martin Saska received his Ph.D. degree at University of Wuerzburg, Germany, within PhD program of Elite Network of Bavaria. He founded and heads the Multi-robot Systems lab (<a href="http://mrs.felk.cvut.cz/" target="_blank" rel="noopener noreferrer">mrs.felk.cvut.cz</a>) at Czech Technical University in Prague with more than 40 researchers. He was a visiting scholar at University of Illinois at Urbana-Champaign and at University of Pennsylvania, USA. He is co-author of >200 publications in conferences and impacted journals, including IJRR, AURO, JFR, ASC, EJC, with >8200 citations indexed by Scholar and H-index 51. His team won multiple robotic challenges in MBZIRC 2017, MBZIRC 2020 and DARPA SubT competitions (<a href="http://mrs.felk.cvut.cz/projects/mbzirc" target="_blank" rel="noopener noreferrer">MBZIRC 2017</a>, <a href="http://mrs.felk.cvut.cz/mbzirc2020" target="_blank" rel="noopener noreferrer">MBZIRC 2020</a>, <a href="http://mrs.felk.cvut.cz/projects/darpa" target="_blank" rel="noopener noreferrer">DARPA SubT</a>).
+  # presentation_link: "https://drive.google.com/file/d/example/view?usp=sharing"
+  # video_link: "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
 
 - id: speaker-frosi
   name: Matteo Frosi
@@ -21,6 +23,7 @@
   order: 2
   bio: |
     Matteo Frosi is a Research Assistant at the Artificial Intelligence and Robotics Laboratory (AIRLab) of Politecnico di Milano, where he also earned his Ph.D. His primary accomplishment lies in the development of versatile and robust Simultaneous Localization and Mapping (SLAM) systems for robots operating in challenging environments. A key achievement has been his success in bridging advanced theory with real-world application, successfully deploying his multi-sensor fusion frameworks (using LiDAR, camera, and radar) in industrial collaborations. These projects have solved critical problems in agricultural automation and autonomous inspection, enabling reliable navigation in unstructured terrain and ensuring long-term autonomy. Beyond this, Matteo actively contributes to the academic community by mentoring Master’s students and disseminating his research at major international conferences.
+
 - id: speaker-dharmadhikari
   name: Mihir Dharmadhikari
   affiliation: Norwegian University of Science and Technology (NTNU)
@@ -31,6 +34,12 @@
   time: "14:30-15:00"
   abstract: "The talk discusses methods for resilient localization and mapping - enabling autonomy functionalities - in GPS-denied and visually-degraded environments. Experiences from field deployments, including the winning run in the DARPA Subterranean Challenge are presented."
   order: 5
+  qa:
+    - question: "How do you handle multi-sensor calibration? Is it part of your state space or more of an external calibration?"
+      answer: "We do not estimate the sensor extrinsics as part of the state space. We perform sensor extrinsic calibrations based on the modality. We use Kalibr for camera-IMU calibration. Similarly, we have explored various LiDAR-IMU and radar-IMU calibration techniques. As our sensors have rigid transformations between them and are placed close by, a transformation from CAD often can work fairly well, if nothing else as an initial guess."
+    - question: "What about the time synchronization in the factor graph optimization? Do you consider discrete measurements or something else?"
+      answer: "We indeed consider discrete measurements for our SLAM methods. Regarding time synchronization, we have developed a synchronization hardware and software system using a Teensy microcontroller that synchronizes the camera, LiDAR, radar, and IMU. Briefly speaking, the microcontroller provides triggering signals to the IMU, radar, and camera for synchronized sampling. Furthermore, the same microcontroller passes an NMEA message once per second to the LiDAR via UART, synchronizing the LiDAR timing the same way a GPS would. In the factor graph, the LiDAR point cloud is deskewed to the latest radar measurement timestamp. Through this synchronization system we achieve accurate time stamping of the measurements that are added to the factor graph.More details about the time synchronization system can be found here: https://arxiv.org/pdf/2507.05717"
+
 
 - id: speaker-laconte
   name: Johann Laconte

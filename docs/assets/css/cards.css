@@ -121,6 +121,103 @@
   color: #0056b3;
 }
 
+/* In custom.css */
+
+/* --- Styles for Q&A with Answers --- */
+.qa-list li {
+  margin-bottom: 1rem; /* Adds space between each Q&A item */
+}
+
+.qa-q {
+  color: var(--dark-color);
+}
+
+.qa-a {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding-left: 1.25rem; /* Indents the answer */
+  font-style: italic;
+  color: #495057; /* Slightly lighter text for the answer */
+}
+
+/* In custom.css */
+
+/* --- Styles for Post-Event Materials --- */
+.post-event-materials {
+  background-color: #f8f9fa;
+  border-left: 3px solid #6c757d;
+  border-radius: 8px;
+  padding: 1rem;
+  margin-top: 0.75rem;
+}
+
+.material-links a {
+  display: inline-block;
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.qa-section h5 {
+  margin-top: 1rem;
+  margin-bottom: 0.5rem;
+  color: var(--dark-color);
+  font-weight: 600;
+}
+
+.qa-list {
+  list-style-type: disc;
+  padding-left: 20px;
+  font-size: 0.9rem;
+  color: var(--dark-gray);
+}
+
+/* Style for the PDF link on the paper list */
+.paper-pdf-link {
+  display: inline-block;
+  margin-left: 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.paper-pdf-link:hover {
+  text-decoration: underline;
+}
+
+/* In custom.css */
+
+/* --- Styles for Expandable Q&A --- */
+.qa-question-toggle {
+  display: block;
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--dark-color);
+  transition: color 0.2s;
+}
+
+.qa-question-toggle:hover {
+  color: var(--primary-color);
+}
+
+.qa-answer {
+  display: none; /* Hide answers by default */
+  margin-top: 0.5rem;
+  padding-left: 1.25rem;
+  margin-left: 6px; /* Align with text above */
+  border-left: 2px solid var(--gray);
+  font-style: italic;
+  color: #495057;
+}
+
+.toggle-icon {
+  margin-right: 8px;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  width: 1em; /* Ensures consistent alignment */
+}
+
 /* --- Fix for Speaker Card Image Cropping --- */
 
 /* Target only the images inside the speaker cards within the program section */

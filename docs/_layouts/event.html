@@ -28,7 +28,7 @@
         {% for item in navigation %}
             {% assign it = item | downcase | replace: " ", "-" %}
             <li>
-                <a href="#{{ it }}" class="{% if item == 'Program' %}cta-nav-button{% endif %}">
+                <a href="#{{ it }}" class="{% if item == 'Program and Materials' %}cta-nav-button{% endif %}">
                     {{ item }}
                 </a>
             </li>

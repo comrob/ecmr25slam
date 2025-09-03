@@ -307,3 +307,20 @@ window.onload = () => {
   window.addEventListener("scroll", highlightNavOnScroll);
   highlightNavOnScroll();
 };
+
+// In your main .js file
+
+function toggleAnswer(questionElement) {
+  const answer = questionElement.nextElementSibling;
+  const icon = questionElement.querySelector('.toggle-icon');
+  
+  if (answer.style.display === "none" || answer.style.display === "") {
+    answer.style.display = "block";
+    icon.classList.remove('fa-plus-square');
+    icon.classList.add('fa-minus-square');
+  } else {
+    answer.style.display = "none";
+    icon.classList.remove('fa-minus-square');
+    icon.classList.add('fa-plus-square');
+  }
+}

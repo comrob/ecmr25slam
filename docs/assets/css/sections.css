@@ -56,6 +56,12 @@ section:nth-of-type(even) {
   text-align: center;
   margin-bottom: 2rem;
 }
+#about-section h3, #dates-section h3, #organizers-section h3,
+#venue-and-location-section h3, #submissions-section h3,
+#program-section h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
 
 .about-intro-container {
   display: flex;
