@@ -155,6 +155,12 @@ contact-email: hulchvse@student.cvut.cz
         <p>Full-day schedule with keynotes, technical sessions, and competitions: <strong>September 2, 2025</strong></p>
         <p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml?gid=764812166&single=true" target="_blank">View the detailed schedule here.</a></strong></p>
         
+        <div class="materials-info-box">
+            <h4><i class="fa-solid fa-folder-open"></i> Workshop Materials Available</h4>
+            <p>All post-workshop materials, including submitted papers and speaker presentations, are available in our shared folder. Please note that some materials are still in the process of being uploaded.</p>
+            <a href="https://drive.google.com/drive/folders/1mOlLbc_5qW_kn4-7GBF9m_7u9YboE_9p?usp=sharing" target="_blank" class="cta-button">Access All Materials</a>
+        </div>
+        
         
         <ul class="date-list">
             <li class="event-speech event-organization" data-start="09:00" data-end="09:10">
@@ -282,7 +288,8 @@ contact-email: hulchvse@student.cvut.cz
         </ul>
     </div>
     <br/>
- <h3>Invited speakers and Materials</h3>
+
+<h3>Invited speakers and Materials</h3>
 <div class="image-info-grid small">
     {% assign sorted_speakers = site.data.speakers | sort: "order" %}
     {% for speaker in sorted_speakers %}
@@ -333,7 +340,7 @@ contact-email: hulchvse@student.cvut.cz
     </div>
     {% endfor %}
 </div>
-    <br/><hr>
+<br/><hr>
 </section>
 
 
