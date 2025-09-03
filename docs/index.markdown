@@ -3,7 +3,7 @@ layout: event
 title: ECMR Workshop 2025
 logo: images/home-logo.png
 permlink: /ecmr-workshop-2025
-navigation: About;Important dates;Competition;Program and Materials;Organizers;Venue and location
+navigation: About;Important dates;Benchmark;Program and Materials;Organizers;Venue and location
 logos: https://www.cvut.cz/,images/logo_ctu.jpg
 contact: Vsevolod Hulchuk
 contact-email: hulchvse@student.cvut.cz
@@ -14,22 +14,21 @@ contact-email: hulchvse@student.cvut.cz
 <div class="hero-section">
     <div class="hero-content">
         <h1>Resilient SLAM in Challenging Settings</h1>
-        <p class="hero-subtitle">A Full-Day Workshop at ECMR 2025</p>
+        <p class="hero-subtitle">A Full-Day Workshop <strong>held</strong> at ECMR 2025 on September 2</p>
         <div class="hero-buttons">
-            <a href="#program-and-materials" class="cta-button">View Program and materials</a>
-            <a href="#submissions-section" class="cta-button secondary">Presentation Guidelines</a>
+            <a href="#program-and-materials" class="cta-button"><strong>View Presentations & Materials</strong></a>
+            <a href="#competition" class="cta-button secondary">SLAM Benchmark</a>
         </div>
     </div>
 </div>
 
-<h2 id="about"></h2>
 <section id="about-section">
-    <h2>About the Workshop</h2>
+    <h2 id="about">About the Workshop</h2>
     <div class="about-intro-container">
         <div class="about-text-column">
             <h3>Resilient SLAM in Challenging Settings</h3>
             <p class="subtitle">Recent Advancements, Open Problems, and Competitions</p>
-            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle, especially in complex or perceptually-degraded conditions. This full-day workshop, held in conjunction with <strong><a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer">ECMR 2025</a></strong>, aims to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
+            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle. This full-day workshop, held in conjunction with <strong><a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer">ECMR 2025</a></strong>, aimed to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
             <div class="cta-button-wrapper" style="text-align: left; margin-top: 1.5rem;">
                 <a href="https://ecmr2025.dei.unipd.it/" target="_blank" class="cta-button secondary">
                     <i class="fa-solid fa-house-chimney"></i> Visit Main Conference Site
@@ -43,12 +42,12 @@ contact-email: hulchvse@student.cvut.cz
             <p>A competition to benchmark new methods on unique datasets from quadruped and wheeled robots.</p>
         </div>
         <div class="feature-card">
-            <h4><i class="fa-solid fa-scroll"></i> Call for Papers</h4>
-            <p>An opportunity to discuss late-breaking results and novel ideas about resilient SLAM.</p>
+            <h4><i class="fa-solid fa-scroll"></i> Published Papers</h4>
+            <p>The workshop provided an opportunity to discuss late-breaking results and novel ideas about resilient SLAM.</p>
         </div>
         <div class="feature-card">
             <h4><i class="fa-solid fa-user-tie"></i> Invited Talks</h4>
-            <p>Sessions with leading experts from academia and industry sharing their latest insights.</p>
+            <p>Sessions with leading experts from academia and industry shared their latest insights.</p>
         </div>
         <div class="feature-card">
             <h4><i class="fa-solid fa-comments"></i> Interactive Sessions</h4>
@@ -60,18 +59,19 @@ contact-email: hulchvse@student.cvut.cz
 
 <h2 id="important-dates"></h2>
 <section id="dates-section">
-    <h2>Important Dates</h2>
+    <h2>Workshop Timeline</h2>
     <div class="section-intro">
+        <p style="text-align:center;">All deadlines have now passed. Thank you to all our contributors!</p>
         <ul class="date-list">
-            <li class="passed">
+            <li>
                 <span class="date-label">Paper submission deadline:</span>
                 <span class="date-value"><strong>August 20, 2025</strong></span>
             </li>
-            <li class="passed">
+            <li>
                 <span class="date-label">Notification of acceptance:</span>
                 <span class="date-value"><strong>August 28, 2025</strong></span>
             </li>
-            <li class="passed">
+            <li>
                 <span class="date-label">Competition deadline:</span>
                 <span class="date-value"><strong>August 28, 2025</strong></span>
             </li>
@@ -85,32 +85,47 @@ contact-email: hulchvse@student.cvut.cz
 </section>
 
 <h2 id="competition"></h2>
+<h2 id="benchmark"></h2>
 <section id="competition-section">
     <div class="competition-hero">
         <div class="hero-overlay"></div>
         <img src="images/slam_challenge_banner_v2.png" alt="Robots in a challenging outdoor environment" class="hero-background">
         <div class="hero-content">
-            <h2>Competition 🏆</h2>
-            <p>Benchmark your SLAM systems in the challenging environments.</p>
+            <h2>Open SLAM Benchmark Platform</h2>
+            <p>An ongoing resource for the robotics community.</p>
             <a href="https://crl-slam.fel.cvut.cz/?page=1" target="_blank" class="cta-button">
-                Go to Competition Platform
+                Go to Benchmark Platform
             </a>
         </div>
     </div>
+
+    <div class="section-intro" style="padding: 1.5rem 0 0 0; text-align: center;">
+        <p>The ECMR 2025 workshop competition has concluded. We now proudly present the evaluation infrastructure as an <strong>open and ongoing benchmark platform</strong> for the SLAM community.</p>
+    </div>
+
     <div class="competition-details">
         <div class="feature-card">
             <h3><i class="fa-brands fa-docker"></i> A Novel Evaluation Approach</h3>
-            <p>This competition uses a unique <strong>server-side evaluation</strong>. You submit your entire <strong>Dockerized ROS1 SLAM system</strong>, and we run it on our servers against private test data.</p>
+            <p>This platform uses a unique <strong>server-side evaluation</strong>. You submit your entire <strong>Dockerized ROS1 SLAM system</strong>, and we run it on our servers against private test data.</p>
         </div>
         <div class="feature-card">
-            <h3><i class="fa-solid fa-globe"></i> Participation & Deadline</h3>
-            <p>Participation is open globally (no travel required). The deadline for the workshop competition is <strong>August 28, 2025</strong>. The platform will remain open for benchmarking afterward.</p>
+            <h3><i class="fa-solid fa-infinity"></i> An Open Platform</h3>
+            <p>This platform is a permanent resource, open globally for anyone to benchmark their SLAM systems against our challenging datasets at any time.</p>
         </div>
         <div class="feature-card">
             <h3><i class="fa-solid fa-chart-simple"></i> Evaluation Metrics</h3>
             <p>Submissions are evaluated using standard metrics, including <strong>Absolute Trajectory Error (ATE)</strong> and <strong>Relative Pose Error (RPE)</strong>.</p>
         </div>
     </div>
+
+    <div class="host-benchmark-cta">
+        <h3><i class="fa-solid fa-bullhorn"></i> Host Your Own Benchmark Challenge!</h3>
+        <p>We invite research groups to expand this platform. You can create your own challenge by providing a new, challenging dataset. We will help you integrate it, and you can then evaluate submitted solutions on your own hardware. This is an excellent opportunity to promote your research and establish a community standard.</p>
+        <div class="cta-button-wrapper">
+            <a href="mailto:robotmappingws@gmail.com" class="cta-button secondary">Contact Us to Get Started</a>
+        </div>
+    </div>
+
     <div class="section-intro" style="text-align: center; margin-top: 2rem;">
         <h3><i class="fa-solid fa-database"></i> Available Datasets</h3>
     </div>
@@ -140,12 +155,8 @@ contact-email: hulchvse@student.cvut.cz
             </div>
         </div>
     </div>
-    <div class="dataset-contribution-prompt">
-        <p><strong>Want to host your own dataset?</strong> We invite researchers to propose and host new challenging datasets on our platform. <a href="mailto:robotmappingws@gmail.com">Contact us for details!</a></p>
-    </div>
     <br/><hr>
 </section>
-
 
 <h2 id="program-and-materials"></h2>
 <h2 id="program"></h2>
@@ -156,8 +167,8 @@ contact-email: hulchvse@student.cvut.cz
         <p><strong><a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vRKTBlQfFsy7Ry1iLaIIFlKDZww0W6he26UZ_iveERtk5A_Ps7fyLiS-Diam5fnhLhh99U1VO7eT7Yw/pubhtml?gid=764812166&single=true" target="_blank">View the detailed schedule here.</a></strong></p>
         
         <div class="materials-info-box">
-            <h4><i class="fa-solid fa-folder-open"></i> Workshop Materials Available</h4>
-            <p>All post-workshop materials, including submitted papers and speaker presentations, are available in our shared folder. Please note that some materials are still in the process of being uploaded.</p>
+            <h4><i class="fa-solid fa-folder-open"></i> Presentations & Materials</h4>
+            <p><strong>Thank you for attending!</strong> All workshop materials, including accepted papers and speaker presentations, are now available in our shared folder.</p>
             <a href="https://drive.google.com/drive/folders/1mOlLbc_5qW_kn4-7GBF9m_7u9YboE_9p?usp=sharing" target="_blank" class="cta-button">Access All Materials</a>
         </div>
         
@@ -346,25 +357,13 @@ contact-email: hulchvse@student.cvut.cz
 
 <h2 id="presenter-info"></h2>
 <section id="submissions-section">
-    <h2>Presenter Information</h2>
+    <h2><strong>Archived Call for Papers</strong></h2>
+    <div class="section-intro">
+        <p>The workshop invited contributions on topics related to resilient SLAM in challenging real-world conditions. The topics of interest included:</p>
+    </div>
     <div class="cfp-container">
-
-        <div class="cfp-main-column">
-            <h3><i class="fa-solid fa-file-arrow-up"></i> Presentation Guidelines</h3>
-            
-            <h4><i class="fa-solid fa-person-chalkboard"></i> Presentation Formats</h4>
-            <ul>
-                <li><strong>Accepted Papers:</strong> Oral presentations are scheduled for <strong>15 minutes, followed by a 5-minute Q&A</strong>. In-person presenters are also required to prepare a poster for the interactive sessions.</li>
-                <li><strong>Invited Talks:</strong> Talks are scheduled for <strong>30 minutes, including Q&A</strong>. This may be adjusted by contacting the organizers.</li>
-            </ul>
-
-            <h4><i class="fa-solid fa-circle-info"></i> General Instructions</h4>
-            <p>Please see the <a href="#program">Program section</a> for your allocated time slot. Online speakers will be provided with a camera overview of the audience. We kindly ask that you be ready <strong>15 minutes before</strong> your scheduled time to test your connection and setup.</p>
-        </div>
-
-        <div class="cfp-sidebar">
+        <div class="cfp-sidebar" style="width: 100%; max-width: 800px; margin: 0 auto;">
             <h4><i class="fa-solid fa-lightbulb"></i> Submission Topics</h4>
-            <p>The call for papers invited contributions on topics including:</p>
             <ul>
                 <li>3D LiDAR-centered SLAM under perceptual degradation</li>
                 <li>Radar-based SLAM and sensor fusion</li>
@@ -373,13 +372,7 @@ contact-email: hulchvse@student.cvut.cz
                 <li>Robust back-end optimization</li>
                 <li>Benchmarks, datasets, and metrics</li>
             </ul>
-            <div class="cta-button-wrapper">
-                <a href="mailto:robotmappingws@gmail.com?subject=ECMR Workshop 2025 - Late Inquiry" class="cta-button inactive">
-                    Submissions Closed (Contact)
-                </a>
-            </div>
         </div>
-        
     </div>
     <br/><hr>
 </section>

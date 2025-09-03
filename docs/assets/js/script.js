@@ -207,7 +207,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // If the count down is finished, write some text
     if (distance < 0) {
       clearInterval(x);
-      document.getElementById("countdown").innerHTML = "<h3>The Workshop has happened!</h3>";
+      document.getElementById("countdown").innerHTML = "<h3></h3>";
     }
   }, 1000);
 
