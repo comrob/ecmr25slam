@@ -1,7 +1,7 @@
-# - title: "Outdoor Degenerate LiDAR"
-#   description: "Open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming."
-#   link: "https://github.com/comrob/CRL25DEG_dataset"
-#   status: "integrated"
+- title: "Outdoor Degenerate LiDAR"
+  description: "Open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming."
+  link: "https://github.com/comrob/CRL25DEG_dataset"
+  status: "integrated"
 
 # - title: "Viking Hill Radar"
 #   description: "Challenging navigation in tall grass using a radar sensor."
