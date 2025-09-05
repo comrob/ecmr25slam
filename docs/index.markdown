@@ -179,8 +179,16 @@ contact-email: hulchvse@student.cvut.cz
     </div>
     <div class="dataset-grid">
         {% assign community_datasets = site.data.datasets | where: "status", "community" %}
+        
+        {% comment %}
+            This trick ensures the result is always an array, preventing a bug
+            when only one item is found.
+        {% endcomment %}
+        {% assign empty_array = "" | split: "," %}
+        {% assign community_datasets = community_datasets | concat: empty_array %}
+        
         {% for dataset in community_datasets %}
-        <div class="dataset-card">
+        <div class="dataset-card" id="{{ dataset.title | slugify }}">
             <a href="#{{ dataset.title | slugify }}" class="stretched-link" aria-label="Scroll to {{ dataset.title }}"></a>
             {% if dataset.image %}
                 <img src="{{ dataset.image | absolute_url }}" alt="{{ dataset.title }}">
@@ -192,6 +200,8 @@ contact-email: hulchvse@student.cvut.cz
                 <a href="{{ dataset.link }}" target="_blank" class="github-button">View Dataset</a>
             </div>
         </div>
+        {% else %}
+            <p>No community-provided datasets have been published yet.</p>
         {% endfor %}
     </div>
     <br/><hr>
