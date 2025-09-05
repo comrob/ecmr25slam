@@ -11,12 +11,14 @@ contact-email: hulchvse@student.cvut.cz
 <head>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
-<div class="hero-section">
+<div class="hero-section hero-with-image">
+    <img src="images/workshop-hero-background.jpg" alt="Workshop Audience" class="hero-background-image">
+    <div class="hero-overlay"></div> {# This is crucial for text visibility #}
     <div class="hero-content">
         <h1>Resilient SLAM in Challenging Settings</h1>
-        <p class="hero-subtitle">A Full-Day Workshop <strong>held</strong> at ECMR 2025 on September 2</p>
+        <p class="hero-subtitle">A Full-Day Workshop held at ECMR 2025</p>
         <div class="hero-buttons">
-            <a href="#program-and-materials" class="cta-button"><strong>View Presentations & Materials</strong></a>
+            <a href="#program-and-materials" class="cta-button">View Materials & Program</a>
             <a href="#competition" class="cta-button secondary">SLAM Benchmark</a>
         </div>
     </div>
@@ -28,12 +30,13 @@ contact-email: hulchvse@student.cvut.cz
         <div class="about-text-column">
             <h3>Resilient SLAM in Challenging Settings</h3>
             <p class="subtitle">Recent Advancements, Open Problems, and Competitions</p>
-            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle. This full-day workshop, held in conjunction with <strong><a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer">ECMR 2025</a></strong>, aimed to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
-            <div class="cta-button-wrapper" style="text-align: left; margin-top: 1.5rem;">
-                <a href="https://ecmr2025.dei.unipd.it/" target="_blank" class="cta-button secondary">
-                    <i class="fa-solid fa-house-chimney"></i> Visit Main Conference Site
-                </a>
-            </div>
+            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle. This full-day workshop, held in conjunction with <strong><a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer">ECMR 2025</a></strong> confernce (Padua, Italy). The workshop is aimed to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
+<div class="cta-button-wrapper" style="text-align: center; margin-top: 1.5rem;">
+    <a href="https://ecmr2025.dei.unipd.it/" target="_blank" class="cta-button with-image-icon">
+        <img src="images/logo_ecmr.jpg" class="button-icon" alt="ECMR Logo">
+        Visit ECMR Conference Site
+    </a>
+</div>
         </div>
     </div>
     <div class="about-features-grid">
@@ -168,7 +171,7 @@ contact-email: hulchvse@student.cvut.cz
         
         <div class="materials-info-box">
             <h4><i class="fa-solid fa-folder-open"></i> Presentations & Materials</h4>
-            <p><strong>Thank you for attending!</strong> All workshop materials, including accepted papers and speaker presentations, are now available in our shared folder.</p>
+            <p><strong>Thank you for attending!</strong> All workshop materials, including accepted papers and speaker presentations, are now available in our shared folder. Recording are in the process of aploading, and would appear within several weeks after the workshop.</p>
             <a href="https://drive.google.com/drive/folders/1mOlLbc_5qW_kn4-7GBF9m_7u9YboE_9p?usp=sharing" target="_blank" class="cta-button">Access All Materials</a>
         </div>
         

@@ -49,6 +49,60 @@ section:nth-of-type(even) {
   font-size: 1.2rem;
 }
 
+/* --- Hero Section with Image Background --- */
+
+.hero-section.hero-with-image {
+  position: relative; /* Allows absolute positioning of image and overlay */
+  overflow: hidden;   /* Ensures image doesn't overflow rounded corners */
+  padding: 0;         /* Remove default padding to allow image to fill */
+  background-color: transparent; /* Remove background color */
+}
+
+.hero-background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;   /* Covers the entire section */
+  object-position: center; /* Centers the image */
+  z-index: 1;         /* Place image below content and overlay */
+}
+
+/* Overlay to darken the image for text readability */
+.hero-section .hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+  z-index: 2; /* Place overlay above image, below content */
+}
+
+.hero-section .hero-content {
+  position: relative; /* Ensure content is above the image and overlay */
+  z-index: 3;         /* Place content on top */
+  padding: 4rem 2rem; /* Restore padding that was removed from .hero-section */
+}
+
+/* Ensure text elements within hero-content are white for contrast */
+.hero-section.hero-with-image h1,
+.hero-section.hero-with-image .hero-subtitle,
+.hero-section.hero-with-image .hero-buttons .cta-button {
+  color: white;
+}
+
+/* Adjust button background for better contrast if needed (e.g., if secondary has light background) */
+.hero-section.hero-with-image .hero-buttons .cta-button.secondary {
+    background-color: rgba(255, 255, 255, 0.2); /* Semi-transparent white */
+    border: 1px solid white;
+}
+
+.hero-section.hero-with-image .hero-buttons .cta-button.secondary:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
 /* --- About Section --- */
 #about-section h2, #dates-section h2, #organizers-section h2,
 #venue-and-location-section h2, #submissions-section h2,
@@ -383,4 +437,48 @@ section:nth-of-type(even) {
 
 .host-benchmark-cta .cta-button {
   margin-top: 1rem;
+}
+
+/* --- Special style for the "Visit Conference Site" button --- */
+
+/* In custom.css */
+
+/* Special style for the "Visit Conference Site" button */
+.conference-site-button {
+  /* Fallback color in case the image ever fails to load */
+  background-color: var(--dark-color);
+  
+  /* CORRECTED PATH: ../../ goes up two directories to the root */
+  background-image: linear-gradient(rgba(28, 37, 48, 0.6), rgba(28, 37, 48, 0.6)), url('../../images/uni-padua.png');
+  background-size: cover;
+  background-position: center;
+
+  /* Text & Border Styling */
+  color: white;
+  border: 2px solid white;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.7);
+  
+  /* Sizing & Spacing */
+  padding: 1rem 1.5rem;
+  transition: transform 0.2s ease;
+}
+
+/* Override default hover and add a subtle zoom effect */
+.conference-site-button:hover {
+  color: white;
+  transform: scale(1.05);
+  background-color: var(--dark-color); /* Maintain fallback color on hover */
+}
+
+/* --- Style for a CTA button with an image icon --- */
+.cta-button.with-image-icon {
+  display: inline-flex; /* Use flexbox to align image and text */
+  align-items: center;
+  gap: 0.75rem; /* Space between the logo and the text */
+}
+
+.button-icon {
+  height: 2.0em; /* Increased size */
+  width: auto;
+  border-radius: 1px;
 }
