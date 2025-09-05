@@ -88,8 +88,9 @@ contact-email: hulchvse@student.cvut.cz
 </section>
 
 <h2 id="competition"></h2>
-<h2 id="benchmark"></h2>
-<section id="competition-section">
+<section id="benchmark">
+    <h2 id="benchmark">Benchmark</h2>
+
     <div class="competition-hero">
         <div class="hero-overlay"></div>
         <img src="images/slam_challenge_banner_v2.png" alt="Robots in a challenging outdoor environment" class="hero-background">
@@ -100,7 +101,7 @@ contact-email: hulchvse@student.cvut.cz
                 Go to Benchmark Platform
             </a>
         </div>
-    </div>
+        </div>
 
     <div class="section-intro" style="padding: 1.5rem 0 0 0; text-align: center;">
         <p>The ECMR 2025 workshop competition has concluded. We now proudly present the evaluation infrastructure as an <strong>open and ongoing benchmark platform</strong> for the SLAM community.</p>
@@ -119,7 +120,7 @@ contact-email: hulchvse@student.cvut.cz
             <h3><i class="fa-solid fa-chart-simple"></i> Evaluation Metrics</h3>
             <p>Submissions are evaluated using standard metrics, including <strong>Absolute Trajectory Error (ATE)</strong> and <strong>Relative Pose Error (RPE)</strong>.</p>
         </div>
-    </div>
+        </div>
 
     <div class="host-benchmark-cta">
         <h3><i class="fa-solid fa-bullhorn"></i> Host Your Own Benchmark Challenge!</h3>
@@ -129,34 +130,50 @@ contact-email: hulchvse@student.cvut.cz
         </div>
     </div>
 
+    <div class="collaboration-prompt">
+        <h3><i class="fa-solid fa-code-branch"></i> Call for Collaboration: ROS2 Upgrade</h3>
+        <p>Our current evaluation system is built on ROS1. We are actively looking for collaborators to help upgrade the platform to ROS2 to support the latest advancements in the robotics community. If you are experienced with ROS2 and interested in contributing, please get in touch!</p>
+        <div class="cta-button-wrapper">
+            <a href="mailto:robotmappingws@gmail.com?subject=Collaboration Inquiry: ROS2 Upgrade" class="cta-button secondary">Collaborate With Us</a>
+        </div>
+    </div>
+
     <div class="section-intro" style="text-align: center; margin-top: 2rem;">
-        <h3><i class="fa-solid fa-database"></i> Available Datasets</h3>
+        <h3><i class="fa-solid fa-server"></i> Integrated Datasets for Auto-Evaluation</h3>
     </div>
     <div class="dataset-grid">
+        {% assign integrated_datasets = site.data.datasets | where_exp: "item", "item.status == 'integrated' or item.status == 'integrating'" %}
+        {% for dataset in integrated_datasets %}
         <div class="dataset-card">
-            <h4>Outdoor Degenerate LiDAR</h4>
-            <p>Open fields with a 3D LiDAR. Tunnel and alpine environments are upcoming.</p>
+            <h4>{{ dataset.title }}</h4>
+            <p>{{ dataset.description }}</p>
             <div class="card-footer">
-                <span class="status-badge available">Available</span>
-                <a href="https://github.com/comrob/CRL25DEG_dataset" target="_blank" class="github-button">View on GitHub</a>
+                <span class="status-badge {{ dataset.status }}">{{ dataset.status }}</span>
+                <a href="{{ dataset.link }}" target="_blank" class="github-button">View on GitHub</a>
             </div>
         </div>
+        {% endfor %}
+    </div>
+
+    <div class="section-intro" style="text-align: center; margin-top: 3rem;">
+        <h3><i class="fa-solid fa-users"></i> Community-Provided Datasets</h3>
+        <p style="font-size: 0.9rem; color: var(--dark-gray);">The following datasets were provided by our workshop participants. They are not integrated into the auto-evaluation platform.</p>
+    </div>
+    <div class="dataset-grid">
+        {% assign community_datasets = site.data.datasets | where: "status", "community" %}
+        {% for dataset in community_datasets %}
         <div class="dataset-card">
-            <h4>Indoor Quadruped</h4>
-            <p>An indoor dataset from a quadruped robot with RGB-D and motion capture ground truth.</p>
+            {% if dataset.image %}
+                <img src="{{ dataset.image | absolute_url }}" alt="{{ dataset.title }}">
+            {% endif %}
+            <h4>{{ dataset.title }}</h4>
+            <p>{{ dataset.description }}</p>
             <div class="card-footer">
-                <span class="status-badge integrating">Integrating</span>
-                <a href="https://github.com/aislabunimi/IAS_IRIM_AIS_dataset" target="_blank" class="github-button">View on GitHub</a>
+                <span class="status-badge {{ dataset.status }}">{{ dataset.status }}</span>
+                <a href="{{ dataset.link }}" target="_blank" class="github-button">View Dataset</a>
             </div>
         </div>
-        <div class="dataset-card">
-            <h4>Viking Hill Radar</h4>
-            <p>Focusing on challenging navigation in tall grass.</p>
-            <div class="card-footer">
-                <span class="status-badge available">Available</span>
-                <a href="https://github.com/kubelvla/viking_hill_tall_grass" target="_blank" class="github-button">View on GitHub</a>
-            </div>
-        </div>
+        {% endfor %}
     </div>
     <br/><hr>
 </section>
