@@ -30,7 +30,7 @@ contact-email: hulchvse@student.cvut.cz
         <div class="about-text-column">
             <h3>Resilient SLAM in Challenging Settings</h3>
             <p class="subtitle">Recent Advancements, Open Problems, and Competitions</p>
-            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle. This full-day workshop, held in conjunction with <strong><a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer">ECMR 2025</a></strong> confernce (Padua, Italy). The workshop is aimed to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
+            <p>Despite decades of research, deploying SLAM systems in the real world remains a major hurdle. This full-day workshop, held in conjunction with <strong><a href="https://ecmr2025.dei.unipd.it/" target="_blank" rel="noopener noreferrer">ECMR 2025</a></strong> conefernce (Padua, Italy). The workshop is aimed to unite researchers across Europe to tackle the challenges of robust localization and mapping head-on.</p>
 <div class="cta-button-wrapper" style="text-align: center; margin-top: 1.5rem;">
     <a href="https://ecmr2025.dei.unipd.it/" target="_blank" class="cta-button with-image-icon">
         <img src="images/logo_ecmr.jpg" class="button-icon" alt="ECMR Logo">
@@ -171,7 +171,7 @@ contact-email: hulchvse@student.cvut.cz
         
         <div class="materials-info-box">
             <h4><i class="fa-solid fa-folder-open"></i> Presentations & Materials</h4>
-            <p><strong>Thank you for attending!</strong> All workshop materials, including accepted papers and speaker presentations, are now available in our shared folder. Recording are in the process of aploading, and would appear within several weeks after the workshop.</p>
+            <p><strong>Thank you for attending!</strong> All workshop materials, including accepted papers and speaker presentations, are now available in our shared folder. Recordings are in the process of uploading, and will appear within several weeks after the workshop.</p>
             <a href="https://drive.google.com/drive/folders/1mOlLbc_5qW_kn4-7GBF9m_7u9YboE_9p?usp=sharing" target="_blank" class="cta-button">Access All Materials</a>
         </div>
         
@@ -401,8 +401,8 @@ contact-email: hulchvse@student.cvut.cz
                 Via S. Francesco, 90<br>
                 I-35121 Padua (Italy)
             </p>
-            <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+della+Salute,Via+S.+Francesco,90,Padua,Italy" target="_blank" rel="noopener noreferrer" class="ctgit push
-            a-button">
+            <br/>
+            <a href="https://www.google.com/maps/search/?api=1&query=Palazzo+della+Salute,Via+S.+Francesco,90,Padua,Italy" target="_blank" rel="noopener noreferrer" class="cta-button">
                 <i class="fa-solid fa-map-location-dot"></i> Open in Google Maps
             </a>
             <p style="font-size: 1.2rem; margin-top: 1rem;">

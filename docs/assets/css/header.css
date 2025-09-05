@@ -119,3 +119,13 @@ a.cta-nav-button:hover {
   opacity: 1; /* Override the default link hover opacity */
   transform: scale(1.05);
 }
+
+nav a {
+  padding: 0.5rem 0;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color);
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s;
+  white-space: nowrap; /* <-- ADD THIS LINE */
+}
