@@ -144,15 +144,26 @@ contact-email: hulchvse@student.cvut.cz
     </div>
     <div class="dataset-grid">
         {% assign integrated_datasets = site.data.datasets | where_exp: "item", "item.status == 'integrated' or item.status == 'integrating'" %}
+        
+        {% comment %}
+            This is a standard Jekyll trick to prevent a bug where the 'for' loop 
+            fails if only one item is found.
+        {% endcomment %}
+        {% assign empty_array = "" | split: "," %}
+        {% assign integrated_datasets = integrated_datasets | concat: empty_array %}
+
         {% for dataset in integrated_datasets %}
-        <div class="dataset-card">
-            <h4>{{ dataset.title }}</h4>
-            <p>{{ dataset.description }}</p>
-            <div class="card-footer">
-                <span class="status-badge {{ dataset.status }}">{{ dataset.status }}</span>
-                <a href="{{ dataset.link }}" target="_blank" class="github-button">View on GitHub</a>
+            <div class="dataset-card" id="{{ dataset.title | slugify }}">
+                <a href="#{{ dataset.title | slugify }}" class="stretched-link" aria-label="Scroll to {{ dataset.title }}"></a>
+                <h4>{{ dataset.title }}</h4>
+                <p>{{ dataset.description }}</p>
+                <div class="card-footer">
+                    <span class="status-badge {{ dataset.status }}">{{ dataset.status }}</span>
+                    <a href="{{ dataset.link }}" target="_blank" class="github-button">View on GitHub</a>
+                </div>
             </div>
-        </div>
+        {% else %}
+            <p>There are currently no datasets integrated with the benchmark platform.</p>
         {% endfor %}
     </div>
 
