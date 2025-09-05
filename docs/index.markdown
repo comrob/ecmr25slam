@@ -146,7 +146,6 @@ contact-email: hulchvse@student.cvut.cz
         {% assign integrated_datasets = site.data.datasets | where_exp: "item", "item.status == 'integrated' or item.status == 'integrating'" %}
         {% for dataset in integrated_datasets %}
         <div class="dataset-card">
-            <a href="#{{ dataset.title | slugify }}" class="stretched-link" aria-label="Scroll to {{ dataset.title }}"></a>
             <h4>{{ dataset.title }}</h4>
             <p>{{ dataset.description }}</p>
             <div class="card-footer">
