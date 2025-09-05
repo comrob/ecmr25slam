@@ -269,7 +269,7 @@ contact-email: hulchvse@student.cvut.cz
                     <button class="details-toggle-btn" data-open-text="Session Breakdown" onclick="toggleDetails(this)"><i class="fa-solid fa-plus"></i> Session Breakdown</button>
                     <div class="expandable-details" style="display: none;">
                         <ul class="paper-list">
-                            {% assign session_speakers = site.data.speakers | where: "session", 3 %}{% for speaker in session_speakers %}<li class="paper-entry" data-speaker-id="{{ speaker.id }}"><span class="paper-time">{{ paper.time }}</span><div class="paper-details"><strong class="paper-author">{{ speaker.name }} {% if speaker.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">"{{ speaker.topic }}"</em></div></li>{% endfor %}
+                            {% assign session_speakers = site.data.speakers | where: "session", 3 %}{% for speaker in session_speakers %}<li class="paper-entry" data-speaker-id="{{ speaker.id }}"><span class="paper-time">{{ speaker.time }}</span><div class="paper-details"><strong class="paper-author">{{ speaker.name }} {% if speaker.online %}<span class="online-badge small">online</span>{% endif %}</strong><em class="paper-title">"{{ speaker.topic }}"</em></div></li>{% endfor %}
                         </ul>
                     </div>
                 </div>
