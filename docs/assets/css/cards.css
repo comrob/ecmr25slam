@@ -251,3 +251,33 @@
   margin: 2rem 0;
   text-align: center;
 }
+
+/* Make the entire dataset card clickable */
+.dataset-card {
+  cursor: pointer;
+  scroll-margin-top: var(--header-height-increased, 0px);
+} 
+
+/* --- Stretched Link for Clickable Cards --- */
+
+/* The card needs to be a positioning context */
+.dataset-card {
+  position: relative;
+}
+
+/* This creates an invisible link layer that covers the entire card */
+.stretched-link::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 1; /* Place it above the card but below other links */
+  content: "";
+}
+
+/* Ensure the GitHub button is clickable on top of the stretched link */
+.dataset-card .github-button {
+  position: relative; /* Required for z-index to work */
+  z-index: 2;       /* Place it on a higher layer */
+}

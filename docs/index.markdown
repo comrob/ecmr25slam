@@ -3,7 +3,7 @@ layout: event
 title: ECMR Workshop 2025
 logo: images/home-logo.png
 permlink: /ecmr-workshop-2025
-navigation: About;Important dates;Benchmark;Program and Materials;Organizers;Venue and location
+navigation: About;Benchmark and Datasets;Program and Materials;Organizers;Venue and location
 logos: https://www.cvut.cz/,images/logo_ctu.jpg
 contact: Vsevolod Hulchuk
 contact-email: hulchvse@student.cvut.cz
@@ -88,6 +88,7 @@ contact-email: hulchvse@student.cvut.cz
 </section>
 
 <h2 id="competition"></h2>
+<h2 id="benchmark-and-datasets"></h2>
 <section id="benchmark">
     <h2 id="benchmark">Benchmark</h2>
 
@@ -144,7 +145,8 @@ contact-email: hulchvse@student.cvut.cz
     <div class="dataset-grid">
         {% assign integrated_datasets = site.data.datasets | where_exp: "item", "item.status == 'integrated' or item.status == 'integrating'" %}
         {% for dataset in integrated_datasets %}
-        <div class="dataset-card">
+        <div class="dataset-card" id="{{ dataset.title | slugify }}">
+            <a href="#{{ dataset.title | slugify }}" class="stretched-link" aria-label="Scroll to {{ dataset.title }}"></a>
             <h4>{{ dataset.title }}</h4>
             <p>{{ dataset.description }}</p>
             <div class="card-footer">
@@ -162,7 +164,8 @@ contact-email: hulchvse@student.cvut.cz
     <div class="dataset-grid">
         {% assign community_datasets = site.data.datasets | where: "status", "community" %}
         {% for dataset in community_datasets %}
-        <div class="dataset-card">
+        <div class="dataset-card" id="{{ dataset.title | slugify }}">
+            <a href="#{{ dataset.title | slugify }}" class="stretched-link" aria-label="Scroll to {{ dataset.title }}"></a>
             {% if dataset.image %}
                 <img src="{{ dataset.image | absolute_url }}" alt="{{ dataset.title }}">
             {% endif %}
